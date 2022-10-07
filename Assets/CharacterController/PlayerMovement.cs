@@ -5,19 +5,36 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    // Base code provided by  Dave / GameDevelopment on YouTube
+
     [Header("Movement")]
-    public float moveSpeed;
+    private float moveSpeed;
+    public float walkSpeed;
 
     public float groundDrag;
 
+    [Header("Jumping")]
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
     private int jumpAmount = 2;
     bool readyToJump;
 
+    [Header("Dashing")]
+    public float dashForce;
+    public float dashCooldown;
+    bool readyToDash;
+
+    [Header("Crouching")]
+    public float crouchSpeed;
+    public float crouchYScale;
+    private float startYScale;
+
+
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode dashKey = KeyCode.LeftShift;
+    public KeyCode crouchKey = KeyCode.LeftControl; 
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -34,11 +51,25 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+
+    // define current movment states
+    public MovementState state;
+    public enum MovementState
+    {
+        walking,
+        crouching,
+        air
+        
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         readyToJump = true;
+        readyToDash = true;
+
+        startYScale = transform.localScale.y;
     }
 
     private void Update()
@@ -49,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
         MyInput();
         SpeedControl();
         ResetDoubleJump();
+        StateHandler();
+
         // handle drag 
         if (grounded)
             rb.drag = groundDrag;
@@ -74,6 +107,53 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
+        }
+
+        // when to dash
+        if(Input.GetKey(dashKey) && readyToDash)
+        {
+            readyToDash = false;
+
+            Dash();
+
+            Invoke(nameof(ResetDash), dashCooldown);
+        }
+
+        // when to crouch
+        if(Input.GetKeyDown(crouchKey))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
+            rb.AddForce(Vector3.down *5f, ForceMode.Impulse);
+        }
+
+        //stop crouch
+        if (Input.GetKeyUp(crouchKey))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+        }
+    }
+
+    private void StateHandler()
+    {
+        // Mode - Crouching
+        if(Input.GetKey(crouchKey))
+        {
+            state = MovementState.crouching;
+            moveSpeed = crouchSpeed;
+        }
+
+
+        // Mode - Walking
+        else if(grounded)
+        {
+            state = MovementState.walking;
+            moveSpeed = walkSpeed;
+
+        }
+        // Mode - Air
+        else
+        {
+            state = MovementState.air;
         }
     }
 
@@ -104,6 +184,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+    // jump related functions
+
     private void Jump()
     {
         // reset y velocity 
@@ -123,4 +206,18 @@ public class PlayerMovement : MonoBehaviour
         if(grounded)
             jumpAmount = 2;
     }
+
+    // dash reated functions
+
+    private void Dash()
+    {
+        rb.AddForce(orientation.forward * dashForce, ForceMode.Impulse);
+    }
+
+    private void ResetDash()
+    {
+        readyToDash = true;
+    }
+    
 }
+
