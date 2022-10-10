@@ -190,7 +190,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.air;
         }
 
-        // check iof desiredMoveSpeed has changed drastically
+        // check if desiredMoveSpeed has changed drastically
         if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f && moveSpeed != 0)
         {
             StopAllCoroutines();
