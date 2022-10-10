@@ -10,6 +10,11 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
+    public float slideSpeed;
+    public float wallrunSpeed;
+
+    private float desiredMoveSpeed;
+    private float lastDesiredMoveSpeed;
 
     public float groundDrag;
 
@@ -17,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
-    private int jumpAmount = 2;
+    public int jumpAmount = 2;
     bool readyToJump;
 
     [Header("Dashing")]
@@ -39,7 +44,11 @@ public class PlayerMovement : MonoBehaviour
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
-    bool grounded;
+    public bool grounded;
+
+    [Header("Slope Handling")]
+    public float maxSlopeAngle;
+    private RaycastHit slopeHit;
 
 
     public Transform orientation;
@@ -57,10 +66,15 @@ public class PlayerMovement : MonoBehaviour
     public enum MovementState
     {
         walking,
+        wallrunning,
         crouching,
+        sliding,
         air
         
     }
+
+    public bool sliding;
+    public bool wallrunning;
 
     private void Start()
     {
@@ -100,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         //when to jump
-        if(Input.GetKey(jumpKey) && readyToJump && jumpAmount > 1)
+        if(Input.GetKey(jumpKey) && readyToJump && jumpAmount > 1 && !wallrunning)
         {
             readyToJump = false;
 
@@ -110,7 +124,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // when to dash
-        if(Input.GetKey(dashKey) && readyToDash)
+        if(Input.GetKey(dashKey) && readyToDash && !OnSlope() && !wallrunning) //!Onslope is a half fix to stop slopes accelerating players upwards while dashing - This is not a proper solution!
         {
             readyToDash = false;
 
@@ -135,11 +149,30 @@ public class PlayerMovement : MonoBehaviour
 
     private void StateHandler()
     {
+        // Mode - Wallrunning
+        if(wallrunning)
+        {
+            state = MovementState.wallrunning;
+            desiredMoveSpeed = wallrunSpeed;
+        }
+
+        // Mode - Sliding
+        else if(sliding)
+        {
+            state = MovementState.sliding;
+
+            if(OnSlope() && rb.velocity.y < 0.1f)
+                desiredMoveSpeed = slideSpeed;
+
+            else
+                desiredMoveSpeed = walkSpeed;
+
+        } 
         // Mode - Crouching
-        if(Input.GetKey(crouchKey))
+        else if(Input.GetKey(crouchKey))
         {
             state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
+            desiredMoveSpeed = crouchSpeed;
         }
 
 
@@ -147,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
         else if(grounded)
         {
             state = MovementState.walking;
-            moveSpeed = walkSpeed;
+            desiredMoveSpeed = walkSpeed;
 
         }
         // Mode - Air
@@ -155,6 +188,37 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.air;
         }
+
+        // check iof desiredMoveSpeed has changed drastically
+        if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f && moveSpeed != 0)
+        {
+            StopAllCoroutines();
+            StartCoroutine(SmoothlyLerpMoveSpeed());
+        }
+        else
+        {
+            moveSpeed = desiredMoveSpeed;
+        }
+
+        lastDesiredMoveSpeed = desiredMoveSpeed;
+    }
+
+
+    private IEnumerator SmoothlyLerpMoveSpeed()
+    {
+        // smoothly lerp movementSpeed to desired value
+        float time = 0;
+        float difference = Mathf.Abs(desiredMoveSpeed - moveSpeed);
+        float startValue = moveSpeed;
+
+        while (time < difference)
+        {
+            moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / difference);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        moveSpeed = desiredMoveSpeed;
     }
 
     private void MovePlayer()
@@ -162,13 +226,25 @@ public class PlayerMovement : MonoBehaviour
         // calculate movement direction 
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
+        // on slope
+        if(OnSlope())
+        {
+            rb.AddForce(GetSlopeMoveDirection(moveDirection) * moveSpeed * 20f, ForceMode.Force);
+
+            if (rb.velocity.y > 0)
+                rb.AddForce(Vector3.down * 80f, ForceMode.Force);
+        }
+
         // on ground
-        if(grounded)
+        else if(grounded)
             rb.AddForce(moveDirection.normalized *moveSpeed * 10f, ForceMode.Force);
         
         // in air
         else if(!grounded)
             rb.AddForce(moveDirection.normalized *moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        
+        // turn gravity off while on slope
+        if(!wallrunning) rb.useGravity = !OnSlope();
     }
 
     private void SpeedControl()
@@ -207,7 +283,7 @@ public class PlayerMovement : MonoBehaviour
             jumpAmount = 2;
     }
 
-    // dash reated functions
+    // dash related functions
 
     private void Dash()
     {
@@ -218,6 +294,20 @@ public class PlayerMovement : MonoBehaviour
     {
         readyToDash = true;
     }
-    
+
+    public bool OnSlope()
+    {
+        if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.3f))
+        {
+            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            return angle < maxSlopeAngle && angle != 0;
+        }
+        return false;
+    }
+
+    public Vector3 GetSlopeMoveDirection(Vector3 direction)
+    {
+        return Vector3.ProjectOnPlane(direction, slopeHit.normal).normalized;
+    }
 }
 

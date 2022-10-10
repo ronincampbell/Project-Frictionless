@@ -39,6 +39,8 @@
      <Compile Include="Assets\CharacterController\PlayerMovement.cs" />
      <Compile Include="Assets\CharacterController\PlayerCam.cs" />
      <Compile Include="Assets\CharacterController\MoveCamera.cs" />
+     <Compile Include="Assets\CharacterController\Sliding.cs" />
+     <Compile Include="Assets\CharacterController\WallRunning.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -290,6 +292,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+        <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -737,6 +742,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{29f75865-cc18-3add-95d3-a2b3665a6e7b}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
