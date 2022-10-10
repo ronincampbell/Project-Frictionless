@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Sliding : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Sliding : MonoBehaviour
     public Transform playerObj;
     private Rigidbody rb;
     private PlayerMovement pm;
+    public PlayerCam cam;
 
     [Header("Sliding")]
     public float maxSlideTime;
@@ -60,6 +62,7 @@ public class Sliding : MonoBehaviour
         rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
 
         slideTimer = maxSlideTime;
+        cam.DoFov(90f);
     }
 
     private void SlidingMovement()
@@ -88,6 +91,7 @@ public class Sliding : MonoBehaviour
     {
         pm.sliding = false;
         playerObj.localScale = new Vector3(playerObj.localScale.x, startYScale, playerObj.localScale.z);
+        cam.DoFov(80f);
     }
 
 }
