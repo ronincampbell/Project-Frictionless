@@ -19,11 +19,13 @@ public class PlayerMovement : MonoBehaviour
     public float groundDrag;
 
     [Header("Jumping")]
-    public float jumpForce;
+    public float normalJump;
+    private float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
     public int jumpAmount = 2;
     bool readyToJump;
+    private float padRef;
 
     [Header("Dashing")]
     public float dashForce;
@@ -45,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     public bool grounded;
+    public bool onPad;
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
@@ -59,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+
+
 
 
     // define current movment states
@@ -96,10 +101,14 @@ public class PlayerMovement : MonoBehaviour
         SpeedControl();
         ResetDoubleJump();
         StateHandler();
+        CheckForPad();
 
         // handle drag and set default jump height
         if (grounded)
+        {
             rb.drag = groundDrag;
+            onPad = false;
+        }
         else
             rb.drag = 0;
     }
@@ -310,6 +319,28 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 GetSlopeMoveDirection(Vector3 direction)
     {
         return Vector3.ProjectOnPlane(direction, slopeHit.normal).normalized;
+    }
+
+    // This Allows for individual jump pads to have their own values for jump force - it is entirely my own code and i am very proud of it :)
+    private void OnCollisionEnter(Collision collision)
+    {
+        GameObject other = collision.gameObject;
+        if (collision.gameObject.tag == "jumpPad")
+        {
+            onPad = true;
+            padRef = other.GetComponent<JumpPadParams>().padForce;
+        }
+    }
+
+    private void CheckForPad()
+    {
+        if(onPad == true)
+        {
+            jumpForce = padRef;
+            Jump();
+        }
+        else
+            jumpForce = normalJump;
     }
 }
 
