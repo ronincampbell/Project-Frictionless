@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
         ResetDoubleJump();
         StateHandler();
 
-        // handle drag 
+        // handle drag and set default jump height
         if (grounded)
             rb.drag = groundDrag;
         else
@@ -288,6 +288,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Dash()
     {
+        rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
         rb.AddForce(orientation.forward * dashForce, ForceMode.Impulse);
     }
 
