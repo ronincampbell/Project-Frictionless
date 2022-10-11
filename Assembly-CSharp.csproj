@@ -37,11 +37,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\CharacterController\Sliding.cs" />
+     <Compile Include="Assets\CharacterController\JumpPadParams.cs" />
      <Compile Include="Assets\CharacterController\PlayerMovement.cs" />
      <Compile Include="Assets\CharacterController\WallRunning.cs" />
      <Compile Include="Assets\CharacterController\PlayerCam.cs" />
      <Compile Include="Assets\CharacterController\MoveCamera.cs" />
-     <Compile Include="Assets\CharacterController\JumpPadParams.cs" />
+     <Compile Include="Assets\CharacterController\Dashing.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
