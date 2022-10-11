@@ -36,13 +36,49 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Assets\AssestStore\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll" />
+  </ItemGroup>
+  <ItemGroup>
      <Compile Include="Assets\CharacterController\Sliding.cs" />
      <Compile Include="Assets\CharacterController\JumpPadParams.cs" />
      <Compile Include="Assets\CharacterController\PlayerMovement.cs" />
      <Compile Include="Assets\CharacterController\WallRunning.cs" />
      <Compile Include="Assets\CharacterController\PlayerCam.cs" />
-     <Compile Include="Assets\CharacterController\MoveCamera.cs" />
      <Compile Include="Assets\CharacterController\Dashing.cs" />
+     <Compile Include="Assets\CharacterController\MoveCamera.cs" />
+     <Compile Include="Assets\CharacterController\GunSystem.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunView.cs" />
+     <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunsMenu.cs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\AssestStore\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
