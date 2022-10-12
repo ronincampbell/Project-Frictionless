@@ -17,6 +17,8 @@ public class Dashing : MonoBehaviour
     public float dashUpwardsForce;
     public float maxDashYSpeed;
     public float dashDuration;
+    public float dashDamage;
+    private bool dashDamageActive;
 
     [Header("CameraEffects")]
     public PlayerCam cam;
@@ -39,6 +41,7 @@ public class Dashing : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         pm = GetComponent<PlayerMovement>();
+        dashDamageActive = false;
     }
 
     private void Update ()
@@ -55,6 +58,7 @@ public class Dashing : MonoBehaviour
         if (dashCdTimer > 0) return;
         else dashCdTimer = dashCd;
 
+        dashDamageActive = true;
         pm.dashing = true;
         pm.maxYSpeed = maxDashYSpeed;
 
@@ -95,6 +99,7 @@ public class Dashing : MonoBehaviour
     {
         pm.dashing = false;
         pm.maxYSpeed = 0;
+        dashDamageActive = false;
 
         cam.DoFov(80f);
 
@@ -118,6 +123,19 @@ public class Dashing : MonoBehaviour
             direction = forwardT.forward;
         
         return direction.normalized;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (dashDamageActive)
+        {
+            Target target = other.gameObject.transform.GetComponent<Target>();
+            if (target != null)
+            {
+                target.TakeDamage(dashDamage);
+            }
+        }
+        
     }
 
 }

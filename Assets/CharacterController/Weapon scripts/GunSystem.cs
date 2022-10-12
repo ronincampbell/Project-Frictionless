@@ -4,7 +4,7 @@ using TMPro;
 
 public class GunSystem : MonoBehaviour
 {
-    // Firing system by Brakeys on YouTube | Reloading and ammo based on code by Dave / GameDevelopment on YouTube
+    // Firing system by Brakeys on YouTube | Reloading and ammo based on code by Dave / GameDevelopment on YouTube | Ammo indicator by me
 
    public float damage = 10f;
    public float range = 100f;
@@ -12,7 +12,7 @@ public class GunSystem : MonoBehaviour
    public float impactForce = 30f;
    public float reloadTime = 2f;
    public int magazineSize = 30;
-   int bulletsLeft, bulletsShot;
+   int bulletsLeft, bulletsShot, thirdOfMag;
 
    bool reloading = false;
 
@@ -20,12 +20,14 @@ public class GunSystem : MonoBehaviour
    public ParticleSystem muzzleFlash;
    public GameObject impactEffect;
    public TextMeshProUGUI text;
+   public GameObject bullet1, bullet2, bullet3;
 
    private float nextTImeToFire = 0f;
 
    private void Start() 
    {
         bulletsLeft = magazineSize;
+        thirdOfMag = magazineSize / 3;
    }
    
    private void Update() 
@@ -38,7 +40,7 @@ public class GunSystem : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
 
-        text.SetText(bulletsLeft + " / " + magazineSize);
+        CheckAmmo();
    }
 
    private void Shoot()
@@ -75,6 +77,32 @@ public class GunSystem : MonoBehaviour
    private void ReloadFinished()
    {
         bulletsLeft = magazineSize;
+        bullet1.SetActive(true);
+        bullet2.SetActive(true);
+        bullet3.SetActive(true);
         reloading = false;
+   }
+
+   // Check Ammo amount for UI Elements 
+
+   private void CheckAmmo()
+   {
+     text.SetText(bulletsLeft + " / " + magazineSize);
+
+     if (bulletsLeft <= 2 * thirdOfMag)
+     {
+          bullet3.SetActive(false);
+     }
+
+     if (bulletsLeft <= thirdOfMag)
+     {
+          bullet2.SetActive(false);
+     }
+
+     if (bulletsLeft == 0)
+     {
+          bullet1.SetActive(false);
+     }
+
    }
 }
