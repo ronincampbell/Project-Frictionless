@@ -354,7 +354,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/AssestStore/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll"
 "Assets/AssestStore/EffectExamples/Shared/Scripts/DecalDestroyer.cs"
 "Assets/AssestStore/EffectExamples/Shared/Scripts/ExtinguishableFire.cs"
 "Assets/AssestStore/EffectExamples/Shared/Scripts/GunAim.cs"
@@ -366,13 +365,15 @@
 "Assets/AssestStore/Low Poly Guns/Scripts/GunsMenu.cs"
 "Assets/AssestStore/Low Poly Guns/Scripts/GunView.cs"
 "Assets/CharacterController/Dashing.cs"
-"Assets/CharacterController/GunSystem.cs"
 "Assets/CharacterController/JumpPadParams.cs"
 "Assets/CharacterController/MoveCamera.cs"
 "Assets/CharacterController/PlayerCam.cs"
 "Assets/CharacterController/PlayerMovement.cs"
 "Assets/CharacterController/Sliding.cs"
 "Assets/CharacterController/WallRunning.cs"
+"Assets/CharacterController/Weapon scripts/GunSystem.cs"
+"Assets/CharacterController/Weapon scripts/Sway.cs"
+"Assets/CharacterController/Weapon scripts/Target.cs"
 -langversion:9.0
 
 /deterministic

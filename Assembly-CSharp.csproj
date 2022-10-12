@@ -36,27 +36,26 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Assets\AssestStore\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll" />
-  </ItemGroup>
-  <ItemGroup>
+     <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunsMenu.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\CharacterController\Sliding.cs" />
      <Compile Include="Assets\CharacterController\JumpPadParams.cs" />
+     <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunView.cs" />
+     <Compile Include="Assets\CharacterController\Weapon scripts\GunSystem.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\CharacterController\PlayerMovement.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\CharacterController\WallRunning.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\CharacterController\PlayerCam.cs" />
+     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\CharacterController\Dashing.cs" />
      <Compile Include="Assets\CharacterController\MoveCamera.cs" />
-     <Compile Include="Assets\CharacterController\GunSystem.cs" />
-     <Compile Include="Assets\AssestStore\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
-     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
-     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
-     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunAim.cs" />
-     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
-     <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
-     <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunView.cs" />
-     <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunsMenu.cs" />
+     <Compile Include="Assets\CharacterController\Weapon scripts\Target.cs" />
+     <Compile Include="Assets\CharacterController\Weapon scripts\Sway.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
