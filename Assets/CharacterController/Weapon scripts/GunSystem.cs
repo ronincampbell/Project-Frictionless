@@ -21,6 +21,7 @@ public class GunSystem : MonoBehaviour
    public GameObject impactEffect;
    public TextMeshProUGUI text;
    public GameObject bullet1, bullet2, bullet3;
+   public Animator reloadAnim;
 
    private float nextTImeToFire = 0f;
 
@@ -71,6 +72,7 @@ public class GunSystem : MonoBehaviour
    private void Reload()
    {
         reloading = true;
+        reloadAnim.SetBool("Reloading", true);
         Invoke("ReloadFinished", reloadTime);
    } 
 
@@ -81,6 +83,7 @@ public class GunSystem : MonoBehaviour
         bullet2.SetActive(true);
         bullet3.SetActive(true);
         reloading = false;
+        reloadAnim.SetBool("Reloading", false);
    }
 
    // Check Ammo amount for UI Elements 

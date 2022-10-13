@@ -8,17 +8,18 @@ public class PlayerMovement : MonoBehaviour
     // Base code provided by  Dave / GameDevelopment on YouTube
 
     [Header("Movement")]
-    private float moveSpeed;
+    public float moveSpeed;
     public float walkSpeed;
     public float slideSpeed;
     public float wallrunSpeed;
+    public float swingSpeed;
 
     public float dashSpeed;
     public float dashSpeedChangeFactor;
 
     public float maxYSpeed;
 
-    private float desiredMoveSpeed;
+    public float desiredMoveSpeed;
     private float lastDesiredMoveSpeed;
     private MovementState lastState;
     private bool keepMomentum;
@@ -74,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
     {
         walking,
         wallrunning,
+        swinging,
         crouching,
         sliding,
         dashing,
@@ -84,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
     public bool sliding;
     public bool wallrunning;
     public bool dashing;
+    public bool swinging;
 
     private void Start()
     {
@@ -157,6 +160,13 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.dashing;
             desiredMoveSpeed = dashSpeed;
             speedChangeFactor = dashSpeedChangeFactor;
+        }
+
+        // Mode - Swinging
+        else if(swinging)
+        {
+            state = MovementState.swinging;
+            moveSpeed = swingSpeed;
         }
         // Mode - Wallrunning
         else if(wallrunning)
