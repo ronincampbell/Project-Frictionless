@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.4f, whatIsGround);
 
         MyInput();
         SpeedControl();
@@ -109,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
         StateHandler();
         CheckForPad();
 
-        // handle drag and set default jump height
+        // handle drag
         if (state == MovementState.walking || state == MovementState.crouching || state == MovementState.sliding)
         {
             rb.drag = groundDrag;
@@ -257,7 +257,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        if (state == MovementState.dashing) return;
+        if (dashing) return;
+        if (swinging) return;
 
         // calculate movement direction 
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;

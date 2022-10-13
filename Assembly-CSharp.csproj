@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunsMenu.cs" />
      <Compile Include="Assets\CharacterController\Weapon scripts\Target.cs" />
+     <Compile Include="Assets\CharacterController\Grappling\GrapplingGun.cs" />
      <Compile Include="Assets\CharacterController\Weapon scripts\Sway.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\CharacterController\Sliding.cs" />
@@ -56,6 +57,8 @@
      <Compile Include="Assets\CharacterController\Dashing.cs" />
      <Compile Include="Assets\CharacterController\MoveCamera.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\CharacterController\Grappling\Spring.cs" />
+     <Compile Include="Assets\CharacterController\Grappling\GrapplingRope.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
