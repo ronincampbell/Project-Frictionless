@@ -37,16 +37,24 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunsMenu.cs" />
-     <Compile Include="Assets\CharacterController\Weapon scripts\Target.cs" />
      <Compile Include="Assets\CharacterController\Grappling\GrapplingGun.cs" />
      <Compile Include="Assets\CharacterController\Weapon scripts\Sway.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\CharacterController\Sliding.cs" />
+     <Compile Include="Assets\AssestStore\_Heathen Engineering\Samples\UX Examples\Flat Icons [Free]\ToggleSetAnimatorBoolean.cs" />
+     <Compile Include="Assets\CharacterController\Grappling\Spring.cs" />
+     <Compile Include="Assets\AssestStore\SciFi Warehouse Kit\Demo\Scripts\PushPhysics.cs" />
      <Compile Include="Assets\CharacterController\JumpPadParams.cs" />
+     <Compile Include="Assets\Scripts\Dash_PickUp.cs" />
      <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunView.cs" />
      <Compile Include="Assets\CharacterController\Weapon scripts\GunSystem.cs" />
+     <Compile Include="Assets\AssestStore\SciFi Warehouse Kit\Demo\Scripts\MouseComponent.cs" />
+     <Compile Include="Assets\Scripts\Slide_PickUp.cs" />
+     <Compile Include="Assets\CharacterController\Grappling\GrapplingRope.cs" />
+     <Compile Include="Assets\AssestStore\SciFi Warehouse Kit\Demo\Scripts\PlayRandomSound.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\AssestStore\SciFi Warehouse Kit\Demo\Scripts\LightFlicker.cs" />
      <Compile Include="Assets\CharacterController\PlayerMovement.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
@@ -56,9 +64,9 @@
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\CharacterController\Dashing.cs" />
      <Compile Include="Assets\CharacterController\MoveCamera.cs" />
+     <Compile Include="Assets\Scripts\Target.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunAim.cs" />
-     <Compile Include="Assets\CharacterController\Grappling\Spring.cs" />
-     <Compile Include="Assets\CharacterController\Grappling\GrapplingRope.cs" />
+     <Compile Include="Assets\Scripts\Elevator.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -74,6 +82,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\AssestStore\_Heathen Engineering\Documentation\UX\Flat Icons [Free]\Read Me.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -735,11 +744,17 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -749,6 +764,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -764,6 +782,9 @@
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
         <HintPath>C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
