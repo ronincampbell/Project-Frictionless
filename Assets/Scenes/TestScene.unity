@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.48396292, g: 0.5757421, b: 0.6802008, a: 1}
+  m_IndirectSpecularColor: {r: 0.48395744, g: 0.5757396, b: 0.68019843, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2031,8 +2031,8 @@ GameObject:
   - component: {fileID: 1497308472}
   - component: {fileID: 1497308471}
   - component: {fileID: 1497308470}
-  - component: {fileID: 1497308469}
   - component: {fileID: 1497308468}
+  - component: {fileID: 1497308474}
   m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -2056,19 +2056,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1497308469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497308467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c24bab59e8dfe34baffe71bed8aa993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!65 &1497308470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2147,6 +2134,19 @@ Transform:
   m_Father: {fileID: 1926968107}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497308474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497308467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf08a2b14888bc498da790dd8162f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
 --- !u!4 &1573493054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5770537319269238441, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
@@ -3100,6 +3100,7 @@ GameObject:
   - component: {fileID: 2145202166}
   - component: {fileID: 2145202170}
   - component: {fileID: 2145202171}
+  - component: {fileID: 2145202172}
   m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
@@ -3197,7 +3198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c24bab59e8dfe34baffe71bed8aa993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
 --- !u!54 &2145202171
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3214,6 +3214,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2145202172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145202165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf08a2b14888bc498da790dd8162f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!1001 &3555928674476392558
 PrefabInstance:
   m_ObjectHideFlags: 0
