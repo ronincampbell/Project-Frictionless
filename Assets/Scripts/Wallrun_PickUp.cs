@@ -9,7 +9,6 @@ public class Wallrun_PickUp : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         player.GetComponent<WallRunning>().enabled = true;
-        Debug.Log(player);
         Destroy(gameObject);
     }
 }

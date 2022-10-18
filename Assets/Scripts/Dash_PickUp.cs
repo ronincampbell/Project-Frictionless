@@ -9,7 +9,6 @@ public class Dash_PickUp : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         player.GetComponent<Dashing>().enabled = true;
-        Debug.Log(player);
         Destroy(gameObject);
     }
 

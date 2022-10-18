@@ -9,7 +9,6 @@ public class Slide_PickUp : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         player.GetComponent<Sliding>().enabled = true;
-        Debug.Log(player);
         Destroy(gameObject);
     }
 
