@@ -115,6 +115,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:CROSS_PLATFORM_INPUT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/AssestStore/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll"
@@ -375,6 +376,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/AssestStore/EffectExamples/TutorialInfo/Scripts/Editor/ReadmeEditor.cs"
+"Assets/AssestStore/RetroAesthetics/Demos/[Utility] Standard Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
+"Assets/AssestStore/RetroAesthetics/Shaders/Editor/RetroSkyboxEditor.cs"
 -langversion:9.0
 
 /deterministic
