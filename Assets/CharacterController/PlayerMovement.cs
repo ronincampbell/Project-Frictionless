@@ -176,7 +176,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Mode - Sliding
-        else if(sliding)
+        else if(sliding && grounded)
         {
             state = MovementState.sliding;
 
@@ -188,7 +188,7 @@ public class PlayerMovement : MonoBehaviour
 
         } 
         // Mode - Crouching
-        else if(Input.GetKey(crouchKey))
+        else if(Input.GetKey(crouchKey) && grounded)
         {
             state = MovementState.crouching;
             desiredMoveSpeed = crouchSpeed;
@@ -359,6 +359,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "jumpPad")
         {
             onPad = true;
+            sliding = false;
             padRef = other.GetComponent<JumpPadParams>().padForce;
         }
     }
