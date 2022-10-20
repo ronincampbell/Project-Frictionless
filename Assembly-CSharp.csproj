@@ -92,7 +92,9 @@
      <Compile Include="Assets\Scripts\stopWatch.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\Menu\Scripts\MenuScripts.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\Scripts\StartButton.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Scripts\InspectorButton.cs" />
+     <Compile Include="Assets\Scripts\KillBox.cs" />
      <Compile Include="Assets\CharacterController\WallRunning.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Scripts\CombineMeshes.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\WaypointProgressTracker.cs" />
@@ -110,7 +112,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\AlphaButtonClickMask.cs" />
      <Compile Include="Assets\CharacterController\MoveCamera.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\FOVKick.cs" />
-     <Compile Include="Assets\Scripts\Elevator.cs" />
+     <Compile Include="Assets\Scripts\DeathScript.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
@@ -122,6 +124,9 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Scripts\SceneField.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\Scripts\QuitButton.cs" />
+     <Compile Include="Assets\Scripts\Rotate.cs" />
+     <Compile Include="Assets\Scripts\CameraTexture.cs" />
      <None Include="Assets\AssestStore\RetroAesthetics\Shaders\SpriteGradientSprites.shader" />
      <None Include="Assets\AssestStore\RetroAesthetics\Shaders\UnlitTextureColor.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

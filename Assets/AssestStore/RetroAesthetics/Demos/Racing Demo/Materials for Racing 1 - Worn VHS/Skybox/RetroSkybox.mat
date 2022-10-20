@@ -2,13 +2,17 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: RetroSkybox
   m_Shader: {fileID: 4800000, guid: dfa17a30b23e94b049ffccdb334d21bc, type: 3}
-  m_ShaderKeywords: _EMISSION _SUNENABLED_ON
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  - _SUNENABLED_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -58,6 +62,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Border: 0.5
     - _BottomSpeed: 5
@@ -88,10 +93,10 @@ Material:
     - _StripesSpeed: 0.25
     - _StripesWidth: 0.01
     - _SunEnabled: 1
-    - _SunExponent: 5
-    - _SunPitch: 90
-    - _SunSize: 0.01
-    - _SunYaw: 0
+    - _SunExponent: 3.76
+    - _SunPitch: 93.8
+    - _SunSize: 0.0188
+    - _SunYaw: 180
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
@@ -103,9 +108,10 @@ Material:
     - _ColorGround2: {r: 0, g: 0.6, b: 0.74, a: 0}
     - _ColorStripe: {r: 0, g: 0.7, b: 0.74, a: 0}
     - _ColorSun: {r: 0.97, g: 0.67, b: 0.51, a: 0}
-    - _ColorSun1: {r: 0.54901963, g: 0.043137256, b: 0.427451, a: 0}
-    - _ColorSun2: {r: 0.89705884, g: 0.48255578, b: 0.45512545, a: 0}
+    - _ColorSun1: {r: 0.9921569, g: 0.97647065, b: 0.26666668, a: 0}
+    - _ColorSun2: {r: 0.98823535, g: 0.23529413, b: 0.6509804, a: 0}
     - _Direction: {r: 0, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SunDirection: {r: 0, g: -0.00000004371139, b: 1, a: 0}
-    - _SunDirectionP: {r: -0, g: -1, b: -0.00000008742278, a: 0}
+    - _SunDirection: {r: -0.000000087230575, g: -0.066273995, b: -0.9978015, a: 0}
+    - _SunDirectionP: {r: 0.0000000057938605, g: -0.9978015, b: 0.06627404, a: 0}
+  m_BuildTextureStacks: []
