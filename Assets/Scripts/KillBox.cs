@@ -9,7 +9,6 @@ public class KillBox : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         player.GetComponent<DeathScript>().PlayerDie();
-        Debug.Log(player);
         Destroy(gameObject);
     }
 }
