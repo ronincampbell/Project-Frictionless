@@ -1,426 +1,583 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1666256277304845, "dur": 361946, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1666256277305249, "dur": 15441, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1666256277320692, "dur": 341752, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1666256277662445, "dur": 4345, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1666256277667533, "dur": 10, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257929207673, "dur": 2227556, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257929207943, "dur": 8860, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257929216805, "dur": 46616, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257929263462, "dur": 1037015, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257930300479, "dur": 1123935, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257931424416, "dur": 10812, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257931435993, "dur": 12, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1666257930129193, "dur": 155472, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666257930130257, "dur": 49606, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666257930266481, "dur": 5239, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666257930271724, "dur": 12930, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666257930272515, "dur": 11150, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666257930289769, "dur": 1442, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666257930288879, "dur": 2358, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257931436093, "dur": 205, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1666256277370458, "dur":1816, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277372286, "dur":283, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1666256277372609, "dur":21, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1666256277372632, "dur":645, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1666256277373314, "dur":794, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277374108, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639238, "dur":225, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639463, "dur":69, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639532, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639535, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639546, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639549, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639556, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639557, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639563, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639565, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639572, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639574, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639581, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639582, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639588, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639590, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639598, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639600, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639606, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639607, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639614, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639615, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639622, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639624, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639632, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639645, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277639671, "dur":2392, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1666256277373576, "dur":542, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277374118, "dur":8523, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277382649, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1666256277382840, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277382958, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1666256277383240, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277383398, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277383574, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277383697, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277383765, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277383875, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277383932, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384064, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384158, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384259, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384326, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384475, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384648, "dur":201, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384850, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277384918, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277385023, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277385089, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277385193, "dur":24527, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277409721, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277409862, "dur":18087, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277427949, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277428120, "dur":25933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454054, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454226, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454297, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454397, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454470, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454561, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454614, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454716, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454773, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454857, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454909, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277454990, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455044, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455130, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455188, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455343, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455410, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455518, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455590, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455707, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455775, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277455880, "dur":133312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277589201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1666256277589328, "dur":1207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1666256277590580, "dur":48664, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277373567, "dur":546, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277374116, "dur":8503, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277382650, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1666256277382652, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277382812, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1666256277382814, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277382921, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1666256277383275, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277383416, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1666256277383656, "dur":277, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277383934, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1666256277384005, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277384147, "dur":226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1666256277384374, "dur":690, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277385065, "dur":1607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":2, "ts":1666256277386672, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277386832, "dur":1233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":2, "ts":1666256277388066, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277388208, "dur":33081, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1666256277421290, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277421452, "dur":48233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.ProBuilder.Stl.dll" }}
-,{ "pid":12345, "tid":2, "ts":1666256277469686, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277469865, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1666256277469941, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1666256277469949, "dur":119679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1666256277589677, "dur":49561, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277373652, "dur":479, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277374131, "dur":8497, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277382648, "dur":919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":3, "ts":1666256277383567, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277383734, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1666256277383847, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277383973, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1666256277384040, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277384178, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1666256277384244, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277384355, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1666256277384433, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277384532, "dur":912, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1666256277385445, "dur":384, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277385831, "dur":61239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":3, "ts":1666256277447070, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277447238, "dur":47321, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.ProBuilder.Csg.dll" }}
-,{ "pid":12345, "tid":3, "ts":1666256277494560, "dur":260, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1666256277494823, "dur":144425, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277373613, "dur":513, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277374127, "dur":8503, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277382650, "dur":603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1666256277383254, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277383420, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277383560, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277383711, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277383779, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277383889, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277383945, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277384061, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277384179, "dur":337, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277384516, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277384578, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277384710, "dur":393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277385103, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277385205, "dur":36481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277421686, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277421793, "dur":77109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
-,{ "pid":12345, "tid":4, "ts":1666256277498903, "dur":90293, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1666256277589199, "dur":50056, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277373686, "dur":451, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277374138, "dur":8502, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277382648, "dur":313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1666256277382962, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383128, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383301, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383415, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless.exe" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383499, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383564, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383637, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383748, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383854, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277383976, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384046, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384161, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384231, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384363, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384428, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384544, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384625, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384740, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384873, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277384978, "dur":89009, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1666256277473988, "dur":197, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277474187, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level2.resS" }}
-,{ "pid":12345, "tid":5, "ts":1666256277474263, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277474270, "dur":1568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level2.resS" }}
-,{ "pid":12345, "tid":5, "ts":1666256277475903, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level2" }}
-,{ "pid":12345, "tid":5, "ts":1666256277475970, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277475978, "dur":1640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level2" }}
-,{ "pid":12345, "tid":5, "ts":1666256277477683, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level0.resS" }}
-,{ "pid":12345, "tid":5, "ts":1666256277477753, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277477760, "dur":1567, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level0.resS" }}
-,{ "pid":12345, "tid":5, "ts":1666256277479395, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1666256277479461, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1666256277479470, "dur":1395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1666256277480919, "dur":158327, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277373711, "dur":431, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277374142, "dur":8524, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277382667, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1666256277382860, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277382979, "dur":317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1666256277383297, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277383435, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277383513, "dur":261, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277383775, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277383844, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277383953, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384013, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384117, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384176, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384280, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384331, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384469, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384530, "dur":347, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384878, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277384949, "dur":185, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277385135, "dur":69537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277454672, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277454782, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277454840, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277454925, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277454986, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455093, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455151, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455239, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455295, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455384, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455441, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455531, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455591, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277455687, "dur":440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1666256277456127, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277456228, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":6, "ts":1666256277456409, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277456525, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":6, "ts":1666256277456608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277457765, "dur":5385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":6, "ts":1666256277463239, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":6, "ts":1666256277463366, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277463371, "dur":3570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":6, "ts":1666256277467002, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":6, "ts":1666256277467065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277467073, "dur":1284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":6, "ts":1666256277468418, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":6, "ts":1666256277468486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277468494, "dur":2890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":6, "ts":1666256277471441, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":6, "ts":1666256277471605, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277471722, "dur":880, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":6, "ts":1666256277472603, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277472711, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1666256277472772, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277472781, "dur":3638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1666256277476478, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level1" }}
-,{ "pid":12345, "tid":6, "ts":1666256277476536, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277476541, "dur":1191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level1" }}
-,{ "pid":12345, "tid":6, "ts":1666256277477797, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1666256277477876, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277477883, "dur":1558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1666256277479502, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1666256277479667, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1666256277479782, "dur":159453, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277373740, "dur":407, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277374147, "dur":8518, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277382666, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1666256277382843, "dur":211, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277383054, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1666256277383335, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277383447, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1666256277383601, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277383700, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1666256277383768, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277383878, "dur":131876, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1666256277515755, "dur":199, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1666256277515956, "dur":123305, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277373809, "dur":341, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277374151, "dur":8483, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277382649, "dur":395, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1666256277383045, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277383195, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277383418, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277383567, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277383646, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277383745, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277383862, "dur":319, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277384182, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277384257, "dur":232, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277384490, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277384657, "dur":224, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277384882, "dur":69330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277454213, "dur":417, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277454633, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277454724, "dur":367, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455093, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455159, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455303, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455366, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455469, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455529, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455630, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455692, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455799, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/DOTween.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455869, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277455968, "dur":64867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Assembly-CSharp-firstpass.dll" }}
-,{ "pid":12345, "tid":8, "ts":1666256277520835, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1666256277521004, "dur":118248, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277373838, "dur":321, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277374160, "dur":8483, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277382651, "dur":312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1666256277382964, "dur":474, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277383439, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1666256277383568, "dur":202, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277383771, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1666256277383859, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277383973, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384043, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384165, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384263, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384390, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384467, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384602, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384681, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277384888, "dur":121148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1666256277506037, "dur":209, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1666256277506249, "dur":132984, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277373872, "dur":292, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277374165, "dur":8499, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277382664, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":10, "ts":1666256277382826, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277382935, "dur":341, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":10, "ts":1666256277383276, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277383399, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":10, "ts":1666256277383578, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277383685, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277383750, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277383856, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277383925, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384070, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384127, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384212, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384280, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384393, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384463, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384561, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384649, "dur":214, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384864, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277384947, "dur":431, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277385379, "dur":1287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277386667, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277386822, "dur":6758, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277393581, "dur":174, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277393759, "dur":8406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277402166, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277402334, "dur":25892, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277428227, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277428399, "dur":210679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.ProBuilder.dll" }}
-,{ "pid":12345, "tid":10, "ts":1666256277639079, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1666256277639204, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":10, "ts":1666256277639204, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277373930, "dur":239, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277374170, "dur":8462, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277382648, "dur":300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":11, "ts":1666256277382948, "dur":231, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383180, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383401, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383512, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383588, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383712, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383779, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383884, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277383946, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384052, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384113, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384221, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384287, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384401, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384470, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384623, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384698, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384875, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277384948, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277385041, "dur":204455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":11, "ts":1666256277589496, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1666256277589619, "dur":49635, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277373961, "dur":213, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277374174, "dur":8464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277382651, "dur":573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1666256277383224, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277383330, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277383482, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277383596, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277383680, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277383849, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277383914, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384017, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384076, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384177, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384244, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384356, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384431, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384531, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384667, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384844, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277384928, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277385041, "dur":77017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":12, "ts":1666256277462059, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277462197, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":12, "ts":1666256277462280, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277462287, "dur":7686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":12, "ts":1666256277470034, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":12, "ts":1666256277470097, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277470105, "dur":3878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":12, "ts":1666256277474042, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/resources.assets" }}
-,{ "pid":12345, "tid":12, "ts":1666256277474114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277474121, "dur":1782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/resources.assets" }}
-,{ "pid":12345, "tid":12, "ts":1666256277475969, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level1.resS" }}
-,{ "pid":12345, "tid":12, "ts":1666256277476031, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277476038, "dur":1689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/level1.resS" }}
-,{ "pid":12345, "tid":12, "ts":1666256277477797, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":12, "ts":1666256277477877, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1666256277477883, "dur":1987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":12, "ts":1666256277479934, "dur":159311, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1666256277644472, "dur":2002, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1666256277667640, "dur": 695, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1666256277667521, "dur": 841, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1666257930351346, "dur":1735, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257930353091, "dur":87, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1666257930353223, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1666257930353244, "dur":697, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1666257930353991, "dur":849, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257930354840, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931411896, "dur":331, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412227, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412241, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412244, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412252, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412254, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412260, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412262, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412269, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412270, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412276, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412278, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412283, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412285, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412291, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412293, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412298, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412300, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412306, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412308, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412315, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412316, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412323, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412324, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412331, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412340, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931412354, "dur":2390, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1666257930354220, "dur":627, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930354849, "dur":7026, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930361891, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1666257930361892, "dur":185, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930362083, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1666257930362091, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930363083, "dur":7192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1666257930370279, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1666257930370443, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930370995, "dur":2253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1666257930373315, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1666257930373540, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930373766, "dur":82769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1666257930456598, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1666257930456786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930456798, "dur":3684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1666257930460540, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless.exe" }}
+,{ "pid":12345, "tid":1, "ts":1666257930460598, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930460604, "dur":36728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless.exe" }}
+,{ "pid":12345, "tid":1, "ts":1666257930497385, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930497442, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930497451, "dur":104064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930601570, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930601626, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930601635, "dur":82038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930683748, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930683814, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930683824, "dur":26977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930710861, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930710923, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930710933, "dur":98425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930809420, "dur":67487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930876914, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930876927, "dur":1852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930878838, "dur":835, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930879677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930879684, "dur":1704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930881444, "dur":26889, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930908339, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930908351, "dur":1284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930909688, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930909742, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930909751, "dur":87343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930997160, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257930997227, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257930997236, "dur":39282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257931036574, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257931036636, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666257931036645, "dur":233333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666257931270045, "dur":141864, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930354410, "dur":472, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930354882, "dur":7026, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930361910, "dur":308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1666257930362221, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930379248, "dur":79398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1666257930458722, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930458863, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930459236, "dur":16018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930475329, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930475400, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930475411, "dur":48919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930524400, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930524536, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930524562, "dur":24372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930548992, "dur":168267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930717265, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930717279, "dur":1527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930718862, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930718925, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930718934, "dur":92576, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930811567, "dur":184481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257930996054, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257930996066, "dur":5860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257931001980, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257931002034, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931002043, "dur":187904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666257931190014, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":2, "ts":1666257931190252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931190886, "dur":1437, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":2, "ts":1666257931192383, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1666257931192446, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931192511, "dur":1984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1666257931194549, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931194609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931194617, "dur":7962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931202636, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1666257931202693, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931202701, "dur":1129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1666257931203885, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":2, "ts":1666257931203940, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931203947, "dur":2787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":2, "ts":1666257931206792, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1666257931206850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931206856, "dur":4194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1666257931211108, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1666257931211280, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931211289, "dur":1217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1666257931212566, "dur":944, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1666257931213516, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931213552, "dur":1345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1666257931214960, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931215023, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931215030, "dur":4904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931220008, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931220067, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931220074, "dur":1998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931222143, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931222212, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666257931222222, "dur":5128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666257931227423, "dur":184463, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930354262, "dur":594, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930354857, "dur":7041, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930361899, "dur":308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1666257930362212, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930370474, "dur":7405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1666257930377926, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1666257930378065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930378072, "dur":80680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1666257930458835, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1666257930459118, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930459124, "dur":8731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1666257930467948, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930468031, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930468192, "dur":26173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930494427, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930494542, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930494556, "dur":17523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930512137, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930512206, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930512216, "dur":24111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930536385, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930536441, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930536450, "dur":38580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930575094, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930575158, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930575168, "dur":89516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930664747, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930664812, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930664822, "dur":55673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930720553, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930720613, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930720621, "dur":104571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930825263, "dur":73952, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930899221, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930899231, "dur":1415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930900698, "dur":70747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930971451, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930971481, "dur":1247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930972779, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257930972834, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257930972842, "dur":101333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257931074224, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257931074282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931074291, "dur":140615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666257931214980, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666257931215045, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931215053, "dur":2643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666257931217766, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1666257931217833, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931217842, "dur":1667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1666257931219570, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1666257931219627, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931219636, "dur":1228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1666257931220911, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level1" }}
+,{ "pid":12345, "tid":3, "ts":1666257931220963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931220970, "dur":1190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level1" }}
+,{ "pid":12345, "tid":3, "ts":1666257931222224, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1666257931222285, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931222291, "dur":3066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1666257931225429, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666257931225496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931225506, "dur":1837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666257931227405, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1666257931227571, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666257931227580, "dur":1336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1666257931228969, "dur":182916, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930354317, "dur":546, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930354863, "dur":7022, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930361906, "dur":275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1666257930362222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930457185, "dur":33911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1666257930491163, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930491231, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930491242, "dur":100166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930591476, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930591537, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930591545, "dur":62510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930654110, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930654173, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930654208, "dur":72900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930727208, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930727269, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930727275, "dur":69379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930796731, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930796809, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930796818, "dur":39965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930836851, "dur":35653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930872510, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930872521, "dur":1407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930873988, "dur":53581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930927575, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930927585, "dur":1303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930928936, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930928988, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930928994, "dur":63159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930992206, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257930992259, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257930992268, "dur":125126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257931117451, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257931117504, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257931117513, "dur":53174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257931170752, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/DOTween.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257931170813, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666257931170823, "dur":130571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/DOTween.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666257931301439, "dur":110477, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930354346, "dur":524, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930354870, "dur":7030, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930361904, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1666257930362212, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930373761, "dur":193517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1666257930567336, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930567391, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930567399, "dur":34697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930602150, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930602202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930602209, "dur":77012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930679290, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930679356, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930679366, "dur":136415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930815842, "dur":124071, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930939919, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930939983, "dur":1903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930941940, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257930941996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257930942005, "dur":182600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257931124660, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257931124718, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666257931124726, "dur":287076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666257931411850, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1666257931411852, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930354374, "dur":503, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930354877, "dur":7020, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930361897, "dur":278, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1666257930362218, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930378571, "dur":79973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1666257930458614, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930458798, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930459149, "dur":2482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930461704, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":6, "ts":1666257930461902, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930462588, "dur":32355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":6, "ts":1666257930495062, "dur":334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930495400, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930495437, "dur":37291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930532801, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930532880, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930532890, "dur":105689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930638632, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930638689, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930638697, "dur":75550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930714326, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930714394, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930715019, "dur":63507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930778593, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930778667, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930778676, "dur":45294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930824041, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930824109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930824118, "dur":69640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930893816, "dur":91094, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930984918, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930984930, "dur":1764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930986750, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257930986810, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257930986819, "dur":57113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257931043994, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257931044059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257931044068, "dur":42167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257931086299, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257931086363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666257931086373, "dur":170275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666257931256718, "dur":155191, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930354445, "dur":442, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930354887, "dur":7015, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930361903, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1666257930362135, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930367318, "dur":6274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1666257930373655, "dur":262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1666257930373923, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930373939, "dur":84756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1666257930458784, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930458961, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930458969, "dur":39164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930498190, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930498253, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930498263, "dur":24629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930522965, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930523027, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930523037, "dur":22630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930545785, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930545885, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930545898, "dur":44242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930590205, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930590267, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930590274, "dur":19811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930610155, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930610221, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930610233, "dur":20403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930630701, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930630759, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930630768, "dur":21092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930651917, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930651976, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930651986, "dur":20473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930672519, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930672591, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930672600, "dur":20083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930692761, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930692842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930692857, "dur":22303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930715236, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930715336, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930715354, "dur":19629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930735046, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930735115, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930735124, "dur":41615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930776851, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930776923, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930776930, "dur":48979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930825978, "dur":1011, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930826996, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930827007, "dur":1320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930828388, "dur":46505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930874967, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930874979, "dur":3756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930878793, "dur":49965, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930928764, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930928774, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930929990, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257930930047, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257930930054, "dur":97594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257931027701, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257931027754, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666257931027763, "dur":226030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666257931253853, "dur":158057, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930354489, "dur":404, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930354893, "dur":7013, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930361907, "dur":284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1666257930362241, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930462759, "dur":8569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1666257930471445, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930471528, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930471540, "dur":25005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930496607, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930496698, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930496710, "dur":27962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930524744, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930524810, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930524819, "dur":21945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930546846, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930546922, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930546931, "dur":163295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930710294, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930710363, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930710373, "dur":41268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930751701, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930751765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930752209, "dur":129773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930882044, "dur":38722, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930920772, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930920856, "dur":1327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930922242, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257930922330, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666257930922338, "dur":311591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666257931233995, "dur":177910, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930354552, "dur":348, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930354900, "dur":7016, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930361917, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1666257930362238, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930461965, "dur":221488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1666257930683512, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930683599, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930683607, "dur":43324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930726995, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930727061, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930727098, "dur":25205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930752373, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930752437, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930752445, "dur":44213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930796730, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930796809, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930796818, "dur":161213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930962560, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257930962677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257930962717, "dur":188870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257931151645, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257931151705, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666257931151788, "dur":214114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666257931365948, "dur":45949, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930354588, "dur":318, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930354906, "dur":7003, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930361910, "dur":274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1666257930362229, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930457346, "dur":9421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1666257930466829, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930466893, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930467205, "dur":62810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930530073, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930530130, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930530140, "dur":59790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930589995, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930590064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930590073, "dur":47901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930638043, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930638109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930638118, "dur":25694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930663883, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930663950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930663959, "dur":21073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930685086, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930685141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930685149, "dur":30331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930715551, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930715615, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930715623, "dur":24121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930739805, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930739867, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930739878, "dur":36544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930776480, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930776542, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257930776550, "dur":49191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257930825809, "dur":215859, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257931041674, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257931044775, "dur":1622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257931046452, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257931046508, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257931046538, "dur":142539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257931189140, "dur":62277, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257931251444, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666257931251454, "dur":1261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666257931252760, "dur":159148, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930354628, "dur":283, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930354911, "dur":6982, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930361896, "dur":289, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1666257930362233, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930461254, "dur":17687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1666257930479003, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930479075, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930479084, "dur":56753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930535913, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930535991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930536004, "dur":37931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930573997, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930574059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930574068, "dur":90048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930664230, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930664311, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930664320, "dur":99603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930763982, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930764049, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930764058, "dur":33713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930797829, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930797902, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930797912, "dur":55879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930853848, "dur":41196, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930895049, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257930895059, "dur":1556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257930896669, "dur":288860, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257931185536, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257931185547, "dur":2121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257931187731, "dur":117662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257931305399, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666257931305409, "dur":1465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666257931306915, "dur":104987, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930354677, "dur":239, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930354917, "dur":6972, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930361891, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1666257930362135, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930364137, "dur":6145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1666257930370359, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1666257930370526, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930370724, "dur":6533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1666257930377327, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1666257930377544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930377554, "dur":204077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1666257930581704, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930581849, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930581859, "dur":169791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930751715, "dur":2547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930754314, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930754330, "dur":41200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930795601, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930795662, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930795672, "dur":70875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930866613, "dur":6017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930872636, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930872647, "dur":1742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930874452, "dur":2210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930876670, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930876685, "dur":1725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930878482, "dur":897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930879384, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930879395, "dur":1918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930881655, "dur":931, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930882591, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930882628, "dur":1372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930884053, "dur":76957, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930961016, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930961028, "dur":5787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930966878, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257930966942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257930966951, "dur":99103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257931066113, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257931066172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257931066182, "dur":135639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666257931201885, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":12, "ts":1666257931201954, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257931201963, "dur":4528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":12, "ts":1666257931206544, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1666257931206600, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257931206608, "dur":19099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1666257931225765, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1666257931225822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666257931225830, "dur":2041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1666257931227931, "dur":183952, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666257931416732, "dur":2331, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1666257931436370, "dur": 820, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666257931435981, "dur": 1235, "ph": "X", "name": "Write chrome-trace events", "args": {} },

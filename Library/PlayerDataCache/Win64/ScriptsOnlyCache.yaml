@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - Dashing
     - DeathScript
@@ -13,6 +15,7 @@ ScriptsOnlyBuild:
     - PlayerCam
     - PlayerMovement
     - QuitButton
+    - Readme
     - RetroAesthetics.Demos.MenuScripts
     - RetroAesthetics.Demos.SpeedTilt
     - RetroAesthetics.RetroCameraEffect
@@ -39,10 +42,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -220,35 +221,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5128}
     - Class: 114
-      Script: {instanceID: 5834}
+      Script: {instanceID: 5550}
     - Class: 114
-      Script: {instanceID: 5862}
+      Script: {instanceID: 5836}
     - Class: 114
-      Script: {instanceID: 6536}
+      Script: {instanceID: 5864}
     - Class: 114
-      Script: {instanceID: 6690}
+      Script: {instanceID: 6540}
     - Class: 114
-      Script: {instanceID: 6708}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 7040}
+      Script: {instanceID: 6712}
     - Class: 114
-      Script: {instanceID: 7108}
+      Script: {instanceID: 7044}
     - Class: 114
-      Script: {instanceID: 7218}
+      Script: {instanceID: 7112}
     - Class: 114
-      Script: {instanceID: 7294}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 7646}
+      Script: {instanceID: 7298}
     - Class: 114
-      Script: {instanceID: 7840}
+      Script: {instanceID: 7650}
     - Class: 114
-      Script: {instanceID: 8390}
+      Script: {instanceID: 7844}
     - Class: 114
-      Script: {instanceID: 8652}
+      Script: {instanceID: 8394}
     - Class: 114
-      Script: {instanceID: 9062}
+      Script: {instanceID: 8656}
     - Class: 114
-      Script: {instanceID: 39922}
+      Script: {instanceID: 9066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -307,7 +308,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3132}
     - Class: 114
-      Script: {instanceID: 6536}
+      Script: {instanceID: 6540}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -388,21 +389,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4972}
     - Class: 114
-      Script: {instanceID: 5834}
+      Script: {instanceID: 5836}
     - Class: 114
-      Script: {instanceID: 6536}
+      Script: {instanceID: 6540}
     - Class: 114
-      Script: {instanceID: 6708}
+      Script: {instanceID: 6712}
     - Class: 114
-      Script: {instanceID: 7046}
+      Script: {instanceID: 7050}
     - Class: 114
-      Script: {instanceID: 7108}
+      Script: {instanceID: 7112}
     - Class: 114
-      Script: {instanceID: 7124}
+      Script: {instanceID: 7128}
     - Class: 114
-      Script: {instanceID: 8002}
+      Script: {instanceID: 8006}
     - Class: 114
-      Script: {instanceID: 9356}
+      Script: {instanceID: 9360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1112,6 +1113,12 @@ ScriptsOnlyBuild:
     className: UnityOnBeginDragMessageListener
   - hash:
       serializedVersion: 2
+      Hash: d30378a5cdd9f9ef5b1cdb418708ef47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rotate
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1248,6 +1255,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Utility
     className: SmoothFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 4228a930d69e7c7d17fd0cb53b50e60a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraTexture
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -1716,21 +1729,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: d30378a5cdd9f9ef5b1cdb418708ef47
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Rotate
-  - hash:
-      serializedVersion: 2
-      Hash: 4228a930d69e7c7d17fd0cb53b50e60a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraTexture
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Loading.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/Fuzzy/Desktop/FrictionlessBuild1/Project Frictionless.exe
+  playerPath: C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless.exe

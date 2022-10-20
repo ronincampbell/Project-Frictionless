@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 26
+  controlID: 49
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 27
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 28
+  controlID: 57
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 29
+  controlID: 58
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,14 +241,14 @@ MonoBehaviour:
     height: 758
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,8 +296,8 @@ MonoBehaviour:
     y: 0
     width: 459
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -425,22 +425,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1700}
-    m_SelectedIDs: d4620000
-    m_LastClickedID: 25300
-    m_ExpandedIDs: 00000000a4620000d0620000d2620000d4620000ea620000f4620000f662000006630000166300001e630000206300002c6300002e630000386300003e630000446300001076000024d9000026d9000036d9000038d9000064ec00006cec0000b4160100a83901004e7c0100
+    scrollPos: {x: 0, y: 196}
+    m_SelectedIDs: cc630000
+    m_LastClickedID: 25548
+    m_ExpandedIDs: 00000000a8630000c0630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -468,7 +468,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a4620000
+    m_ExpandedIDs: 00000000a8630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -555,9 +555,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e4ddfcff
-      m_LastClickedID: -205340
-      m_ExpandedIDs: 08defcff38dffcff98e3fcff36e5fcff86e5fcff9ee8fcffa4e8fcffd8e8fcff1651fdffb298fdffb698fdffc498fdffcc98fdffe498fdffc8defdffecdefdffec95feff4a98feff58b2feff54b5feff76b7feffd2b9feff8cdbfeff62afffffe8c8ffff8eceffffe6d9ffff16eaffff36fbffffb25e0000f65e00002e5f0000325f0000785f0000aa5f00005e6000006e60000078600000b6d6000028da0000f4da0000c4db0000fae60000eee900001cea000070ea0000b0ea0000c2ea000090370100e4370100826f0100fa700100
+      m_SelectedIDs: 5e870000
+      m_LastClickedID: 34654
+      m_ExpandedIDs: 78e0ffff0cf4ffff5cf4ffff78f7ffff82f7ffffc2f7ffff36fbffff966a0000c86b0000066c0000066e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -806,9 +806,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -41.319485, y: -52.614643, z: -5.4097686}
+    m_Target: {x: -1, y: -22.325619, z: 6.1}
     speed: 2
-    m_Value: {x: -41.319485, y: -52.614643, z: -5.4097686}
+    m_Value: {x: -1, y: -22.325619, z: 6.1}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -855,13 +855,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.41527182, y: 0.043755647, z: -0.017580781, w: 0.90907395}
+    m_Target: {x: 0.29787338, y: -0.088806726, z: 0.030315522, w: 0.95055497}
     speed: 2
-    m_Value: {x: 0.41504577, y: 0.043731827, z: -0.01757121, w: 0.90857905}
+    m_Value: {x: 0.29771134, y: -0.08875842, z: 0.03029903, w: 0.95003784}
   m_Size:
-    m_Target: 2.8333762
+    m_Target: 3.7853827
     speed: 2
-    m_Value: 2.8333762
+    m_Value: 3.9637516
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -947,7 +947,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 60164
+  m_LastSelectedObjectID: 28264
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1100,7 +1100,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 1062
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

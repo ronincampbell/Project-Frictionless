@@ -76,6 +76,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\FPSCounter.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Scripts\Rotate.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
      <Compile Include="Assets\CharacterController\Grappling\GrapplingRope.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\SimpleMouseRotator.cs" />
@@ -85,6 +86,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\CameraTexture.cs" />
      <Compile Include="Assets\CharacterController\PlayerMovement.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\WaypointCircuit.cs" />
@@ -125,8 +127,6 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Scripts\SceneField.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunAim.cs" />
      <Compile Include="Assets\Scripts\QuitButton.cs" />
-     <Compile Include="Assets\Scripts\Rotate.cs" />
-     <Compile Include="Assets\Scripts\CameraTexture.cs" />
      <None Include="Assets\AssestStore\RetroAesthetics\Shaders\SpriteGradientSprites.shader" />
      <None Include="Assets\AssestStore\RetroAesthetics\Shaders\UnlitTextureColor.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
