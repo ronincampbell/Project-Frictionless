@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - ReadmeEditor
     Assembly-CSharp.dll:
     - Dashing
     - DeathScript
@@ -12,10 +10,10 @@ ScriptsOnlyBuild:
     - JumpPadParams
     - KillBox
     - MoveCamera
+    - PauseMenu
     - PlayerCam
     - PlayerMovement
     - QuitButton
-    - Readme
     - RetroAesthetics.Demos.MenuScripts
     - RetroAesthetics.Demos.SpeedTilt
     - RetroAesthetics.RetroCameraEffect
@@ -58,6 +56,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   serializedClasses:
     Assembly-CSharp:
@@ -112,9 +111,18 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: StartButton
-    methodName: startMenu
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -145,6 +153,24 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: StartButton
     methodName: startMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: QuitButton
+    methodName: OnClickExit
+  - assembly: Assembly-CSharp
+    fullTypeName: StartButton
+    methodName: startMenu
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: RetroAesthetics.Demos.MenuScripts
+    methodName: StartLevel
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -158,8 +184,20 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: QuitButton
-    methodName: OnClickExit
+    fullTypeName: PauseMenu
+    methodName: Resume
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Resume
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   sceneClasses:
     Assets/Scenes/Level1.unity:
     - Class: 1
@@ -190,6 +228,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -201,9 +243,13 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1662}
+    - Class: 114
       Script: {instanceID: 1664}
     - Class: 114
       Script: {instanceID: 2320}
+    - Class: 114
+      Script: {instanceID: 2550}
     - Class: 114
       Script: {instanceID: 2624}
     - Class: 114
@@ -214,6 +260,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3132}
     - Class: 114
       Script: {instanceID: 3220}
+    - Class: 114
+      Script: {instanceID: 3470}
     - Class: 114
       Script: {instanceID: 4294}
     - Class: 114
@@ -235,6 +283,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7044}
     - Class: 114
+      Script: {instanceID: 7050}
+    - Class: 114
       Script: {instanceID: 7112}
     - Class: 114
       Script: {instanceID: 7222}
@@ -245,11 +295,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7844}
     - Class: 114
+      Script: {instanceID: 8006}
+    - Class: 114
       Script: {instanceID: 8394}
     - Class: 114
       Script: {instanceID: 8656}
     - Class: 114
       Script: {instanceID: 9066}
+    - Class: 114
+      Script: {instanceID: 37788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1113,7 +1167,7 @@ ScriptsOnlyBuild:
     className: UnityOnBeginDragMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d30378a5cdd9f9ef5b1cdb418708ef47
+      Hash: 48a09b22b72471fdc71db05cf1709b2b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Rotate
@@ -1729,9 +1783,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 156a4e0965bc9ed3c4764580afd61c3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Loading.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/Fuzzy/Documents/ProFricBUILDS/V0.1/Project Frictionless.exe
+  playerPath: C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.1/Project Frictionless.exe

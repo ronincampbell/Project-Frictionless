@@ -23,6 +23,7 @@ namespace RetroAesthetics.Demos {
 		}
 
 		virtual public void StartLevel() {
+			Time.timeScale = 1f;
 			if (levelScene != null) {
 				if (_cameraEffect != null) {
 					if (loadingScene != null) {
