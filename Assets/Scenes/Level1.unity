@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5066799, g: 0.011650368, b: 0.19815707, a: 1}
+  m_IndirectSpecularColor: {r: 0.50666606, g: 0.011649244, b: 0.19815116, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2768,17 +2768,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587085663}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7219799, y: 0.7219799, z: 0.7219799}
+  m_LocalScale: {x: 0.24512255, y: 0.24512255, z: 0.24512255}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1322662429}
-  m_RootOrder: 2
+  m_Father: {fileID: 1785212431}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 657, y: 449}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 4.3, y: 3.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587085665
@@ -3242,8 +3242,8 @@ MonoBehaviour:
   levelScene:
     m_SceneAsset: {fileID: 102900000, guid: 0dc85c021826545c68e5aed9ca83e70c, type: 3}
     m_SceneName: Menu
-  fadeInMenu: 1
-  fadeOutMenu: 1
+  fadeInMenu: 0
+  fadeOutMenu: 0
 --- !u!1 &646965136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3701,53 +3701,6 @@ Transform:
   m_Father: {fileID: 990358733}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -120, y: 0, z: 180}
---- !u!21 &700255127
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/RetroCameraEffect
-  m_Shader: {fileID: 4800000, guid: 2cfdcae76c757405786f1219a383da6e, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SecondaryTex:
-        m_Texture: {fileID: 2800000, guid: 2ee566ccadfe14d0cadbd3e2107180cf, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ChromaticAberration: 0
-    - _DisplacementAmplitude: 0.001
-    - _DisplacementFrequency: 100
-    - _DisplacementSpeed: 1
-    - _NoiseBottomHeight: 0.04
-    - _NoiseBottomIntensity: 1
-    - _OffsetNoiseX: 0
-    - _OffsetNoiseY: 0
-    - _StaticIntensity: 1
-    - _UseChromaticAberration: 1
-    - _UseDisplacement: 1
-    - _UseStaticNoise: 1
-    - _UseVignette: 0
-    - _Vignette: 0
-    m_Colors:
-    - _OffsetPos: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &701539814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d193b99a2336f5f4aa0c0f7822dc241d, type: 3}
@@ -4184,7 +4137,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824615591}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -4638,6 +4591,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 5b86c693acc5f4805b033c23b06b3a69, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5b86c693acc5f4805b033c23b06b3a69, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5b86c693acc5f4805b033c23b06b3a69, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6126,18 +6083,18 @@ RectTransform:
   m_GameObject: {fileID: 1215888826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1272001, y: 2.1272001, z: 2.1272001}
+  m_LocalScale: {x: 1.3187577, y: 1.3187577, z: 1.3187577}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 138759174}
   - {fileID: 623489835}
   - {fileID: 1019292546}
   m_Father: {fileID: 1322662429}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000038146973, y: -255}
+  m_AnchoredPosition: {x: -0.0000038146973, y: -159}
   m_SizeDelta: {x: 221.281, y: 41.082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215888828
@@ -6899,7 +6856,6 @@ RectTransform:
   m_Children:
   - {fileID: 515156946}
   - {fileID: 1785212431}
-  - {fileID: 587085664}
   - {fileID: 6844940177771302859}
   - {fileID: 1888886139}
   - {fileID: 1215888827}
@@ -7471,6 +7427,53 @@ Transform:
   m_Father: {fileID: 516694158}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1560070702
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/RetroCameraEffect
+  m_Shader: {fileID: 4800000, guid: 2cfdcae76c757405786f1219a383da6e, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryTex:
+        m_Texture: {fileID: 2800000, guid: 2ee566ccadfe14d0cadbd3e2107180cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ChromaticAberration: 0
+    - _DisplacementAmplitude: 0.001
+    - _DisplacementFrequency: 100
+    - _DisplacementSpeed: 1
+    - _NoiseBottomHeight: 0.04
+    - _NoiseBottomIntensity: 1
+    - _OffsetNoiseX: 0
+    - _OffsetNoiseY: 0
+    - _StaticIntensity: 1
+    - _UseChromaticAberration: 1
+    - _UseDisplacement: 1
+    - _UseStaticNoise: 1
+    - _UseVignette: 0
+    - _Vignette: 0
+    m_Colors:
+    - _OffsetPos: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1561891529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7931,6 +7934,10 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5b86c693acc5f4805b033c23b06b3a69, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5b86c693acc5f4805b033c23b06b3a69, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1e0a0e963ccb64d36863b1dc3bcc3a3f, type: 2}
@@ -8278,15 +8285,16 @@ RectTransform:
   m_GameObject: {fileID: 1785212430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4319, y: 2.4319, z: 2.4319}
+  m_LocalScale: {x: 1.722612, y: 1.722612, z: 1.722612}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 587085664}
   m_Father: {fileID: 1322662429}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 335, y: -81}
+  m_AnchoredPosition: {x: 224.2, y: -47.5}
   m_SizeDelta: {x: 252.98193, y: 40.95331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1785212432
@@ -8463,7 +8471,7 @@ MonoBehaviour:
   useScanlines: 1
   scanlineSize: 512
   scanlineIntensity: 0.5
-  _material: {fileID: 700255127}
+  _material: {fileID: 1560070702}
 --- !u!124 &1802521278
 Behaviour:
   m_ObjectHideFlags: 0
@@ -8566,6 +8574,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706588477}
     m_Modifications:
+    - target: {fileID: 6372295405488960768, guid: a1bcd87ff0583b4499336bbe77fdcede, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1225386174}
     - target: {fileID: 6372295405488960768, guid: a1bcd87ff0583b4499336bbe77fdcede, type: 3}
       propertyPath: padForce
       value: 30
@@ -8752,18 +8764,18 @@ RectTransform:
   m_GameObject: {fileID: 1888886138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4033716, y: 2.4033716, z: 2.4033716}
+  m_LocalScale: {x: 1.3837893, y: 1.3837893, z: 1.3837893}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 211036833}
   - {fileID: 1199661917}
   - {fileID: 558302942}
   m_Father: {fileID: 1322662429}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -143}
+  m_AnchoredPosition: {x: 0, y: -94}
   m_SizeDelta: {x: 203.302, y: 41.082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888886140
@@ -9276,6 +9288,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706588477}
     m_Modifications:
+    - target: {fileID: 6372295405488960768, guid: a1bcd87ff0583b4499336bbe77fdcede, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1225386174}
     - target: {fileID: 6372295405488960768, guid: a1bcd87ff0583b4499336bbe77fdcede, type: 3}
       propertyPath: padForce
       value: 50
@@ -10395,6 +10411,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1225386174}
+    - target: {fileID: 5770537319224090434, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: slideFov
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: normalJump
       value: 13
@@ -10839,14 +10859,14 @@ RectTransform:
   m_GameObject: {fileID: 6844940177771302856}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.1938066, y: 3.1938066, z: 3.1938066}
+  m_LocalScale: {x: 2.346969, y: 2.346969, z: 2.346969}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6844940176983187901}
   - {fileID: 6844940177691438043}
   - {fileID: 6844940177607019843}
   m_Father: {fileID: 1322662429}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

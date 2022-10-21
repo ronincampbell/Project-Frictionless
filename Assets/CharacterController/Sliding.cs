@@ -18,6 +18,7 @@ public class Sliding : MonoBehaviour
     public float maxSlideTime;
     public float slideForce;
     private float slideTimer;
+    public float slideFov;
 
     public float slideYScale;
     private float startYScale;
@@ -62,7 +63,7 @@ public class Sliding : MonoBehaviour
         rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
 
         slideTimer = maxSlideTime;
-        cam.DoFov(90f);
+        cam.DoFov(slideFov);
     }
 
     private void SlidingMovement()
@@ -91,7 +92,6 @@ public class Sliding : MonoBehaviour
     {
         pm.sliding = false;
         playerObj.localScale = new Vector3(playerObj.localScale.x, startYScale, playerObj.localScale.z);
-        cam.DoFov(80f);
     }
 
 }
