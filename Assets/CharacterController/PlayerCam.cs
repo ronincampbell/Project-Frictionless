@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-// Code by Dave / Game Development on YouTube
+// Code base Dave / Game Development on YouTube
 
 public class PlayerCam : MonoBehaviour
 {
-    public float sensX;
-    public float sensY;
 
     public Transform orientation;
     public Transform camHolder;
-
+    float sense;
+    public float sensX;
+    public float sensY;
     float xRotation;
     float yRotation;
 
@@ -24,9 +24,10 @@ public class PlayerCam : MonoBehaviour
 
     private void Update()
     {
+        float sense = PlayerPrefs.GetFloat("SenseValue");
         // get mouse input
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX * sense;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY * sense;
 
         yRotation += mouseX;
 

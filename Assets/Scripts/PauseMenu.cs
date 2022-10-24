@@ -12,12 +12,19 @@ public class PauseMenu : MonoBehaviour
     public GameObject DeathScreen;
     public GameObject AliveUI;
     public GameObject pCamera;
+    public GameObject SettingsUI;
+    public GameObject ResumeButton;
+    public GameObject SettingsButton;
+    public GameObject QuitButton;
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy)
+        if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy && !PauseMenuUI.activeInHierarchy)
         {
             PauseMenuUI.SetActive(true);
+            ResumeButton.SetActive(true);
+            SettingsButton.SetActive(true);
+            QuitButton.SetActive(true);
             Triangle1.SetActive(false);
             Triangle2.SetActive(false);
             Triangle3.SetActive(false);
@@ -25,11 +32,16 @@ public class PauseMenu : MonoBehaviour
             Cursor.visible = true;
             pCamera.GetComponent<RetroCameraEffect>().enabled = true;
             Cursor.lockState = CursorLockMode.None;
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy)
+        {
+            Resume();
         }       
     }
 
     public void Resume()
     {
+        SettingsUI.SetActive(false);
         PauseMenuUI.SetActive(false);
         AliveUI.SetActive(true);
         Time.timeScale = 1f;
