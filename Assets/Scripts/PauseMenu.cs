@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject ResumeButton;
     public GameObject SettingsButton;
     public GameObject QuitButton;
+    public GameObject soundNegative;
     
     void Update()
     {
@@ -28,6 +29,7 @@ public class PauseMenu : MonoBehaviour
             Triangle1.SetActive(false);
             Triangle2.SetActive(false);
             Triangle3.SetActive(false);
+            soundNegative.SetActive(true);
             Time.timeScale = 0f;
             Cursor.visible = true;
             pCamera.GetComponent<RetroCameraEffect>().enabled = true;
@@ -44,6 +46,7 @@ public class PauseMenu : MonoBehaviour
         SettingsUI.SetActive(false);
         PauseMenuUI.SetActive(false);
         AliveUI.SetActive(true);
+        soundNegative.SetActive(false);
         Time.timeScale = 1f;
         Cursor.visible = false;
         pCamera.GetComponent<RetroCameraEffect>().enabled = false;
