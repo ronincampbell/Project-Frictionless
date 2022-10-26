@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - ReadmeEditor
     Assembly-CSharp.dll:
     - Dashing
     - DeathScript
@@ -11,12 +9,13 @@ ScriptsOnlyBuild:
     - GunSystem
     - JumpPadParams
     - KillBox
+    - LevelLoad
+    - LevelSelect
     - MoveCamera
     - PauseMenu
     - PlayerCam
     - PlayerMovement
     - QuitButton
-    - Readme
     - RetroAesthetics.Demos.MenuScripts
     - RetroAesthetics.Demos.SpeedTilt
     - RetroAesthetics.RetroCameraEffect
@@ -178,6 +177,57 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: set_clip
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -259,9 +309,273 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.AudioModule
     fullTypeName: UnityEngine.AudioSource
     methodName: set_clip
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: set_clip
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: set_clip
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: set_clip
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelect
+    methodName: tapeSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelect
+    methodName: tapeUnselected
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelect
+    methodName: tapeSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelect
+    methodName: tapeUnselected
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: set_clip
+  - assembly: Assembly-CSharp
+    fullTypeName: RetroAesthetics.Demos.MenuScripts
+    methodName: StartLevel
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -334,6 +648,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: PlayOneShot
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -379,6 +696,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: PlayOneShot
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: Resume
@@ -436,81 +756,83 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16884}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 17492}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 17722}
+      Script: {instanceID: 1666}
     - Class: 114
-      Script: {instanceID: 17796}
+      Script: {instanceID: 2324}
     - Class: 114
-      Script: {instanceID: 17998}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 18050}
+      Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 18066}
+      Script: {instanceID: 2830}
     - Class: 114
-      Script: {instanceID: 18304}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 18392}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 18642}
+      Script: {instanceID: 3136}
     - Class: 114
-      Script: {instanceID: 19464}
+      Script: {instanceID: 3224}
     - Class: 114
-      Script: {instanceID: 19562}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 19590}
+      Script: {instanceID: 3530}
     - Class: 114
-      Script: {instanceID: 20296}
+      Script: {instanceID: 4300}
     - Class: 114
-      Script: {instanceID: 20524}
+      Script: {instanceID: 4398}
     - Class: 114
-      Script: {instanceID: 20720}
+      Script: {instanceID: 4426}
     - Class: 114
-      Script: {instanceID: 20850}
+      Script: {instanceID: 5134}
     - Class: 114
-      Script: {instanceID: 20916}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 21006}
+      Script: {instanceID: 5558}
     - Class: 114
-      Script: {instanceID: 21034}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 21320}
+      Script: {instanceID: 5842}
     - Class: 114
-      Script: {instanceID: 21710}
+      Script: {instanceID: 5870}
     - Class: 114
-      Script: {instanceID: 21864}
+      Script: {instanceID: 6546}
     - Class: 114
-      Script: {instanceID: 21880}
+      Script: {instanceID: 6700}
     - Class: 114
-      Script: {instanceID: 22212}
+      Script: {instanceID: 6718}
     - Class: 114
-      Script: {instanceID: 22218}
+      Script: {instanceID: 7050}
     - Class: 114
-      Script: {instanceID: 22280}
+      Script: {instanceID: 7056}
     - Class: 114
-      Script: {instanceID: 22292}
+      Script: {instanceID: 7118}
     - Class: 114
-      Script: {instanceID: 22390}
+      Script: {instanceID: 7130}
     - Class: 114
-      Script: {instanceID: 22466}
+      Script: {instanceID: 7228}
     - Class: 114
-      Script: {instanceID: 22818}
+      Script: {instanceID: 7304}
     - Class: 114
-      Script: {instanceID: 23012}
+      Script: {instanceID: 7656}
     - Class: 114
-      Script: {instanceID: 23174}
+      Script: {instanceID: 7850}
     - Class: 114
-      Script: {instanceID: 23562}
+      Script: {instanceID: 8012}
     - Class: 114
-      Script: {instanceID: 23626}
+      Script: {instanceID: 8400}
     - Class: 114
-      Script: {instanceID: 23824}
+      Script: {instanceID: 8464}
     - Class: 114
-      Script: {instanceID: 23876}
+      Script: {instanceID: 8662}
     - Class: 114
-      Script: {instanceID: 24236}
+      Script: {instanceID: 8714}
+    - Class: 114
+      Script: {instanceID: 9074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -571,11 +893,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18304}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 21320}
+      Script: {instanceID: 3136}
     - Class: 114
-      Script: {instanceID: 21710}
+      Script: {instanceID: 6546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -617,6 +939,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -627,62 +951,68 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16884}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 17582}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 18050}
+      Script: {instanceID: 1666}
     - Class: 114
-      Script: {instanceID: 18066}
+      Script: {instanceID: 1942}
     - Class: 114
-      Script: {instanceID: 18304}
+      Script: {instanceID: 2414}
     - Class: 114
-      Script: {instanceID: 18642}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 19040}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 19464}
+      Script: {instanceID: 3136}
     - Class: 114
-      Script: {instanceID: 19562}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 19728}
+      Script: {instanceID: 3876}
     - Class: 114
-      Script: {instanceID: 19838}
+      Script: {instanceID: 4300}
     - Class: 114
-      Script: {instanceID: 20140}
+      Script: {instanceID: 4398}
     - Class: 114
-      Script: {instanceID: 20850}
+      Script: {instanceID: 4566}
     - Class: 114
-      Script: {instanceID: 20916}
+      Script: {instanceID: 4676}
     - Class: 114
-      Script: {instanceID: 21006}
+      Script: {instanceID: 4978}
     - Class: 114
-      Script: {instanceID: 21320}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 21710}
+      Script: {instanceID: 5842}
     - Class: 114
-      Script: {instanceID: 21880}
+      Script: {instanceID: 6546}
     - Class: 114
-      Script: {instanceID: 22218}
+      Script: {instanceID: 6718}
     - Class: 114
-      Script: {instanceID: 22280}
+      Script: {instanceID: 7056}
     - Class: 114
-      Script: {instanceID: 22292}
+      Script: {instanceID: 7118}
     - Class: 114
-      Script: {instanceID: 22296}
+      Script: {instanceID: 7130}
     - Class: 114
-      Script: {instanceID: 23174}
+      Script: {instanceID: 7134}
     - Class: 114
-      Script: {instanceID: 23626}
+      Script: {instanceID: 8012}
     - Class: 114
-      Script: {instanceID: 23876}
+      Script: {instanceID: 8464}
     - Class: 114
-      Script: {instanceID: 24530}
+      Script: {instanceID: 8714}
+    - Class: 114
+      Script: {instanceID: 9368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -714,16 +1044,28 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UIElements
-    className: PanelRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UIElements
+    className: PanelRaycaster
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -772,6 +1114,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 582b630d49778611d02d400ec8da3679
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelSelect
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1057,6 +1405,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelLoad
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnInputFieldValueChangedMessageListener
@@ -1338,7 +1692,7 @@ ScriptsOnlyBuild:
     className: CarAudio
   - hash:
       serializedVersion: 2
-      Hash: 8e994b4345d00665404e96b87844c375
+      Hash: c7c0dd6e957510db258f3e44979ae032
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
@@ -1428,12 +1782,6 @@ ScriptsOnlyBuild:
     className: PreferenceDictionary
   - hash:
       serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1516,12 +1864,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDeselectMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: f00ca901b734f71f99db8f25241154c4
