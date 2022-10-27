@@ -22,6 +22,7 @@ public class GunSystem : MonoBehaviour
    public TextMeshProUGUI text;
    public GameObject bullet1, bullet2, bullet3;
    public Animator reloadAnim;
+   public GameObject PauseMenu;
 
    private float nextTImeToFire = 0f;
 
@@ -33,10 +34,15 @@ public class GunSystem : MonoBehaviour
    
    private void Update() 
    {
-        if (Input.GetKey(KeyCode.Mouse0) && Time.time >= nextTImeToFire && !reloading && bulletsLeft > 0)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= nextTImeToFire && !reloading && bulletsLeft > 0 && !PauseMenu.activeInHierarchy)
         {
             nextTImeToFire = Time.time + 1f/fireRate;
             Shoot();
+        }
+
+        if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+           reloadAnim.SetBool("Firing", false);
         }
 
         if(Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
@@ -47,8 +53,8 @@ public class GunSystem : MonoBehaviour
    private void Shoot()
    {
         muzzleFlash.Play();
-
         bulletsLeft--;
+        reloadAnim.SetBool("Firing", true);
 
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
