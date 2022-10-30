@@ -40,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
     public float crouchYScale;
     private float startYScale;
 
+    [Header("SFX")]
+    public GameObject Walksource;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
@@ -160,6 +162,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.dashing;
             desiredMoveSpeed = dashSpeed;
             speedChangeFactor = dashSpeedChangeFactor;
+            Walksource.SetActive(false);
         }
 
         // Mode - Swinging
@@ -167,12 +170,17 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.swinging;
             moveSpeed = swingSpeed;
+            Walksource.SetActive(false);
         }
         // Mode - Wallrunning
         else if(wallrunning)
         {
             state = MovementState.wallrunning;
             desiredMoveSpeed = wallrunSpeed;
+            if (horizontalInput > 0 || verticalInput > 0)
+                Walksource.SetActive(true);
+            else
+                Walksource.SetActive(false);
 
         }
 
@@ -180,6 +188,7 @@ public class PlayerMovement : MonoBehaviour
         else if(sliding && grounded)
         {
             state = MovementState.sliding;
+            Walksource.SetActive(false);
 
             if(OnSlope() && rb.velocity.y < 0.1f)
                 desiredMoveSpeed = slideSpeed;
@@ -201,6 +210,10 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.walking;
             desiredMoveSpeed = walkSpeed;
+            if (horizontalInput > 0 || verticalInput > 0)
+                Walksource.SetActive(true);
+            else
+                Walksource.SetActive(false);
 
         }
         // Mode - Air
@@ -208,6 +221,7 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.air;
             desiredMoveSpeed = walkSpeed;
+            Walksource.SetActive(false);
         }
 
         // check if desiredMoveSpeed has changed drastically

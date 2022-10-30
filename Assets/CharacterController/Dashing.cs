@@ -37,6 +37,11 @@ public class Dashing : MonoBehaviour
     [Header("Input")]
     public KeyCode dashKey = KeyCode.LeftShift;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip DashingSFX;
+    public float volume=1f;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -61,6 +66,7 @@ public class Dashing : MonoBehaviour
         dashDamageActive = true;
         pm.dashing = true;
         pm.maxYSpeed = maxDashYSpeed;
+        audioSource.PlayOneShot(DashingSFX, volume);
 
         cam.DoFov(dashFov);
 

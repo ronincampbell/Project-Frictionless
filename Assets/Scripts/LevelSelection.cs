@@ -8,7 +8,7 @@ public class LevelSelection : MonoBehaviour
 {
     private float AvailScenes;
     public GameObject Level1Button;
-
+    
     private void Start() 
     {
         AvailScenes = PlayerPrefs.GetInt("UnlockedLevels");

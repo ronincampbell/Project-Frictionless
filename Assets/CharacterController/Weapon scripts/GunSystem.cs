@@ -24,6 +24,11 @@ public class GunSystem : MonoBehaviour
    public Animator reloadAnim;
    public GameObject PauseMenu;
 
+    public AudioSource audioSource;
+    public AudioClip fireSFX;
+    public AudioClip reloadSFX;
+    public float volume=0.5f;
+
    private float nextTImeToFire = 0f;
 
    private void Start() 
@@ -55,6 +60,7 @@ public class GunSystem : MonoBehaviour
         muzzleFlash.Play();
         bulletsLeft--;
         reloadAnim.SetBool("Firing", true);
+        audioSource.PlayOneShot(fireSFX, volume);
 
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
@@ -79,6 +85,7 @@ public class GunSystem : MonoBehaviour
    {
         reloading = true;
         reloadAnim.SetBool("Reloading", true);
+        audioSource.PlayOneShot(reloadSFX, volume);
         Invoke("ReloadFinished", reloadTime);
    } 
 

@@ -22,6 +22,11 @@ public class GrapplingGun : MonoBehaviour {
     public PlayerCam cam;
     public float grappleFov;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip grappleSFX;
+    public float volume=0.5f;
+
     void Update() {
         if (Input.GetMouseButtonDown(1)) {
             StartGrapple();
@@ -47,6 +52,7 @@ public class GrapplingGun : MonoBehaviour {
             joint.connectedAnchor = grapplePoint;
             pm.swinging = true;
             cam.DoFov(grappleFov);
+            audioSource.PlayOneShot(grappleSFX, volume);
 
             float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
 
