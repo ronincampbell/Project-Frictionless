@@ -27,6 +27,7 @@ public class LevelLoad : MonoBehaviour
         if (highestlevel < levelnumber)
          {
             PlayerPrefs.SetInt("UnlockedLevels", levelnumber);
+            Debug.Log(PlayerPrefs.GetInt("UnlockedLevels"));
          }
     }
 }

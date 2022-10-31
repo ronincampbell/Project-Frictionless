@@ -8,6 +8,8 @@ public class LevelSelection : MonoBehaviour
 {
     private float AvailScenes;
     public GameObject Level1Button;
+    public GameObject continueButton;
+    public GameObject newGameButton;
     
     private void Start() 
     {
@@ -30,5 +32,20 @@ public class LevelSelection : MonoBehaviour
     {
         PlayerPrefs.SetInt("UnlockedLevels", 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void checkForContinue()
+    {
+        if (AvailScenes > 0)
+        {
+            continueButton.SetActive(true);
+            newGameButton.SetActive(false);
+        }
+        else
+        {
+            continueButton.SetActive(false);
+            newGameButton.SetActive(true);
+        }
+
     }
 }
