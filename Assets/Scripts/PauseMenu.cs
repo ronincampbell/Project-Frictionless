@@ -17,15 +17,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject SettingsButton;
     public GameObject QuitButton;
     public AudioSource audioSource;
-    public GameObject backdrop;
     public GameObject PressQ;
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy && !PauseMenuUI.activeInHierarchy)
+        if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy && !PauseMenuUI.activeInHierarchy && !PressQ.activeInHierarchy)
         {
-            backdrop.SetActive(false);
-            PressQ.SetActive(false);
             PauseMenuUI.SetActive(true);
             ResumeButton.SetActive(true);
             SettingsButton.SetActive(true);
@@ -39,7 +36,7 @@ public class PauseMenu : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             audioSource.volume = 0.1f;
         }
-        else if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy)
+        else if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy && !PressQ.activeInHierarchy)
         {
             Resume();
         }       

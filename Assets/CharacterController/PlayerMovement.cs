@@ -212,6 +212,7 @@ public class PlayerMovement : MonoBehaviour
         // Mode - Walking
         else if(grounded)
         {
+            jumpAmount = 2;
             state = MovementState.walking;
             desiredMoveSpeed = walkSpeed;
             if (horizontalInput > 0 || verticalInput > 0)

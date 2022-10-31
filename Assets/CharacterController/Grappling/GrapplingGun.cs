@@ -18,6 +18,11 @@ public class GrapplingGun : MonoBehaviour {
     public float horizontalThrustForce;
     public float forwardThrustForce;
 
+    [Header("Prediction")]
+    public RaycastHit predictionHit;
+    public float predictionSphereCastRadius;
+    public Transform predictionPoint;
+
     [Header("CameraEffects")]
     public PlayerCam cam;
     public float grappleFov;
@@ -28,6 +33,9 @@ public class GrapplingGun : MonoBehaviour {
     public float volume=0.5f;
 
     void Update() {
+
+        checkForSwingPoints();
+
         if (Input.GetMouseButtonDown(1)) {
             StartGrapple();
         }
@@ -44,27 +52,29 @@ public class GrapplingGun : MonoBehaviour {
     /// Call whenever we want to start a grapple
     /// </summary>
     void StartGrapple() {
-        RaycastHit hit;
-        if (Physics.Raycast(camera.position, camera.forward, out hit, maxDistance, whatIsGrappleable)) {
-            grapplePoint = hit.point;
-            joint = player.gameObject.AddComponent<SpringJoint>();
-            joint.autoConfigureConnectedAnchor = false;
-            joint.connectedAnchor = grapplePoint;
-            pm.swinging = true;
-            cam.DoFov(grappleFov);
-            audioSource.PlayOneShot(grappleSFX, volume);
 
-            float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
+        // return if predictionHit not found
+        if (predictionHit.point == Vector3.zero) return;
 
-            //The distance grapple will try to keep from grapple point. 
-            joint.maxDistance = distanceFromPoint * 0.8f;
-            joint.minDistance = distanceFromPoint * 0.25f;
 
-            //Adjust these values to fit your game.
-            joint.spring = 4.5f;
-            joint.damper = 7f;
-            joint.massScale = 4.5f;
-        }
+        grapplePoint = predictionHit.point;
+        joint = player.gameObject.AddComponent<SpringJoint>();
+        joint.autoConfigureConnectedAnchor = false;
+        joint.connectedAnchor = grapplePoint;
+        pm.swinging = true;
+        cam.DoFov(grappleFov);
+        audioSource.PlayOneShot(grappleSFX, volume);
+
+        float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
+
+        //The distance grapple will try to keep from grapple point. 
+        joint.maxDistance = distanceFromPoint * 0.8f;
+        joint.minDistance = distanceFromPoint * 0.25f;
+
+        //Adjust these values to fit your game.
+        joint.spring = 4.5f;
+        joint.damper = 7f;
+        joint.massScale = 4.5f;
     }
 
 
@@ -96,5 +106,45 @@ public class GrapplingGun : MonoBehaviour {
         if (Input.GetKey(KeyCode.W)) rb.AddForce(orientation.forward * forwardThrustForce * Time.deltaTime);
         // backwards
         if (Input.GetKey(KeyCode.S)) rb.AddForce(-orientation.forward * forwardThrustForce * Time.deltaTime);
+    }
+
+    // Aim assist function
+    private void checkForSwingPoints()
+    {
+        if (joint != null) return;
+        RaycastHit sphereCastHit;
+        Physics.SphereCast(camera.position, predictionSphereCastRadius, camera.forward, out sphereCastHit, maxDistance, whatIsGrappleable);
+
+        RaycastHit raycastHit;
+        Physics.Raycast(camera.position, camera.forward, out raycastHit, maxDistance, whatIsGrappleable);
+
+        Vector3 realHitPoint;
+
+        // Option 1 - Direct Hit
+        if (raycastHit.point != Vector3.zero)
+            realHitPoint = raycastHit.point;
+
+        // Option 2 - Indirect (predicted) hit
+        else if (sphereCastHit.point != Vector3.zero)
+            realHitPoint = sphereCastHit.point;
+
+        // Option 3 - Miss
+        else
+            realHitPoint = Vector3.zero;
+
+
+        // realHitPoint found
+        if (realHitPoint != Vector3.zero)
+        {
+            predictionPoint.gameObject.SetActive(true);
+            predictionPoint.position = realHitPoint;
+        }
+        // realHitPoint not found
+        else
+        {
+            predictionPoint.gameObject.SetActive(false);
+        }
+
+        predictionHit = raycastHit.point == Vector3.zero ? sphereCastHit : raycastHit;
     }
 }

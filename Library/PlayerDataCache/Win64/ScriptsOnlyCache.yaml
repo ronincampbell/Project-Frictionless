@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     - PlayerCam
     - PlayerMovement
     - QuitButton
+    - RetroAesthetics.Demos.ContinueFunction
     - RetroAesthetics.Demos.MenuScripts
     - RetroAesthetics.Demos.SpeedTilt
     - RetroAesthetics.RetroCameraEffect
@@ -45,10 +46,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -312,9 +311,6 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: LevelSelection
     methodName: HideLevels
@@ -324,6 +320,12 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelection
+    methodName: checkForContinue
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -348,6 +350,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.AudioModule
     fullTypeName: UnityEngine.AudioSource
     methodName: set_clip
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -495,6 +500,27 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: RetroAesthetics.Demos.ContinueFunction
+    methodName: StartLevel
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: StartButton
     methodName: startMenu
@@ -552,9 +578,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelection
+    methodName: checkForContinue
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -775,11 +801,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8402}
     - Class: 114
-      Script: {instanceID: 8466}
+      Script: {instanceID: 8468}
     - Class: 114
-      Script: {instanceID: 8664}
+      Script: {instanceID: 8666}
     - Class: 114
-      Script: {instanceID: 8716}
+      Script: {instanceID: 8718}
     - Class: 114
       Script: {instanceID: 9078}
     - Class: 115
@@ -789,6 +815,8 @@ ScriptsOnlyBuild:
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -959,9 +987,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8014}
     - Class: 114
-      Script: {instanceID: 8466}
+      Script: {instanceID: 8414}
     - Class: 114
-      Script: {instanceID: 8716}
+      Script: {instanceID: 8468}
+    - Class: 114
+      Script: {instanceID: 8718}
     - Class: 114
       Script: {instanceID: 9372}
     - Class: 115
@@ -1109,7 +1139,7 @@ ScriptsOnlyBuild:
     className: PlatformSpecificContent
   - hash:
       serializedVersion: 2
-      Hash: 9b3d2a7cb88662ab14cd3c7ebf222a79
+      Hash: 84642bcb666179f9785a21e723ddc653
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GrapplingGun
@@ -1643,7 +1673,7 @@ ScriptsOnlyBuild:
     className: CarAudio
   - hash:
       serializedVersion: 2
-      Hash: 7407700f793c8c55238fcb0f210190f7
+      Hash: 5878c49465e4006aa8a6d8cf31ced755
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
@@ -2027,7 +2057,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 9ac8aa8a97e8bec663712b70e2bfc71c
+      Hash: e37dcc44b808e6ae061439229e3f4f5b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelSelection
@@ -2175,6 +2205,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveCamera
+  - hash:
+      serializedVersion: 2
+      Hash: ddb0c08c14b10f3f5c2bcf5f052661b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RetroAesthetics.Demos
+    className: ContinueFunction
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
