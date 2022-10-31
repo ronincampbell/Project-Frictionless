@@ -42,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("SFX")]
     public GameObject Walksource;
+    public AudioSource audioSource;
+    public AudioClip bounceSFX;
+    public AudioClip jumpSFX;
+    public float volume = 1f;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
@@ -330,6 +334,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
+        if(!onPad)
+            audioSource.PlayOneShot(jumpSFX, volume);
         exitingSlope = true;
         // reset y velocity 
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
@@ -383,6 +389,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(onPad == true)
         {
+            audioSource.PlayOneShot(bounceSFX, volume);
             jumpForce = padRef;
             Jump();
         }

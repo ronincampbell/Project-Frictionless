@@ -28,6 +28,11 @@ public class Sliding : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip slideSFX;
+    public float volume = 2f;
+
 
     private void Start()
     {
@@ -64,6 +69,8 @@ public class Sliding : MonoBehaviour
 
         slideTimer = maxSlideTime;
         cam.DoFov(slideFov);
+
+        audioSource.PlayOneShot(slideSFX, volume);
     }
 
     private void SlidingMovement()

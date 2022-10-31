@@ -9,6 +9,10 @@ public class DeathScript : MonoBehaviour
     public GameObject pCamera;
     public GameObject DeathScreen;
     public GameObject AliveUI;
+    public GameObject musicController;
+    public AudioSource audioSource;
+    public AudioClip deathSFX;
+    public float volume = 1f;
 
     private void Update()
     {
@@ -19,8 +23,11 @@ public class DeathScript : MonoBehaviour
     }
     public void PlayerDie()
     {
+        audioSource.PlayOneShot(deathSFX, volume);
         DeathScreen.SetActive(true);
         AliveUI.SetActive(false);
+        musicController.SetActive(false);
+
         pCamera.GetComponent<RetroCameraEffect>().enabled = true;
         Time.timeScale = 0f;
     }

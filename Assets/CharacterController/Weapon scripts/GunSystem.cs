@@ -23,6 +23,7 @@ public class GunSystem : MonoBehaviour
    public GameObject bullet1, bullet2, bullet3;
    public Animator reloadAnim;
    public GameObject PauseMenu;
+   public GameObject backdrop;
 
     public AudioSource audioSource;
     public AudioClip fireSFX;
@@ -39,7 +40,7 @@ public class GunSystem : MonoBehaviour
    
    private void Update() 
    {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= nextTImeToFire && !reloading && bulletsLeft > 0 && !PauseMenu.activeInHierarchy)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= nextTImeToFire && !reloading && bulletsLeft > 0 && !PauseMenu.activeInHierarchy && !backdrop.activeInHierarchy)
         {
             nextTImeToFire = Time.time + 1f/fireRate;
             Shoot();
