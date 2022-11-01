@@ -15,6 +15,9 @@ public class LevelSelection : MonoBehaviour
     {
         AvailScenes = PlayerPrefs.GetInt("UnlockedLevels");
         HideLevels();
+
+        if (PlayerPrefs.GetFloat("Highscore1") == 0)
+            PlayerPrefs.SetFloat("Highscore1", 10000);
     }
 
     public void DisplayLevels()
@@ -31,7 +34,7 @@ public class LevelSelection : MonoBehaviour
     public void ClearProgress()
     {
         PlayerPrefs.SetInt("UnlockedLevels", 0);
-        PlayerPrefs.SetFloat("Highscore", 10000);
+        PlayerPrefs.SetFloat("Highscore1", 10000);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

@@ -38,8 +38,8 @@ public class EndLevelPickUp : MonoBehaviour
             if (finalScore < HighScore)
             {
                 Debug.Log("New HI SCORE!!!");
-                PlayerPrefs.SetFloat("Highscore", finalScore);
-                HighScore = PlayerPrefs.GetFloat("Highscore");
+                PlayerPrefs.SetFloat("Highscore1", finalScore);
+                HighScore = PlayerPrefs.GetFloat("Highscore1");
                 HighScoreTime.text = HighScore.ToString();
                 HighScoreText.SetActive(true);
             }
@@ -78,7 +78,7 @@ public class EndLevelPickUp : MonoBehaviour
     private void LevelEndUI()
     {
         endTime.text = runTimer.text;
-        HighScore = PlayerPrefs.GetFloat("Highscore");
+        HighScore = PlayerPrefs.GetFloat("Highscore1");
         HighScoreUI.SetActive(true);
         pCamera.GetComponent<RetroCameraEffect>().enabled = true;
         footSteps.SetActive(false);
