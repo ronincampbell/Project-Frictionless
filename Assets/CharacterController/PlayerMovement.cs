@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     public float crouchSpeed;
     public float crouchYScale;
     private float startYScale;
+    public PlayerCam cam;
 
     [Header("SFX")]
     public GameObject Walksource;
@@ -155,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(crouchKey))
         {
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+            cam.DoFov(80);
         }
     }
 

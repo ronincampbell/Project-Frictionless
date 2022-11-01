@@ -39,6 +39,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
+     <Compile Include="Assets\Scripts\LevelSelect.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\DynamicShadowSettings.cs" />
      <Compile Include="Assets\AssestStore\Low Poly Guns\Scripts\GunsMenu.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
      <Compile Include="Assets\CharacterController\Sliding.cs" />
+     <Compile Include="Assets\Scripts\EndScreenMenu.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\Scripts\LevelLoad.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Cameras\Scripts\AutoCam.cs" />
@@ -84,6 +86,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\SimpleMouseRotator.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\Scripts\EndLevelPickUp.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
@@ -105,6 +108,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\DragRigidbody.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\Scripts\LevelSelection.cs" />
      <Compile Include="Assets\CharacterController\PlayerCam.cs" />
      <Compile Include="Assets\AssestStore\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\CharacterController\Dashing.cs" />
@@ -115,6 +119,7 @@
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\AlphaButtonClickMask.cs" />
      <Compile Include="Assets\CharacterController\MoveCamera.cs" />
+     <Compile Include="Assets\Scripts\ContinueFunction.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\Scripts\DeathScript.cs" />
      <Compile Include="Assets\AssestStore\RetroAesthetics\Demos\[Utility] Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
