@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoad : MonoBehaviour
 {
+
+    //
+    // DEPECATED DO NOT USE | DEPECATED DO NOT USE | DEPECATED DO NOT USE | DEPECATED DO NOT USE | DEPECATED DO NOT USE | 
+    //
     public int levelnumber;
 
     private int highestlevel;

@@ -9,7 +9,7 @@ using RetroAesthetics;
 public class stopWatch : MonoBehaviour
 {
     public bool stopwatchActive = false;
-    float currentTime;
+    public float currentTime;
     public TextMeshProUGUI currentTimeText;
     public GameObject pCamera;
     public GameObject backdrop;
@@ -37,6 +37,7 @@ public class stopWatch : MonoBehaviour
         }
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         currentTimeText.text = time.ToString(@"mm\:ss\:ff");
+        
     }
 
     public void StartStopwatch()
