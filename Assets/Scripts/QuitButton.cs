@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuitButton : MonoBehaviour
 {
+    // Quit the game when called (duh)
     public void OnClickExit()
     {
         Debug.Log("Quitting...");

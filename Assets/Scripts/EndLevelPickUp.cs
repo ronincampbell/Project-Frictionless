@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class EndLevelPickUp : MonoBehaviour
 {
+    // Declare necessary variables
     public int levelNumber;
     private int highestlevel;
     private float finalScore;
@@ -23,12 +24,13 @@ public class EndLevelPickUp : MonoBehaviour
     public GameObject pCamera;
     public GameObject footSteps;
 
-    // Start is called before the first frame update
+    // Check players highest unlocked level
     void Start()
     {
         highestlevel = PlayerPrefs.GetInt("UnlockedLevels");
     }
 
+    // Check if current runs score beats previous high score
     private void Update() 
     {
         if (finalScore > 0)
@@ -37,19 +39,15 @@ public class EndLevelPickUp : MonoBehaviour
 
             if (finalScore < HighScore)
             {
-                Debug.Log("New HI SCORE!!!");
                 PlayerPrefs.SetFloat("Highscore1", finalScore);
                 HighScore = PlayerPrefs.GetFloat("Highscore1");
                 HighScoreTime.text = HighScore.ToString();
                 HighScoreText.SetActive(true);
             }
-            else if (finalScore > HighScore)
-            {
-                Debug.Log("UNLUCKY");
-            }
         }
     }
 
+    // Activate primary UI elements and save players score
     private void OnTriggerEnter(Collider other)
     {
         Cursor.lockState = CursorLockMode.None;
@@ -59,13 +57,13 @@ public class EndLevelPickUp : MonoBehaviour
         Gun.SetActive(false);
         UnlockLevel();
         LevelEndUI();
-        Debug.Log("Loading next scene...");
-
         finalScore = timer.GetComponent<stopWatch>().currentTime;
         PlayerObj.SetActive(false);
 
     }
 
+
+    //Unlock level if the player doesnt have the current one unlocked yet
     private void UnlockLevel()
     {
         if (highestlevel < levelNumber)
@@ -75,6 +73,7 @@ public class EndLevelPickUp : MonoBehaviour
          }
     }
 
+    // Display secondary UI elements and mute footsteps
     private void LevelEndUI()
     {
         endTime.text = runTimer.text;
@@ -82,9 +81,5 @@ public class EndLevelPickUp : MonoBehaviour
         HighScoreUI.SetActive(true);
         pCamera.GetComponent<RetroCameraEffect>().enabled = true;
         footSteps.SetActive(false);
-        
-
-        Debug.Log("Your time was " + finalScore);
-        Debug.Log("Your running HighScore is " + HighScore);
     }
 }

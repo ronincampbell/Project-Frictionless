@@ -4,6 +4,7 @@ public class Spring
 {
     // Code by Affax on YouTube 
 
+    // Declare necessary variables
     private float strength;
     private float damper;
     private float target;
@@ -11,6 +12,7 @@ public class Spring
     private float value;
  
     public void Update(float deltaTime) {
+        // Calculate rope animation and perams
         var direction = target - value >= 0 ? 1f : -1f;
         var force = Mathf.Abs(target - value) * strength;
         velocity += (force * direction - velocity * damper) * deltaTime;

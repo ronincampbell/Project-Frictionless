@@ -5,6 +5,7 @@ using RetroAesthetics;
 
 public class PauseMenu : MonoBehaviour
 {
+    // Declare necessary variables
     public GameObject PauseMenuUI;
     public GameObject Triangle1;
     public GameObject Triangle2;
@@ -21,6 +22,7 @@ public class PauseMenu : MonoBehaviour
     
     void Update()
     {
+        // If player presses esape, pull up the pause menu
         if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy && !PauseMenuUI.activeInHierarchy && !PressQ.activeInHierarchy)
         {
             PauseMenuUI.SetActive(true);
@@ -36,12 +38,14 @@ public class PauseMenu : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             audioSource.volume = 0.1f;
         }
+        // If player presses escape and the pause menu is already active, resume the game
         else if(Input.GetKeyDown(KeyCode.Escape) && !DeathScreen.activeInHierarchy && !PressQ.activeInHierarchy)
         {
             Resume();
         }       
     }
 
+    // Hide the pause menu, set time back to normal and show the alive UI
     public void Resume()
     {
         SettingsUI.SetActive(false);

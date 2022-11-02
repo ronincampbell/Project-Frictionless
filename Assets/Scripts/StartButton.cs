@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StartButton : MonoBehaviour
 {
+    // Declare necessary variables
     public GameObject PlayButton;
     public GameObject PlayButtonSmall;
     public GameObject SettingsButton;
@@ -21,6 +22,7 @@ public class StartButton : MonoBehaviour
 
     public void startMenu()
     {
+        // Set all start menu functions to active
         PlayButton.SetActive(true);
         PlayButtonSmall.SetActive(true);
         SettingsButton.SetActive(true);

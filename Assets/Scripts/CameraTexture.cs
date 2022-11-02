@@ -8,13 +8,13 @@ public class CameraTexture : MonoBehaviour
 {
     public RawImage camera_texture;
     private RawImage rawImage;
-    // Start is called before the first frame update
+    // Get static sprite
     void Start()
     {
         rawImage = GetComponent<RawImage>();
     }
 
-    // Update is called once per frame
+    // Apply sprite to the camera 
     void Update()
     {
         rawImage.texture = camera_texture.texture;

@@ -4,8 +4,9 @@ using TMPro;
 
 public class GunSystem : MonoBehaviour
 {
-    // Firing system by Brakeys on YouTube | Reloading and ammo based on code by Dave / GameDevelopment on YouTube | Ammo indicator by me
+    // Base Firing system by Brakeys on YouTube | Reloading and ammo based on code by Dave / GameDevelopment on YouTube
 
+   // Declare necessary variables
    public float damage = 10f;
    public float range = 100f;
    public float fireRate = 15f;
@@ -34,35 +35,42 @@ public class GunSystem : MonoBehaviour
 
    private void Start() 
    {
+        // Set the magazine to full and define what a third of the magazine capacity is
         bulletsLeft = magazineSize;
         thirdOfMag = magazineSize / 3;
    }
    
    private void Update() 
    {
+        // If player tries to fire, and all conditions are met, shoot and set the delay for the next shot
         if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= nextTImeToFire && !reloading && bulletsLeft > 0 && !PauseMenu.activeInHierarchy && !backdrop.activeInHierarchy)
         {
             nextTImeToFire = Time.time + 1f/fireRate;
             Shoot();
         }
 
+        // If player stops firing set firing to false
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
            reloadAnim.SetBool("Firing", false);
         }
 
+        // If player presses 'R' and does not have max ammo, Reload
         if(Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
 
+        // Check ammo amount for UI ellements
         CheckAmmo();
    }
 
    private void Shoot()
    {
+        // Set firing to true, display muzzleFlash effect, remove one bullet from the magazine, and play SFX
         muzzleFlash.Play();
         bulletsLeft--;
         reloadAnim.SetBool("Firing", true);
         audioSource.PlayOneShot(fireSFX, volume);
 
+        // If bullet hits a target with a Target script, cause it to take damage
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -77,11 +85,13 @@ public class GunSystem : MonoBehaviour
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
 
+            // Create and bullet impact effect at hit point, then destroy it after a delay
             GameObject imapactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(imapactGO, 2f);
         }
    }
    
+   // Begin reload animation, SFX, and invoke reloadFinished after the designated reload time
    private void Reload()
    {
         reloading = true;
@@ -90,6 +100,7 @@ public class GunSystem : MonoBehaviour
         Invoke("ReloadFinished", reloadTime);
    } 
 
+   // Reset bullets and UI elements - Complete reload
    private void ReloadFinished()
    {
         bulletsLeft = magazineSize;
@@ -101,7 +112,6 @@ public class GunSystem : MonoBehaviour
    }
 
    // Check Ammo amount for UI Elements 
-
    private void CheckAmmo()
    {
      text.SetText(bulletsLeft + " / " + magazineSize);

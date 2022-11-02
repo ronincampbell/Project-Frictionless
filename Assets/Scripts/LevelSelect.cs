@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class LevelSelect : MonoBehaviour
 {
+    // Declare necessary variables
     public Animator tapeSelector;
 
+    // Change animator variables on select and unselect
     public void tapeSelected()
     {
         tapeSelector.SetBool("IsSelected", true);

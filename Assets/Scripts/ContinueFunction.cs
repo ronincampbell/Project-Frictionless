@@ -4,20 +4,21 @@ using UnityEngine.SceneManagement;
 namespace RetroAesthetics.Demos {
 
 	public class ContinueFunction : MonoBehaviour {
+
+		// Declare necessary variables
 		public SceneField loadingScene;
 		public SceneField levelScene1;
-
 		public bool fadeInMenu = true;
 		public bool fadeOutMenu = true;
-
 		private int continueTo;
-
 		private RetroCameraEffect _cameraEffect;
 		private AsyncOperation _loadingSceneAsync;
 
+		// Define continue function as most recent level
 		void Start() 
 		{
 			continueTo = PlayerPrefs.GetInt("UnlockedLevels");
+			// Fade in menu
 			if (fadeInMenu) {
 				_cameraEffect = GameObject.FindObjectOfType<RetroCameraEffect>();
 				if (_cameraEffect != null) {
@@ -26,6 +27,7 @@ namespace RetroAesthetics.Demos {
 			}
 		}
 
+		// Start level and load loading scene in the interim
 		virtual public void StartLevel() {
 			Time.timeScale = 1f;
 			if (levelScene1 != null) {
@@ -50,6 +52,7 @@ namespace RetroAesthetics.Demos {
 			}
 		}
 
+		// Load next scene in build order
 		private void LoadNextScene() {
 			if (_loadingSceneAsync != null) {
 				_loadingSceneAsync.allowSceneActivation = true;

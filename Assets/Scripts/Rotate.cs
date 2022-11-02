@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+    // Declare necessary variables
     public float YSpeed;
     public float ZSpeed;
     public float XSpeed;
-    // Update is called once per frame
+    
+    // Rotate the attached gameObject at a constant rate of speed
     void FixedUpdate()
     {
         transform.Rotate(new Vector3(XSpeed, YSpeed, ZSpeed));    
