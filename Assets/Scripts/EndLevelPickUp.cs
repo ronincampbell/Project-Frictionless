@@ -23,6 +23,7 @@ public class EndLevelPickUp : MonoBehaviour
     public GameObject Gun;
     public GameObject pCamera;
     public GameObject footSteps;
+    public GameObject victorySound;
 
     // Check players highest unlocked level
     void Start()
@@ -33,16 +34,26 @@ public class EndLevelPickUp : MonoBehaviour
     // Check if current runs score beats previous high score
     private void Update() 
     {
+
         if (finalScore > 0)
         {
             HighScoreTime.text = HighScore.ToString();
 
-            if (finalScore < HighScore)
+            if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 PlayerPrefs.SetFloat("Highscore1", finalScore);
                 HighScore = PlayerPrefs.GetFloat("Highscore1");
                 HighScoreTime.text = HighScore.ToString();
                 HighScoreText.SetActive(true);
+                victorySound.SetActive(true);
+            }
+            else if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 3)
+            {
+                PlayerPrefs.SetFloat("Highscore2", finalScore);
+                HighScore = PlayerPrefs.GetFloat("Highscore2");
+                HighScoreTime.text = HighScore.ToString();
+                HighScoreText.SetActive(true);
+                victorySound.SetActive(true);
             }
         }
     }
@@ -69,7 +80,6 @@ public class EndLevelPickUp : MonoBehaviour
         if (highestlevel < levelNumber)
          {
             PlayerPrefs.SetInt("UnlockedLevels", levelNumber);
-            Debug.Log(PlayerPrefs.GetInt("UnlockedLevels"));
          }
     }
 
@@ -81,5 +91,15 @@ public class EndLevelPickUp : MonoBehaviour
         HighScoreUI.SetActive(true);
         pCamera.GetComponent<RetroCameraEffect>().enabled = true;
         footSteps.SetActive(false);
+
+        // NOTE: This is an inefficient method, TOO BAD!
+        // Determine which highscore value to set
+        if (SceneManager.GetActiveScene().buildIndex == 2){
+            HighScore = PlayerPrefs.GetFloat("Highscore1");
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 3){
+            HighScore = PlayerPrefs.GetFloat("Highscore1");
+        }
+
     }
 }

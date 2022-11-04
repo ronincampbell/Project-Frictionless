@@ -7,7 +7,6 @@ namespace RetroAesthetics.Demos {
 
 		// Declare necessary variables
 		public SceneField loadingScene;
-		public SceneField levelScene1;
 		public bool fadeInMenu = true;
 		public bool fadeOutMenu = true;
 		private int continueTo;
@@ -30,7 +29,6 @@ namespace RetroAesthetics.Demos {
 		// Start level and load loading scene in the interim
 		virtual public void StartLevel() {
 			Time.timeScale = 1f;
-			if (levelScene1 != null) {
 				if (_cameraEffect != null) {
 					if (loadingScene != null) {
 						_loadingSceneAsync = SceneManager.LoadSceneAsync(loadingScene);
@@ -47,9 +45,6 @@ namespace RetroAesthetics.Demos {
 				} else {
 					LoadNextScene();
 				}
-			} else {
-				Debug.LogWarning("Level scene is not set.");
-			}
 		}
 
 		// Load next scene in build order
@@ -58,8 +53,11 @@ namespace RetroAesthetics.Demos {
 				_loadingSceneAsync.allowSceneActivation = true;
 			}
 
-			if (continueTo == 1) {
-				SceneManager.LoadSceneAsync(levelScene1);
+			if (continueTo == 0) {
+				SceneManager.LoadSceneAsync("Level1");
+			}
+			else if (continueTo == 1) {
+				SceneManager.LoadSceneAsync("Level2");
 			}
 		}
 	}
