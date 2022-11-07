@@ -98,7 +98,7 @@ public class EndLevelPickUp : MonoBehaviour
             HighScore = PlayerPrefs.GetFloat("Highscore1");
         }
         else if (SceneManager.GetActiveScene().buildIndex == 3){
-            HighScore = PlayerPrefs.GetFloat("Highscore1");
+            HighScore = PlayerPrefs.GetFloat("Highscore2");
         }
 
     }

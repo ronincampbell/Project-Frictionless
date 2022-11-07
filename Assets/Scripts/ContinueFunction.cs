@@ -16,6 +16,8 @@ namespace RetroAesthetics.Demos {
 		// Define continue function as most recent level
 		void Start() 
 		{
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
 			continueTo = PlayerPrefs.GetInt("UnlockedLevels");
 			// Fade in menu
 			if (fadeInMenu) {
@@ -57,6 +59,9 @@ namespace RetroAesthetics.Demos {
 				SceneManager.LoadSceneAsync("Level1");
 			}
 			else if (continueTo == 1) {
+				SceneManager.LoadSceneAsync("Level2");
+			}
+			else if (continueTo == 2) {
 				SceneManager.LoadSceneAsync("Level2");
 			}
 		}

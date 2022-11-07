@@ -48,6 +48,7 @@ public class LevelSelection : MonoBehaviour
     {
         PlayerPrefs.SetInt("UnlockedLevels", 0);
         PlayerPrefs.SetFloat("Highscore1", 10000);
+        PlayerPrefs.SetFloat("Highscore2", 10000);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
