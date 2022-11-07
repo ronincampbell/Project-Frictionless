@@ -33,6 +33,7 @@ public class Dashing : MonoBehaviour
     [Header("Cooldown")]
     public float dashCd;
     private float dashCdTimer;
+    public Animator cooldownAnim;
 
     [Header("Input")]
     public KeyCode dashKey = KeyCode.LeftShift;
@@ -61,7 +62,10 @@ public class Dashing : MonoBehaviour
     private void Dash()
     {
         if (dashCdTimer > 0) return;
-        else dashCdTimer = dashCd;
+        else {
+            dashCdTimer = dashCd;
+            cooldownAnim.SetBool("CoolingDown", true);
+        }
 
         dashDamageActive = true;
         pm.dashing = true;
@@ -106,6 +110,7 @@ public class Dashing : MonoBehaviour
         pm.dashing = false;
         pm.maxYSpeed = 0;
         dashDamageActive = false;
+        cooldownAnim.SetBool("CoolingDown", false);
 
         cam.DoFov(80f);
 

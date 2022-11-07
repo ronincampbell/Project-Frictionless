@@ -9,6 +9,7 @@ public class LevelSelection : MonoBehaviour
     // Declare necessary variables
     private float AvailScenes;
     public GameObject Level1Button;
+    public GameObject Level2Button;
     public GameObject continueButton;
     public GameObject newGameButton;
     
@@ -26,14 +27,20 @@ public class LevelSelection : MonoBehaviour
     // Display level tapes that the player has unlocked
     public void DisplayLevels()
     {
-        if (AvailScenes > 0)
+        if (AvailScenes == 1)
             Level1Button.SetActive(true);
+        else if (AvailScenes == 2)
+        {
+            Level1Button.SetActive(true);
+            Level2Button.SetActive(true);
+        }
     }
 
     // Hide all levels
     public void HideLevels()
     {
         Level1Button.SetActive(false);
+        Level2Button.SetActive(false);
     }
 
     // Clear player data
