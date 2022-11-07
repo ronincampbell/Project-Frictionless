@@ -5,6 +5,12 @@ using UnityEngine;
 public class DisableCursor : MonoBehaviour
 {
 
+    private void Start() 
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     // Disable cursor after confirming button press
     public void dCursor ()
     {
