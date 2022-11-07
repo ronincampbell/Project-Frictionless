@@ -7902,6 +7902,53 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 48fbce12d4169422dbc54c2d3a70885d, type: 3}
+--- !u!21 &980086561
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/RetroCameraEffect
+  m_Shader: {fileID: 4800000, guid: 2cfdcae76c757405786f1219a383da6e, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryTex:
+        m_Texture: {fileID: 2800000, guid: 2ee566ccadfe14d0cadbd3e2107180cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ChromaticAberration: 0
+    - _DisplacementAmplitude: 0.001
+    - _DisplacementFrequency: 100
+    - _DisplacementSpeed: 1
+    - _NoiseBottomHeight: 0.04
+    - _NoiseBottomIntensity: 1
+    - _OffsetNoiseX: 0
+    - _OffsetNoiseY: 0
+    - _StaticIntensity: 1
+    - _UseChromaticAberration: 1
+    - _UseDisplacement: 1
+    - _UseStaticNoise: 1
+    - _UseVignette: 0
+    - _Vignette: 0
+    m_Colors:
+    - _OffsetPos: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1019292545
 GameObject:
   m_ObjectHideFlags: 0
@@ -11431,53 +11478,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 84e92cf6564344598984d3451b50cade, type: 3}
   m_PrefabInstance: {fileID: 1393259338}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1404932085
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/RetroCameraEffect
-  m_Shader: {fileID: 4800000, guid: 2cfdcae76c757405786f1219a383da6e, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SecondaryTex:
-        m_Texture: {fileID: 2800000, guid: 2ee566ccadfe14d0cadbd3e2107180cf, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ChromaticAberration: 0
-    - _DisplacementAmplitude: 0.001
-    - _DisplacementFrequency: 100
-    - _DisplacementSpeed: 1
-    - _NoiseBottomHeight: 0.04
-    - _NoiseBottomIntensity: 1
-    - _OffsetNoiseX: 0
-    - _OffsetNoiseY: 0
-    - _StaticIntensity: 1
-    - _UseChromaticAberration: 1
-    - _UseDisplacement: 1
-    - _UseStaticNoise: 1
-    - _UseVignette: 0
-    - _Vignette: 0
-    m_Colors:
-    - _OffsetPos: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1432310168
 GameObject:
   m_ObjectHideFlags: 0
@@ -14538,7 +14538,7 @@ MonoBehaviour:
   useScanlines: 1
   scanlineSize: 512
   scanlineIntensity: 0.5
-  _material: {fileID: 1404932085}
+  _material: {fileID: 980086561}
 --- !u!124 &1802521278
 Behaviour:
   m_ObjectHideFlags: 0
@@ -17392,17 +17392,49 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 509db713595ecdc46bf1034a8948d228, type: 3}
     - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: dashSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: walkSpeed
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: Walksource
       value: 
       objectReference: {fileID: 387678994}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: groundDrag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: normalJump
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: slideSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 968703759}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: orientation
+      value: 
+      objectReference: {fileID: 1573493054}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: jumpCooldown
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: wallrunSpeed
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: dashSpeedChangeFactor
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5770537319224090437, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: m_RootOrder
       value: 2

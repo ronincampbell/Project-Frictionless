@@ -23,8 +23,8 @@ public class LevelSelection : MonoBehaviour
         if (PlayerPrefs.GetFloat("Highscore1") == 0)
             PlayerPrefs.SetFloat("Highscore1", 10000);
         
-        if (PlayerPrefs.GetFloat("HighScore2") == 0)
-            PlayerPrefs.SetFloat("HighScore2", 10000);
+        if (PlayerPrefs.GetFloat("Highscore2") == 0)
+            PlayerPrefs.SetFloat("Highscore2", 10000);
     }
 
     // Display level tapes that the player has unlocked
