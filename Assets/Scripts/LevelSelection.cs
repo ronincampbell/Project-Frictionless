@@ -22,6 +22,9 @@ public class LevelSelection : MonoBehaviour
         // If the player has no score, allow them to get a high score through setting it to 10000
         if (PlayerPrefs.GetFloat("Highscore1") == 0)
             PlayerPrefs.SetFloat("Highscore1", 10000);
+        
+        if (PlayerPrefs.GetFloat("HighScore2") == 0)
+            PlayerPrefs.SetFloat("HighScore2", 10000);
     }
 
     // Display level tapes that the player has unlocked

@@ -2849,53 +2849,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324145234}
   m_CullTransparentMesh: 1
---- !u!21 &342905626
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/RetroCameraEffect
-  m_Shader: {fileID: 4800000, guid: 2cfdcae76c757405786f1219a383da6e, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SecondaryTex:
-        m_Texture: {fileID: 2800000, guid: 2ee566ccadfe14d0cadbd3e2107180cf, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ChromaticAberration: 0
-    - _DisplacementAmplitude: 0.001
-    - _DisplacementFrequency: 100
-    - _DisplacementSpeed: 1
-    - _NoiseBottomHeight: 0.04
-    - _NoiseBottomIntensity: 1
-    - _OffsetNoiseX: 0
-    - _OffsetNoiseY: 0
-    - _StaticIntensity: 1
-    - _UseChromaticAberration: 1
-    - _UseDisplacement: 1
-    - _UseStaticNoise: 1
-    - _UseVignette: 0
-    - _Vignette: 0
-    m_Colors:
-    - _OffsetPos: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1001 &373402741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10569,6 +10522,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 640009379}
+        m_TargetAssemblyTypeName: DisableCursor, Assembly-CSharp
+        m_MethodName: dCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1215888830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14643,7 +14608,7 @@ MonoBehaviour:
   useScanlines: 1
   scanlineSize: 512
   scanlineIntensity: 0.5
-  _material: {fileID: 342905626}
+  _material: {fileID: 2028474907}
 --- !u!124 &1802521278
 Behaviour:
   m_ObjectHideFlags: 0
@@ -16257,6 +16222,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bff8308994ccc41c6a4c7900aefb3811, type: 3}
   m_PrefabInstance: {fileID: 1662855400}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &2028474907
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/RetroCameraEffect
+  m_Shader: {fileID: 4800000, guid: 2cfdcae76c757405786f1219a383da6e, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryTex:
+        m_Texture: {fileID: 2800000, guid: 2ee566ccadfe14d0cadbd3e2107180cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ChromaticAberration: 0
+    - _DisplacementAmplitude: 0.001
+    - _DisplacementFrequency: 100
+    - _DisplacementSpeed: 1
+    - _NoiseBottomHeight: 0.04
+    - _NoiseBottomIntensity: 1
+    - _OffsetNoiseX: 0
+    - _OffsetNoiseY: 0
+    - _StaticIntensity: 1
+    - _UseChromaticAberration: 1
+    - _UseDisplacement: 1
+    - _UseStaticNoise: 1
+    - _UseVignette: 0
+    - _Vignette: 0
+    m_Colors:
+    - _OffsetPos: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &2053703084
 GameObject:
   m_ObjectHideFlags: 0
@@ -17660,17 +17672,49 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 509db713595ecdc46bf1034a8948d228, type: 3}
     - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: dashSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: walkSpeed
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: Walksource
       value: 
       objectReference: {fileID: 387678994}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: groundDrag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: normalJump
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: slideSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: swingSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 968703759}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: jumpCooldown
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: wallrunSpeed
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770537319224090435, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
+      propertyPath: dashSpeedChangeFactor
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5770537319224090437, guid: 0942e0dd7b41c1744b4b1dc5570a23db, type: 3}
       propertyPath: m_RootOrder
       value: 2
