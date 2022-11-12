@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 16090 MB
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 32701 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/Ronin Campbell/Project Frictionless
+C:/Users/Fuzzy/Documents/GitHub/Project-Frictionless
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57402
-Successfully changed project path to: C:/Users/Ronin Campbell/Project Frictionless
-C:/Users/Ronin Campbell/Project Frictionless
+54216
+Successfully changed project path to: C:/Users/Fuzzy/Documents/GitHub/Project-Frictionless
+C:/Users/Fuzzy/Documents/GitHub/Project-Frictionless
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,105 +47,288 @@ C:/Users/Ronin Campbell/Project Frictionless
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 137.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 166.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Ronin Campbell/Project Frictionless/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Fuzzy/Documents/GitHub/Project-Frictionless/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
-    Vendor:   Intel
-    VRAM:     8045 MB
-    Driver:   30.0.100.9864
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Vendor:   NVIDIA
+    VRAM:     8019 MB
+    Driver:   31.0.15.2647
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004779 seconds.
+Registered in 0.007401 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 142.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 155.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.760 seconds
+- Completed reload, in  0.875 seconds
 Domain Reload Profiling:
-	ReloadAssembly (761ms)
-		BeginReloadAssembly (75ms)
+	ReloadAssembly (875ms)
+		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (566ms)
-			LoadAssemblies (73ms)
+		EndReloadAssembly (648ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
+			SetupTypeCache (138ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (356ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (411ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (142ms)
+				RefreshPlugins (156ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006874 seconds.
+Registered in 0.013259 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Ronin Campbell\Project Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Ronin Campbell\Project Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.242 seconds
+- Completed reload, in  1.342 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1243ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (1343ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1072ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (337ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (507ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (334ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3889 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (97.8 KB). Loaded Objects now: 4384.
+Memory consumption went from 156.8 MB to 156.8 MB.
+Total: 4.325600 ms (FindLiveObjects: 0.405600 ms CreateObjectMapping: 0.109300 ms MarkObjects: 3.612300 ms  DeleteObjects: 0.197000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 172935.441841 seconds.
+  path: Assets/MainMixer.mixer
+  artifactKey: Guid(4ee7897a940e3f14bac7ec84442d4afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainMixer.mixer using Guid(4ee7897a940e3f14bac7ec84442d4afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330c77e49877025b20de1407bc9cc8ab') in 0.047094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 583.497751 seconds.
+  path: Assets/AssestStore/EffectExamples/SmokeTrail.mat
+  artifactKey: Guid(85320f50710fcfb4d886bc56151bea1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/SmokeTrail.mat using Guid(85320f50710fcfb4d886bc56151bea1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79436923ab64d186f752f157b6a4b383') in 0.115307 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010535 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.290 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1291ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (995ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (329ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (452ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (298ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (65.6 KB). Loaded Objects now: 4428.
+Memory consumption went from 156.9 MB to 156.8 MB.
+Total: 4.329600 ms (FindLiveObjects: 0.389500 ms CreateObjectMapping: 0.169200 ms MarkObjects: 3.635100 ms  DeleteObjects: 0.134300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009596 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.313 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1314ms)
+		BeginReloadAssembly (153ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (994ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1032ms)
+			LoadAssemblies (107ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (313ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (497ms)
+			SetupTypeCache (317ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (479ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (135ms)
-				ProcessInitializeOnLoadAttributes (312ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (310ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3889 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (97.5 KB). Loaded Objects now: 4384.
-Memory consumption went from 157.0 MB to 156.9 MB.
-Total: 3.808100 ms (FindLiveObjects: 0.333700 ms CreateObjectMapping: 0.146600 ms MarkObjects: 3.144100 ms  DeleteObjects: 0.182400 ms)
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (65.6 KB). Loaded Objects now: 4431.
+Memory consumption went from 156.9 MB to 156.8 MB.
+Total: 5.141500 ms (FindLiveObjects: 0.476100 ms CreateObjectMapping: 0.255500 ms MarkObjects: 4.275300 ms  DeleteObjects: 0.131200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010870 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.471 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1472ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1174ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (377ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (531ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (351ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (81.1 KB). Loaded Objects now: 4434.
+Memory consumption went from 156.9 MB to 156.8 MB.
+Total: 5.326100 ms (FindLiveObjects: 0.478800 ms CreateObjectMapping: 0.166500 ms MarkObjects: 4.532000 ms  DeleteObjects: 0.147200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,36 +343,1150 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 20572.375005 seconds.
-  path: Assets/AssestStore/EffectExamples/Scenes/Menu/LightingData.asset
-  artifactKey: Guid(c482561641a25514791bf19c84125d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssestStore/EffectExamples/Scenes/Menu/LightingData.asset using Guid(c482561641a25514791bf19c84125d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42f7536c212ec63ebbb7f2de83ed2ca') in 0.053274 seconds 
+  Time since last request: 611.868309 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/UI Gradients/retro_gradient_02.png
+  artifactKey: Guid(98ad208f658e04f4b93d84949155edde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/UI Gradients/retro_gradient_02.png using Guid(98ad208f658e04f4b93d84949155edde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74e89481ff45e70cd9407b1257d1758') in 0.120038 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(0dc85c021826545c68e5aed9ca83e70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(0dc85c021826545c68e5aed9ca83e70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd674ebe991e552bc6827ff534003fede') in 0.007309 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/UI Gradients/retro_gradient_03.png
+  artifactKey: Guid(731285e0935b04588862840148ecf2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/UI Gradients/retro_gradient_03.png using Guid(731285e0935b04588862840148ecf2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9110266984e629ed4e93d8e40eb41e2a') in 0.028689 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/AssestStore/EffectExamples/Scenes/Menu
-  artifactKey: Guid(b5de108a9fe723f48a4771092550f82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssestStore/EffectExamples/Scenes/Menu using Guid(b5de108a9fe723f48a4771092550f82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622349eff97557a5820ea6746f913475') in 0.007517 seconds 
+  Time since last request: 121.015740 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_pink.mat
+  artifactKey: Guid(5c080c6ff75cf504092e426f2c4c910b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_pink.mat using Guid(5c080c6ff75cf504092e426f2c4c910b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd682386ce5b1d39c1d53cc1b9d80f46b') in 0.062375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.724275 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Concrete slab_Height.png
+  artifactKey: Guid(db368c1c85b12fe48aba6cc9bcd41f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Concrete slab_Height.png using Guid(db368c1c85b12fe48aba6cc9bcd41f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1f05c42889ac7bd79cc8fc24fbc63e') in 0.022948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Lightmap-0_comp_light.exr
+  artifactKey: Guid(9960b70afbb00c1468c54c31462b736a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Lightmap-0_comp_light.exr using Guid(9960b70afbb00c1468c54c31462b736a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbbc9d42ddd6e696af2bfc3b8fade505') in 0.034129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Lightmap-0_comp_dir.png
+  artifactKey: Guid(4a3abcea8684f464a9b302dd7a047387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Lightmap-0_comp_dir.png using Guid(4a3abcea8684f464a9b302dd7a047387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00708939fcad6e80dcb7aacc12a454ed') in 0.017705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Concrete slab_Normal.png
+  artifactKey: Guid(3a0dde7201a17f646865e8deeac56596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Concrete slab_Normal.png using Guid(3a0dde7201a17f646865e8deeac56596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b090f0b8e73250041afdffe799a2d6fe') in 0.032651 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000028 seconds.
-  path: Assets/AssestStore/EffectExamples/Scenes/Menu/ReflectionProbe-1.exr
-  artifactKey: Guid(169a8370c9af86f46bac118280da2234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssestStore/EffectExamples/Scenes/Menu/ReflectionProbe-1.exr using Guid(169a8370c9af86f46bac118280da2234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '405ab252d2e14a1e127bcfbd1cb1dbe6') in 0.146663 seconds 
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Floor3.mat
+  artifactKey: Guid(ca6fd35d7de69cb449d560ab9228d502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Demo scene/Floor3.mat using Guid(ca6fd35d7de69cb449d560ab9228d502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb816f4bb35bd85ba2776797dea8e26') in 0.308204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.088728 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Materials/FireSphere2.mat
+  artifactKey: Guid(2e69c8c236ea65447a07e24d8cbed40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Materials/FireSphere2.mat using Guid(2e69c8c236ea65447a07e24d8cbed40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7834f0798a177450222606e78ed7329') in 0.093379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Materials/SparkSphere.mat
+  artifactKey: Guid(20e729147a4dad247abfc2305c3dd963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Materials/SparkSphere.mat using Guid(20e729147a4dad247abfc2305c3dd963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30694e910592fdfb0e8e54305632e2f2') in 0.018746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.445029 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 0.prefab
+  artifactKey: Guid(08fd1b80cc24cc8439f45fda3c558255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 0.prefab using Guid(08fd1b80cc24cc8439f45fda3c558255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c962db4e650f82d4db37b541c2f71f9') in 0.036284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 3.prefab
+  artifactKey: Guid(78e8b38d431ddef4fa2994a3f2d6e2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 3.prefab using Guid(78e8b38d431ddef4fa2994a3f2d6e2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c534bd62087641395809a0a981107736') in 0.019203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire pro yellow.prefab
+  artifactKey: Guid(52d340ed9c2714c4f8aabf1f82df1b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire pro yellow.prefab using Guid(52d340ed9c2714c4f8aabf1f82df1b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ca9f29d93c43a02cd8e38bef3c8b61') in 0.021475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/RotatorPS2.prefab
+  artifactKey: Guid(26255240385821a4185c7163c7a7aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/RotatorPS2.prefab using Guid(26255240385821a4185c7163c7a7aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a223cf8810edf6320024fddabae14d21') in 0.034251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 2.prefab
+  artifactKey: Guid(529eb4216865eba419c1a4a68d0b0388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 2.prefab using Guid(529eb4216865eba419c1a4a68d0b0388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede759664eeb47646f0ef849a8d400ee') in 0.022441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 1.prefab
+  artifactKey: Guid(25093a0593dc83043a7bc17ebba0e95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Hovl Studio/Procedural fire/Prefabs/Magic fire 1.prefab using Guid(25093a0593dc83043a7bc17ebba0e95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7564a5f5f9e2dda7d5ccab1c9c2cebe9') in 0.020086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.512005 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Arc02_wireframe.fbx
+  artifactKey: Guid(251d025f0fd8448f1bba1eede693076c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Arc02_wireframe.fbx using Guid(251d025f0fd8448f1bba1eede693076c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '122f90fdf77849a6f7fd2334ec63e7a3') in 0.043436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building09_txtr4.fbx
+  artifactKey: Guid(07c8c8baee5de4647a31a7debe7869a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building09_txtr4.fbx using Guid(07c8c8baee5de4647a31a7debe7869a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4a1d3a619e03963e519e5c356ac55a') in 0.024174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building23_txtr4.fbx
+  artifactKey: Guid(e8bf06dc24ecf45589dc05f2e5735580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building23_txtr4.fbx using Guid(e8bf06dc24ecf45589dc05f2e5735580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816eec87bb350f1bd3c9417081fea0f4') in 0.023912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building06_txtr3.fbx
+  artifactKey: Guid(080c62d642160468da92e5273025fd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building06_txtr3.fbx using Guid(080c62d642160468da92e5273025fd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a331bf044b73f946407fd36d28a134') in 0.023519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building01_txtr3.fbx
+  artifactKey: Guid(4a918a4a8f57d4dbc87c5a36563ba1ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building01_txtr3.fbx using Guid(4a918a4a8f57d4dbc87c5a36563ba1ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa052ec0412697b4c138e8bc8d33cfa9') in 0.024972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_4.fbx
+  artifactKey: Guid(ceaf690f72a9c46d48ba76755b562e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_4.fbx using Guid(ceaf690f72a9c46d48ba76755b562e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c6b962f412cf23289a71e873085690c') in 0.025249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Arrow02_unlit.fbx
+  artifactKey: Guid(5c2c1b9118d9f4435a56aef7816e405e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Arrow02_unlit.fbx using Guid(5c2c1b9118d9f4435a56aef7816e405e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414f7713795e1355a588b2d292047c4c') in 0.025563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Pillar.fbx
+  artifactKey: Guid(387b50fd1ebd24cafab7a4109eb9fe80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Pillar.fbx using Guid(387b50fd1ebd24cafab7a4109eb9fe80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba8fb01b9006155882dd4e4c5e9c42e') in 0.024216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building14_txtr4.fbx
+  artifactKey: Guid(3a298b894d3b44e3fabe5b002654f131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building14_txtr4.fbx using Guid(3a298b894d3b44e3fabe5b002654f131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f5bdc1148fdeb7be8b73e990a8ace8') in 0.022939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building19.fbx
+  artifactKey: Guid(67d10501792ca4578aee954b281aa69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building19.fbx using Guid(67d10501792ca4578aee954b281aa69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be95bc6bafcca79c26715d488f4012c') in 0.024498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Palm03.fbx
+  artifactKey: Guid(037318de497624362a61b6dad60ff958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Palm03.fbx using Guid(037318de497624362a61b6dad60ff958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6775278ca8c56d184419393feeedf8d0') in 0.022646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building03.fbx
+  artifactKey: Guid(fa20eee84f5b44cfb8bd538cf597bb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building03.fbx using Guid(fa20eee84f5b44cfb8bd538cf597bb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a4e78bf0cd910ab66b2494188f34c7') in 0.024802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building04.fbx
+  artifactKey: Guid(20e83bf95190548c3ba8b9d56d07bd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building04.fbx using Guid(20e83bf95190548c3ba8b9d56d07bd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8603e6107d52ebf6ea1ef2a1dafe6ea9') in 0.023777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_10.fbx
+  artifactKey: Guid(5b04dc1afdff04d39b2cc9661169796f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_10.fbx using Guid(5b04dc1afdff04d39b2cc9661169796f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f388249f07741548166ca98f9be7fad0') in 0.038778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Border02_txtr2.fbx
+  artifactKey: Guid(cd148dd0b5e79413e9501423c27ee7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Border02_txtr2.fbx using Guid(cd148dd0b5e79413e9501423c27ee7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c11df8589d42ddf5f3ce3ab6b51370') in 0.021825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building16.fbx
+  artifactKey: Guid(86ed49a0b104f4837af2b15601bce33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building16.fbx using Guid(86ed49a0b104f4837af2b15601bce33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ef152937e54a1b4a489854e34db532') in 0.022270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_7.fbx
+  artifactKey: Guid(51dc0bdf6629b496ca987f419c804aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_7.fbx using Guid(51dc0bdf6629b496ca987f419c804aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980f8c76128bf662d7944a4f03d01778') in 0.022565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_9.fbx
+  artifactKey: Guid(fef58862417d1402dbd862e288e79168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_9.fbx using Guid(fef58862417d1402dbd862e288e79168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9e5606038d1df69887c29a7599f292') in 0.022572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/RectangularBar.fbx
+  artifactKey: Guid(0185e78a070204376be9504662b34bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/RectangularBar.fbx using Guid(0185e78a070204376be9504662b34bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600608cb49bceb2ad9fc2662f386f529') in 0.021970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building01.fbx
+  artifactKey: Guid(dc079b8dd3766453b9eaa9224273f0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building01.fbx using Guid(dc079b8dd3766453b9eaa9224273f0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5f30b35ee8fa8ccdeaee8fa5c4d5bc') in 0.023883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building08.fbx
+  artifactKey: Guid(6bdd1aff020aa4d5290d0e4054e937c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building08.fbx using Guid(6bdd1aff020aa4d5290d0e4054e937c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8253746834e6269bf8d18c02a81586d') in 0.024531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_2.fbx
+  artifactKey: Guid(d9dbb9e3ef5e345d495933f6cdaef2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_2.fbx using Guid(d9dbb9e3ef5e345d495933f6cdaef2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312d00cd8be460c5065d627b3925e391') in 0.023438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building24_txtr4.fbx
+  artifactKey: Guid(c7a823cd0668540b5a01f1e80c33a816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building24_txtr4.fbx using Guid(c7a823cd0668540b5a01f1e80c33a816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34dc52a87940d52bc3ebd5031f7b4b2') in 0.025134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building02_txtr2.fbx
+  artifactKey: Guid(1d932def6bde642d3b1ac4df35b7c534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building02_txtr2.fbx using Guid(1d932def6bde642d3b1ac4df35b7c534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34810aa81c77b5c9e42148517fd5cd9') in 0.024757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_8.fbx
+  artifactKey: Guid(99fd79d59da014fcd8aa8a5ca102b9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_8.fbx using Guid(99fd79d59da014fcd8aa8a5ca102b9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8c807d8554e94ba4d334c51f71e5cd') in 0.022817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building04_txtr3.fbx
+  artifactKey: Guid(fda579176fc3a4ea3a0ac50336f65974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building04_txtr3.fbx using Guid(fda579176fc3a4ea3a0ac50336f65974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720ca602c901ab071c00120cd7bcb494') in 0.025218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_5.fbx
+  artifactKey: Guid(a6cbaf1bef755421281e9d32222f3387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest_5.fbx using Guid(a6cbaf1bef755421281e9d32222f3387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4997704b7e0ce3608fb417b7b2a2332') in 0.026808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building12.fbx
+  artifactKey: Guid(c84c5c5aaa9a8414eb909d66ef5f7305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building12.fbx using Guid(c84c5c5aaa9a8414eb909d66ef5f7305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3595aff55615d71f1bd911f1dd30724') in 0.025759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building11.fbx
+  artifactKey: Guid(bafa851494c324e3c94980e2176b804b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building11.fbx using Guid(bafa851494c324e3c94980e2176b804b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffdf1e714cc317f2cfe08796c7e017e3') in 0.024944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Palm02.fbx
+  artifactKey: Guid(bff8308994ccc41c6a4c7900aefb3811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Palm02.fbx using Guid(bff8308994ccc41c6a4c7900aefb3811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e7cc68f532d79243f5116da1016f18') in 0.024024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building16_txtr4.fbx
+  artifactKey: Guid(7e1dc5725b75a4d02a73d78f998a1e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building16_txtr4.fbx using Guid(7e1dc5725b75a4d02a73d78f998a1e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc41b8eacc517e7990d27992acbbca40') in 0.022998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Lantern01.fbx
+  artifactKey: Guid(5b86c693acc5f4805b033c23b06b3a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Lantern01.fbx using Guid(5b86c693acc5f4805b033c23b06b3a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5093a25e1726e757dfdbe1435a53d26b') in 0.023437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest.fbx
+  artifactKey: Guid(33963892dfb7d4b08b5798f007eba3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building_texturetest.fbx using Guid(33963892dfb7d4b08b5798f007eba3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d6e297bc27889e063140501fc6cdf8') in 0.026552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building18.fbx
+  artifactKey: Guid(ba377cab241684ba78858268d641ab15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building18.fbx using Guid(ba377cab241684ba78858268d641ab15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04055ceb915eb08f6d626d64e6adf285') in 0.025640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building09.fbx
+  artifactKey: Guid(d890289a5731941028b9140c7dcd26b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building09.fbx using Guid(d890289a5731941028b9140c7dcd26b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a4892e54ae52d2a8dbb297873a58ec') in 0.024730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building25_txtr4.fbx
+  artifactKey: Guid(fb24cf935793e4cf784a1d8afa3f9bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Building25_txtr4.fbx using Guid(fb24cf935793e4cf784a1d8afa3f9bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4210ce6090146a8182098aa5969081') in 0.024400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Materials/No Name.mat
+  artifactKey: Guid(6f539ab2521754dbcaa74ca7429ce554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Models - Shared for All Scenes/Materials/No Name.mat using Guid(6f539ab2521754dbcaa74ca7429ce554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be08bbd35c7a84b1ec1e1229e25544ee') in 0.018033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Physic Materials/NoFriction.physicMaterial
+  artifactKey: Guid(f7fd8c677d771429097ae1cbb8ed51a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Physic Materials/NoFriction.physicMaterial using Guid(f7fd8c677d771429097ae1cbb8ed51a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edcb5c6146b6ac714f58176e0d3ff4d6') in 0.009312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.404083 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Post Processing Profiles/Subte VHS, Yellow.asset
+  artifactKey: Guid(fbb88be88e089e14abcf172743992dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Post Processing Profiles/Subte VHS, Yellow.asset using Guid(fbb88be88e089e14abcf172743992dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8bcda342c4115d20d30962530c7d2f') in 0.008473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.520195 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Prefabs/Music.prefab
+  artifactKey: Guid(a00f44ca0f44e46dcbfb812711dd718f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Prefabs/Music.prefab using Guid(a00f44ca0f44e46dcbfb812711dd718f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba50ecd5c803bf0a64073d4b7590f7b') in 0.009877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Prefabs/RetroCar.prefab
+  artifactKey: Guid(3eb22da37d8ba42a6ad9ab53d9e2f43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Prefabs/RetroCar.prefab using Guid(3eb22da37d8ba42a6ad9ab53d9e2f43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f1bdcaa375a89ff84063f6ac36a5c2') in 0.031882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.721151 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/Borders2.mat
+  artifactKey: Guid(3d766b0e4d5dd43cba7f3dcdd0de5834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/Borders2.mat using Guid(3d766b0e4d5dd43cba7f3dcdd0de5834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1602dbcf316c32aca88745c0e8cba838') in 0.072678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame3_Colors1.mat
+  artifactKey: Guid(362394b70e8e0462caa7b6d9325bf54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame3_Colors1.mat using Guid(362394b70e8e0462caa7b6d9325bf54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8248d5e4362a9b408a396144aebcae') in 0.017673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingDistant2.mat
+  artifactKey: Guid(ce86273abfabc4450bf9eff54a0bb593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingDistant2.mat using Guid(ce86273abfabc4450bf9eff54a0bb593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a83702f846c8e66746b8114ca14b7b8') in 0.016743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingColored02.mat
+  artifactKey: Guid(7070c7c71d69a4615a8088f1cc4b72ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingColored02.mat using Guid(7070c7c71d69a4615a8088f1cc4b72ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4499c149f93fff73204e9131bfa8a38') in 0.018836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/RetroCarWheels.mat
+  artifactKey: Guid(f428d8d3397b840d0945775039895882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/RetroCarWheels.mat using Guid(f428d8d3397b840d0945775039895882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba09eca072ef42896f949b56b616233') in 0.018017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingColored.mat
+  artifactKey: Guid(1897e6e1e1e6246748349b09091e5386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingColored.mat using Guid(1897e6e1e1e6246748349b09091e5386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258a42a0bcb7252d1b9b9fed25496f7f') in 0.016514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/PalmsWireframeShine.mat
+  artifactKey: Guid(1a949577a48d046d8acdb10f373b7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/PalmsWireframeShine.mat using Guid(1a949577a48d046d8acdb10f373b7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbaf798a0e8ffc3c78356d7680a9662') in 0.017263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/Lantern.mat
+  artifactKey: Guid(9f7413525a1204c848e3a57efaa84327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/Lantern.mat using Guid(9f7413525a1204c848e3a57efaa84327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0e64a1d00b52f5e1d009b7ca65339e') in 0.017356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingDistant.mat
+  artifactKey: Guid(c665945070ff74bfa8a276780a9f4f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingDistant.mat using Guid(c665945070ff74bfa8a276780a9f4f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba0fb14a76aff49ac488a5bc9c9d7a2') in 0.017087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/LandscapeGrid02.mat
+  artifactKey: Guid(9ac7a69c00b924fafb47e6c23d691c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/LandscapeGrid02.mat using Guid(9ac7a69c00b924fafb47e6c23d691c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b64983383d40ec27e671249ef8e1ed') in 0.019055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingColored04.mat
+  artifactKey: Guid(f9e5541e3068445cca020823e3f2bb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingColored04.mat using Guid(f9e5541e3068445cca020823e3f2bb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2a71aa35bdf98302872c99439dc102') in 0.016508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame4_Colors1.mat
+  artifactKey: Guid(bfa4dbbf0f067494d9e101bcdedbdeaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame4_Colors1.mat using Guid(bfa4dbbf0f067494d9e101bcdedbdeaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d64e76d5f465919fb1ae7ff40293699') in 0.018033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/RetroCarBrakeLights.mat
+  artifactKey: Guid(bdfaebd4fcadd4d6a8a470a138cd6bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/RetroCarBrakeLights.mat using Guid(bdfaebd4fcadd4d6a8a470a138cd6bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207354205d93eeb46772caf77b144932') in 0.017764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/RetroCarFrontLights.mat
+  artifactKey: Guid(11e12eb22e4a64124b5b6f3b4845bf21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/RetroCarFrontLights.mat using Guid(11e12eb22e4a64124b5b6f3b4845bf21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7718d3acb6a00c11e7be59bd8cd3525d') in 0.018132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame1_Colors2.mat
+  artifactKey: Guid(dc1a27e1551a44fafb35267b4f77e05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame1_Colors2.mat using Guid(dc1a27e1551a44fafb35267b4f77e05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '576c8703127fa44fd1152f413ee2b7a2') in 0.017446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame2_Colors1.mat
+  artifactKey: Guid(27a23273aec8d413e85a6a68d51abcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 1 - Worn VHS/BuildingFrame2_Colors1.mat using Guid(27a23273aec8d413e85a6a68d51abcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ac03fffa2659e2e16fbc9d489b7afb') in 0.015323 seconds 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 5.93 ms, found 3 plugins.
+Registering precompiled user dll's ...
+Registered in 0.009265 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (62.4 KB). Loaded Objects now: 4418.
-Memory consumption went from 80.7 MB to 80.7 MB.
-Total: 3.457600 ms (FindLiveObjects: 0.366300 ms CreateObjectMapping: 0.115900 ms MarkObjects: 2.862500 ms  DeleteObjects: 0.112200 ms)
+Mono: successfully reloaded assembly
+- Completed reload, in  1.370 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1371ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1039ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (348ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (295ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (66.3 KB). Loaded Objects now: 4449.
+Memory consumption went from 157.8 MB to 157.8 MB.
+Total: 4.997500 ms (FindLiveObjects: 0.426100 ms CreateObjectMapping: 0.121700 ms MarkObjects: 4.308300 ms  DeleteObjects: 0.139600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 770.773495 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_glare01.png
+  artifactKey: Guid(f05983cfab40e40059fe5d58b6952ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_glare01.png using Guid(f05983cfab40e40059fe5d58b6952ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1145d113de0caf6e9ace2f9ee5e7f715') in 0.085377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_pause.png
+  artifactKey: Guid(067bccb974dda4a22b9c099242fb4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_pause.png using Guid(067bccb974dda4a22b9c099242fb4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82bdf2f36e7779da2be459f950a73b27') in 0.029033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_underline04.png
+  artifactKey: Guid(7fc395f9218ea41c8bc026d9ae5eb888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_underline04.png using Guid(7fc395f9218ea41c8bc026d9ae5eb888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5158d690fb844f95f19b3d120a5ce7e9') in 0.023022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_triangle02.png
+  artifactKey: Guid(0990d9bc3bb4a40b69ae941176beddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_triangle02.png using Guid(0990d9bc3bb4a40b69ae941176beddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7b22684b4303349c897b3fc57b28cd') in 0.030150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_underline02.png
+  artifactKey: Guid(b24e31a4b5f2e43eb9ccf94bca9b8e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_underline02.png using Guid(b24e31a4b5f2e43eb9ccf94bca9b8e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a348a439e9812ca14277ff66ac0d6d2') in 0.025840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/retro_aesthetics_logo.png
+  artifactKey: Guid(101bf90e8aa5f4e57a01ed6a325d6577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/retro_aesthetics_logo.png using Guid(101bf90e8aa5f4e57a01ed6a325d6577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb5af1118f68a75a3baf15284c89cb1') in 0.039844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_radial_grad_white.png
+  artifactKey: Guid(b8e691214762b43ceb216110c6248bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_radial_grad_white.png using Guid(b8e691214762b43ceb216110c6248bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7990b0853832b3f13e1c125451d99f92') in 0.034209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_line01.png
+  artifactKey: Guid(157481b600a0242a1b87e1b44306034b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_line01.png using Guid(157481b600a0242a1b87e1b44306034b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba43898d7d2d5e281f3749ad9ccf2bc') in 0.021121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_underline01.png
+  artifactKey: Guid(8acf3e217599a43068af99d90d18c297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Decorations/decoration_underline01.png using Guid(8acf3e217599a43068af99d90d18c297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502c8f0bbf68ccf22db949269ee3a322') in 0.026052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.426474 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Frames/frame512_2.png
+  artifactKey: Guid(914077f20908c4a9ca00ca0e94972724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Frames/frame512_2.png using Guid(914077f20908c4a9ca00ca0e94972724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd013c4305cdca945334a2e11bdf8ee02') in 0.015038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/Frames/frame512_3.png
+  artifactKey: Guid(5a2983bac4abe42b68a221c3fe99f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/Frames/frame512_3.png using Guid(5a2983bac4abe42b68a221c3fe99f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237ef37911b925815b25c1dd0b2abcae') in 0.014580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.006435 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/UVs/bw_512.png
+  artifactKey: Guid(a7495c967c8f4493998b0fc6ea81c28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/UVs/bw_512.png using Guid(a7495c967c8f4493998b0fc6ea81c28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33074e50fa0aa7e952aa1df0bded040') in 0.014627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/UVs/emissive_16_8col_1.png
+  artifactKey: Guid(569d04d6f466c4880b0168cb67f4ce03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/UVs/emissive_16_8col_1.png using Guid(569d04d6f466c4880b0168cb67f4ce03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d80bdb08ad0f8b565286ea3dce0ebc6') in 0.017721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/UVs/scatter_256_01.png
+  artifactKey: Guid(93b9ad928bdb943db9851ad850bbc81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/UVs/scatter_256_01.png using Guid(93b9ad928bdb943db9851ad850bbc81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e822a42bc885b0d587a86899ca78edad') in 0.016105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Textures/UVs/emissive_256.png
+  artifactKey: Guid(c373de1333273429da0de95ef9f1ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Textures/UVs/emissive_256.png using Guid(c373de1333273429da0de95ef9f1ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8402f642763c134a5eb0ec0a18d33c74') in 0.017503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 239.650006 seconds.
+  path: Assets/Materials/Level1.png
+  artifactKey: Guid(c31a557a60ae5f4478b29a187fe4c71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Level1.png using Guid(c31a557a60ae5f4478b29a187fe4c71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecd5b85529c7d0499bba7317da55a16') in 0.075800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Materials/NeonAqua.mat
+  artifactKey: Guid(3b2f3458623222f4fa5b527502a7b253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/NeonAqua.mat using Guid(3b2f3458623222f4fa5b527502a7b253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372913ec602193acca12352beeb9ad54') in 0.055972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Materials/VoidWhite.mat
+  artifactKey: Guid(271f564a9a42c384587884beffb7a9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/VoidWhite.mat using Guid(271f564a9a42c384587884beffb7a9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5257c089130b8e607723d6df95c2ac37') in 0.016739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.775074 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/LandscapeGridGenerative.mat
+  artifactKey: Guid(b601c7b9270244660989478fa4f40467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/LandscapeGridGenerative.mat using Guid(b601c7b9270244660989478fa4f40467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1a040778eca4a1cae8a8b17f919eb2') in 0.130804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Menu/Materials/MenuCheckboard.mat
+  artifactKey: Guid(3d0412edb2d414884ad4e826b7a8db79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Menu/Materials/MenuCheckboard.mat using Guid(3d0412edb2d414884ad4e826b7a8db79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc8ff385423301512f882c0477294e6') in 0.016358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/Lantern.mat
+  artifactKey: Guid(ccccf27371dfd48979a54df70a08e79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/Lantern.mat using Guid(ccccf27371dfd48979a54df70a08e79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f1a5312705bc160fb56389eb49863b') in 0.015655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/Neon Light.mat
+  artifactKey: Guid(b234e1586ac9f524f8162eb03da23c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/Neon Light.mat using Guid(b234e1586ac9f524f8162eb03da23c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ed06a4fb78fc7817691dbedd986751') in 0.017601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Fonts/TMPro/MrDafoe-Regular SDF.asset
+  artifactKey: Guid(139a540ee19b4054b9a25de5b5bb8b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Fonts/TMPro/MrDafoe-Regular SDF.asset using Guid(139a540ee19b4054b9a25de5b5bb8b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab8d522981c575b6988a71202fa115d9') in 0.051227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/EffectExamples/WeaponEffects/Materials/MuzzleFlashParticle.mat
+  artifactKey: Guid(527027c8baf2f0540be3104a3ec38a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/WeaponEffects/Materials/MuzzleFlashParticle.mat using Guid(527027c8baf2f0540be3104a3ec38a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30957d4adac001ccac851cbafffdd78a') in 0.018141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Materials/Materials/Level1.mat
+  artifactKey: Guid(2026fa24a743c824f8fb886c517ec5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Level1.mat using Guid(2026fa24a743c824f8fb886c517ec5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821b7492ef7f5860af0275cf5445b852') in 0.017507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssestStore/EffectExamples/Shared/Models/Materials/MazeLowMan.mat
+  artifactKey: Guid(d695529081158d44f84e349bd501fde6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Shared/Models/Materials/MazeLowMan.mat using Guid(d695529081158d44f84e349bd501fde6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdcd524a31f585af6684c078bfdced31') in 0.017437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/Lantern.mat
+  artifactKey: Guid(1e0a0e963ccb64d36863b1dc3bcc3a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/Lantern.mat using Guid(1e0a0e963ccb64d36863b1dc3bcc3a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1d875d8d911237082d93677ba6fd3b') in 0.014814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/Props/old-computers/source/Old Computers.fbx
+  artifactKey: Guid(a1221892ca6bc5c4a94a2cd4625f22d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Props/old-computers/source/Old Computers.fbx using Guid(a1221892ca6bc5c4a94a2cd4625f22d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139dbeee1d5b14532ce725d20b7c32af') in 1.355079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.376441 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Fonts/TTF/MrDafoe-Regular.ttf
+  artifactKey: Guid(225cbd6a3721549dea05f9fa2325470b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Fonts/TTF/MrDafoe-Regular.ttf using Guid(225cbd6a3721549dea05f9fa2325470b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06733111a7a0d77420f951da36c7b8e') in 0.088632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/LandscapeGrid02.mat
+  artifactKey: Guid(1991bea02b6b647388aa7d1f90d5cee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/LandscapeGrid02.mat using Guid(1991bea02b6b647388aa7d1f90d5cee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279cd15e2493eb1a8ba638c471569b10') in 0.017987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/AssestStore/LowPoly/Low Poly Weapons VOL.2/Models/RPG7.fbx
+  artifactKey: Guid(c785d6ac75eb1684b9741c59c86ab16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/LowPoly/Low Poly Weapons VOL.2/Models/RPG7.fbx using Guid(c785d6ac75eb1684b9741c59c86ab16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9755994c05b621ea3b2b9bc98f9eb14c') in 0.074493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Fonts/TTF/Yellowtail-Regular.ttf
+  artifactKey: Guid(8ece5e12da5ec49a0ac9dd2d1ce8954c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Fonts/TTF/Yellowtail-Regular.ttf using Guid(8ece5e12da5ec49a0ac9dd2d1ce8954c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88640aafbeb96a497cdc25f06b68732f') in 0.023878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/EffectExamples/WaterEffects/Materials/ImpactSplashParticle.mat
+  artifactKey: Guid(90c3f5183cf0f9d488b3821973c75c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/WaterEffects/Materials/ImpactSplashParticle.mat using Guid(90c3f5183cf0f9d488b3821973c75c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c442658353725014f1d741ff2accc1') in 0.018205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/GI Blocker.mat
+  artifactKey: Guid(f9a5ce4748e5abd4288cab387226ef27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/GI Blocker.mat using Guid(f9a5ce4748e5abd4288cab387226ef27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ab5cd75d66f0dbc6a077e246b83a5ad') in 0.018762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/LowPoly/Low Poly Weapons VOL.2/Gun_MAT.mat
+  artifactKey: Guid(8d858f0eba4f06746b8e655966671815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/LowPoly/Low Poly Weapons VOL.2/Gun_MAT.mat using Guid(8d858f0eba4f06746b8e655966671815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1decd29e1598d4bab9356ad8bc81471') in 0.018392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat
+  artifactKey: Guid(f53f1a24bb4ef8f4d879ea7b3a5197e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat using Guid(f53f1a24bb4ef8f4d879ea7b3a5197e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd861fe993fc2e9b73e0ff903607bfb6b') in 0.018995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.692929 seconds.
+  path: Assets/AssestStore/EffectExamples/WeaponEffects/Models/Materials/No Name.mat
+  artifactKey: Guid(547f2e9db866947dabf6f55d8673905d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/WeaponEffects/Models/Materials/No Name.mat using Guid(547f2e9db866947dabf6f55d8673905d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e600f763a6d17e5ef255ece4d2e9e136') in 0.020910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.211046 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/PalmsWireframeShine.mat
+  artifactKey: Guid(8ba4c4dff52154d528aef2d6acfd66f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/PalmsWireframeShine.mat using Guid(8ba4c4dff52154d528aef2d6acfd66f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1250d7d1a1bedf1b013366d2eccfcf30') in 0.016233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/PalmsWireframeShine.mat
+  artifactKey: Guid(a96ea36ef62454870913a6b4c3bdf868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/PalmsWireframeShine.mat using Guid(a96ea36ef62454870913a6b4c3bdf868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe414a592334fb9b1f77cac837355022') in 0.013794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.464465 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/PalmsWireframeShine2.mat
+  artifactKey: Guid(0862893e1ab7a4a349798004b72ac8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/PalmsWireframeShine2.mat using Guid(0862893e1ab7a4a349798004b72ac8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f17744ab40bad1b164f44483269ee2') in 0.018266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053650 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/pistol1/pistol1.mat
+  artifactKey: Guid(94e64d41f68240c41aabd3ef8e0368e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/pistol1/pistol1.mat using Guid(94e64d41f68240c41aabd3ef8e0368e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee905159e74ac56f1d508d4c4d0b6d3f') in 0.026914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/pistol1/pistol1.fbx
+  artifactKey: Guid(4df3ce82db8e66645afd54ab1d5b0262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/pistol1/pistol1.fbx using Guid(4df3ce82db8e66645afd54ab1d5b0262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35a7118681f97126d00138ca4c561cc') in 0.028557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/pistol3/pistol3.mat
+  artifactKey: Guid(41be456e0ecbed04dba9c27c3add980c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/pistol3/pistol3.mat using Guid(41be456e0ecbed04dba9c27c3add980c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67695bccecad3d5da93615a28fc7c6e7') in 0.020947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.624445 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/pistol4/pistol4.fbx
+  artifactKey: Guid(ca1c64f7c147fb0479f9ef03e264a372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/pistol4/pistol4.fbx using Guid(ca1c64f7c147fb0479f9ef03e264a372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6ef1ecc5e79fafe3bdbc47778a49b1') in 0.026362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/EffectExamples/WeaponEffects/Materials/Projectile.mat
+  artifactKey: Guid(a24a209a6bd187d49929d1a6d40a92ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/WeaponEffects/Materials/Projectile.mat using Guid(a24a209a6bd187d49929d1a6d40a92ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68cb30f2df81c320db5e8d39177c2c95') in 0.016927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/PlasmaExplosionParticle.mat
+  artifactKey: Guid(7ff1ab0b724442843965e2dd0f02e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/PlasmaExplosionParticle.mat using Guid(7ff1ab0b724442843965e2dd0f02e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26744cdaa19689e85643e950e21dba7c') in 0.024907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/Props/floppy-disk-35/source/sketchfabDisquette.blend.fbx
+  artifactKey: Guid(3e0711a8edb03de44a87ae1f5369ce2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Props/floppy-disk-35/source/sketchfabDisquette.blend.fbx using Guid(3e0711a8edb03de44a87ae1f5369ce2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146484958e224a5ed7af6642c733f4d8') in 0.114878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.353042 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Brown.mat
+  artifactKey: Guid(bb9ba0197f6873943824ae7aade506c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Brown.mat using Guid(bb9ba0197f6873943824ae7aade506c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd2331c27d4f9afc5cce54dda955361') in 0.016406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Cyan.mat
+  artifactKey: Guid(3d9914e92c1db3f4caed885c92e0b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Cyan.mat using Guid(3d9914e92c1db3f4caed885c92e0b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3412f7e12f6728fa9f4f1ed5173c64b1') in 0.018016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green1.mat
+  artifactKey: Guid(74117f645ca87544896e430b75e9a316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green1.mat using Guid(74117f645ca87544896e430b75e9a316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e25b3e48f4a257edd960875d3ee637a') in 0.011991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Green2.mat
+  artifactKey: Guid(35e2a03bbcc6739409a02bb46883d128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Green2.mat using Guid(35e2a03bbcc6739409a02bb46883d128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ec303404ec03c67fe520679b224844') in 0.017335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Grey2.mat
+  artifactKey: Guid(572218b186e96c648853f56156b07925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Grey2.mat using Guid(572218b186e96c648853f56156b07925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c328f5f9599ac06c1ae49f0d00876d81') in 0.018396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Grey1.mat
+  artifactKey: Guid(64859cf955a5fb047880af754183e463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Grey1.mat using Guid(64859cf955a5fb047880af754183e463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec82826a01ff39f6feacefe952d6611') in 0.012984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green3.mat
+  artifactKey: Guid(f6298605825d7154f8923c76872aa46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green3.mat using Guid(f6298605825d7154f8923c76872aa46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e39d973f61ecff70efaf3d25b981cd') in 0.019283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green3.mat
+  artifactKey: Guid(bce32739db90b6843ac7f0179bcaa6b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green3.mat using Guid(bce32739db90b6843ac7f0179bcaa6b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237f9143ef1e2ba2ec80c2175981c7d1') in 0.013128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.429982 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Grey3.mat
+  artifactKey: Guid(a66e312fee7fb6e469dec2f4daba4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Grey3.mat using Guid(a66e312fee7fb6e469dec2f4daba4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8108aaca84c0622fac8f0e64e40cb01c') in 0.016134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey3.mat
+  artifactKey: Guid(981abf7a53e6a964fba6bc48555ec31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey3.mat using Guid(981abf7a53e6a964fba6bc48555ec31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66701a3d632c3bcb6f3acf67cf381fe') in 0.013311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.029189 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Magenta.mat
+  artifactKey: Guid(4b905f60df09c8245b6e0d5af2e04c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Magenta.mat using Guid(4b905f60df09c8245b6e0d5af2e04c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7cf435b176b4b8ad753e4fc471c4264') in 0.020624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Magenta.mat
+  artifactKey: Guid(4f8daeaadc7b77c42b2004245caa7f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Magenta.mat using Guid(4f8daeaadc7b77c42b2004245caa7f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff4d3a1f4e7645c729202d6b9c7eb9e') in 0.012880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Magenta.mat
+  artifactKey: Guid(9618c6b42230db7408b3b734da21470a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Magenta.mat using Guid(9618c6b42230db7408b3b734da21470a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6628d25180d63d4343dd9d96060d72e1') in 0.014095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_olive.mat
+  artifactKey: Guid(20790e8d55801e449a74d741320573b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_olive.mat using Guid(20790e8d55801e449a74d741320573b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f50ce5435e089f4c3d6bd9526271a5c') in 0.017683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_magenta.mat
+  artifactKey: Guid(e3f136f6cc99914418a6fe54ddd54a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_magenta.mat using Guid(e3f136f6cc99914418a6fe54ddd54a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908a50c09961237aae3753de7c9b88f4') in 0.017615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Orange.mat
+  artifactKey: Guid(d1a5903867c8f0a4a8a94c3fe36dad11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Orange.mat using Guid(d1a5903867c8f0a4a8a94c3fe36dad11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5772193ff87683c5ef50742d6c592b49') in 0.012887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.067449 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Red.mat
+  artifactKey: Guid(a4b62a69d54e80347bd546999c6d4b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Red.mat using Guid(a4b62a69d54e80347bd546999c6d4b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a5a21950621af89c4f8a4bb2e768fa') in 0.017009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_White.mat
+  artifactKey: Guid(2ab8149ec4775284bada96c1b85b4a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_White.mat using Guid(2ab8149ec4775284bada96c1b85b4a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957c52515e4fd3b3f685ae2263b298be') in 0.013376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Yellow.mat
+  artifactKey: Guid(dd66d467961812f4383351e477499b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/HDRP/Prototype_512x512_Yellow.mat using Guid(dd66d467961812f4383351e477499b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f61d9110483b6a0e1db8b0c790425bd') in 0.017836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/RetroCarBody.mat
+  artifactKey: Guid(50d40a7fae00b4730ad28bbc03da99de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/RetroCarBody.mat using Guid(50d40a7fae00b4730ad28bbc03da99de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3f896e9911bb570fb09396a151efad') in 0.018568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/RetroCarFrontLights.mat
+  artifactKey: Guid(7e537c97e9294464692d4b15ab943022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/RetroCarFrontLights.mat using Guid(7e537c97e9294464692d4b15ab943022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348d14bf349274e8befbffc459e1a061') in 0.011397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/Skybox/RetroSkybox.mat
+  artifactKey: Guid(a4346172dfeea4257beb4dcd1d313b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/Skybox/RetroSkybox.mat using Guid(a4346172dfeea4257beb4dcd1d313b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb72059634ffc9a1cf098d2a30fa87a1') in 0.018643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat
+  artifactKey: Guid(795ab1f41a8fd4142859110cee203fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat using Guid(795ab1f41a8fd4142859110cee203fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd55aec0bd72e4a0fef9d41fd6fb41b6') in 0.016658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/EffectExamples/WeaponEffects/Materials/ShallCasing.mat
+  artifactKey: Guid(713f8d12f5dbfb640b7a4874212c2c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/WeaponEffects/Materials/ShallCasing.mat using Guid(713f8d12f5dbfb640b7a4874212c2c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d60c1d76b7b965588bdb360391ad778') in 0.022438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/EffectExamples/Shared/Models/Materials/ShooterFPSWeapon.mat
+  artifactKey: Guid(89dbeb4ba5551ae409a3bd5812b741c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Shared/Models/Materials/ShooterFPSWeapon.mat using Guid(89dbeb4ba5551ae409a3bd5812b741c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f970153bc3318fc2bd9f74b4dcad5f7c') in 0.018591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/EffectExamples/Shared/Materials/Skybox.mat
+  artifactKey: Guid(d1385980456cd2044b282d73625457db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Shared/Materials/Skybox.mat using Guid(d1385980456cd2044b282d73625457db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0df084583b298d146f9125fb1604f9') in 0.020475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/smg1/smg1.mat
+  artifactKey: Guid(42ff7de5af3ca404cbf8813deacd8dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/smg1/smg1.mat using Guid(42ff7de5af3ca404cbf8813deacd8dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e8915274c34de9f112745b6ac74e03') in 0.024469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/VHS/VHS/Materials/T_Cover2_D.tga.mat
+  artifactKey: Guid(27450c1f67cbf154bb8dd7ef1c3dc9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/VHS/Materials/T_Cover2_D.tga.mat using Guid(27450c1f67cbf154bb8dd7ef1c3dc9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2002cb92a7adca2728266659991aae0') in 0.019681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/smg2/smg2.mat
+  artifactKey: Guid(d05b83a5733b4ba469d3c1a5891d6f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/smg2/smg2.mat using Guid(d05b83a5733b4ba469d3c1a5891d6f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07eec7300e8c93679bc66d3545eebad') in 0.024157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/VHS/VHS/Materials/T_Cover1_D.tga.mat
+  artifactKey: Guid(c42bd619115cc614f89168cb2ed485a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/VHS/Materials/T_Cover1_D.tga.mat using Guid(c42bd619115cc614f89168cb2ed485a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794cc1151f0420e5457987ac93ee9a3f') in 0.018354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/RoadMainPart.mat
+  artifactKey: Guid(1650c3961b9514e3fade7daafd75cd4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 3 - Subtle VHS/RoadMainPart.mat using Guid(1650c3961b9514e3fade7daafd75cd4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d5a9b7a4634a499966a280c27a8a69') in 0.015902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/EffectExamples/Misc Effects/Materials/Spark2Particle.mat
+  artifactKey: Guid(a6492a173e6c03f48899880b96cca600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Misc Effects/Materials/Spark2Particle.mat using Guid(a6492a173e6c03f48899880b96cca600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb3fea2858cf6efc78b2d569b459cd5') in 0.019841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AssestStore/Skybox/Materials/Skybox_Sunset.mat
+  artifactKey: Guid(4067de1a02072244798361060c5e7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Skybox/Materials/Skybox_Sunset.mat using Guid(4067de1a02072244798361060c5e7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13e47cc2b48473906b01eef266fba20') in 0.053679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AssestStore/Props/floppy-disk-35/Materials/tex_etiquette_05.mat
+  artifactKey: Guid(b777624a5e949554994543b2139e5494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Props/floppy-disk-35/Materials/tex_etiquette_05.mat using Guid(b777624a5e949554994543b2139e5494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c270ec072fa8f55ab3c40286b232955d') in 0.018545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AssestStore/EffectExamples/WeaponEffects/Materials/TinyStonesParticle.mat
+  artifactKey: Guid(4ac7c4f70dacbc742a33d842cebc2157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/WeaponEffects/Materials/TinyStonesParticle.mat using Guid(4ac7c4f70dacbc742a33d842cebc2157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f3478d71127a68bf01c59a07f320b8') in 0.025535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/shotgun2/shotgun2.mat
+  artifactKey: Guid(052eb9367e604ac428a8b8c83f4584da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/shotgun2/shotgun2.mat using Guid(052eb9367e604ac428a8b8c83f4584da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7554a5753f4ca3c91da9cfa37fde85') in 0.024511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/VHS/old-television-from-90s/Materials/TVTube1_diffuse.mat
+  artifactKey: Guid(f77afdc033aa6ba4192fa37f945b3492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/old-television-from-90s/Materials/TVTube1_diffuse.mat using Guid(f77afdc033aa6ba4192fa37f945b3492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9f9b67aa74d20dad2228615d096917') in 0.018284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/shotgun2/shotgun2.fbx
+  artifactKey: Guid(8b36fb41929fc22429f0083d817b8040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/shotgun2/shotgun2.fbx using Guid(8b36fb41929fc22429f0083d817b8040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '466dae05759f44d2461b5ec09c5faa04') in 0.031487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AssestStore/EffectExamples/Shared/Materials/StoneSurface.mat
+  artifactKey: Guid(3eb079016c4106b41bc3f19de570f770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Shared/Materials/StoneSurface.mat using Guid(3eb079016c4106b41bc3f19de570f770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd707f81da36496c8fa380bc62f86b2ce') in 0.023169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/VHS/VHS/Materials/T_Cover_AO.tga.mat
+  artifactKey: Guid(b65a26a2fb4d9704d89f68f8b246c206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/VHS/Materials/T_Cover_AO.tga.mat using Guid(b65a26a2fb4d9704d89f68f8b246c206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd0aca05bfba3297c9a0f336d9938a1') in 0.019598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Yellow.mat
+  artifactKey: Guid(d76d5dba59c8a824a8170635648a356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/GreyBoxTextures/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Yellow.mat using Guid(d76d5dba59c8a824a8170635648a356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f9cd03e6563ec48c4cde5a8fffd0b3') in 0.013472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AssestStore/VHS/vhs-tape/Materials/vhs_vhs_BaseColor.mat
+  artifactKey: Guid(1e9293567d695f1498ee0f376529d413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/vhs-tape/Materials/vhs_vhs_BaseColor.mat using Guid(1e9293567d695f1498ee0f376529d413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6075640a03c7511ac62a5bc433e41c3a') in 0.024332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/ShockWaveParticle.mat
+  artifactKey: Guid(f88239865da4c79468e051ceb78c0317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/ShockWaveParticle.mat using Guid(f88239865da4c79468e051ceb78c0317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d9cff0e35442e0685c11be00d313c0') in 0.016395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssestStore/VHS/vhs-tape/Materials/vhs_vhs_Roughness.mat
+  artifactKey: Guid(2a67af1adc3b0384b897d5635f433a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/vhs-tape/Materials/vhs_vhs_Roughness.mat using Guid(2a67af1adc3b0384b897d5635f433a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba70a3764b83fe307434383f9115c72') in 0.020020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/VHS/vhs-tape/Materials/vhs_vhs_top_Roughness.mat
+  artifactKey: Guid(7ebd4258d8df6b343a9fab5a9286d4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/vhs-tape/Materials/vhs_vhs_top_Roughness.mat using Guid(7ebd4258d8df6b343a9fab5a9286d4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0078ef23ff573b2e4563753083e545') in 0.019030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AssestStore/VHS/old-television-from-90s/Materials/TVTube1_metalness.mat
+  artifactKey: Guid(ed5bbfad9ddc3d142b1c72c0577d398d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/old-television-from-90s/Materials/TVTube1_metalness.mat using Guid(ed5bbfad9ddc3d142b1c72c0577d398d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a6f66d31ae4c3a6bf5b3e7213ebe3f') in 0.018094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/EffectExamples/Misc Effects/Materials/SparkParticle.mat
+  artifactKey: Guid(19a1e36bbcb5b4c429a5dfdc8fb914de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Misc Effects/Materials/SparkParticle.mat using Guid(19a1e36bbcb5b4c429a5dfdc8fb914de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf8cd04be3a3cfe6abe574ebf6c7219') in 0.016278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssestStore/VHS/VHS/Materials/T_Cassette_D.tga.mat
+  artifactKey: Guid(8dad6566a7361a641a638e93475ece55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/VHS/Materials/T_Cassette_D.tga.mat using Guid(8dad6566a7361a641a638e93475ece55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008d641c886043a84993d2e3742ace87') in 0.022017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssestStore/VHS/VHS/Materials/T_Cassette_R.tga.mat
+  artifactKey: Guid(7d0a7c80ec137db41be9aa26d92a57ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/VHS/VHS/Materials/T_Cassette_R.tga.mat using Guid(7d0a7c80ec137db41be9aa26d92a57ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6a57f10b1338393480ade935bd0ca7') in 0.018972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/SmokeLightParticle.mat
+  artifactKey: Guid(f06455b167e1b0b428c9af62d7aa6832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/FireExplosionEffects/Materials/SmokeLightParticle.mat using Guid(f06455b167e1b0b428c9af62d7aa6832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeeb72dd235ac77916d1ae9b9c7ff48d') in 0.233626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/RoadMainPart.mat
+  artifactKey: Guid(282e7729576a24e95a4d96f702c5903a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/RetroAesthetics/Demos/Racing Demo/Materials for Racing 2 - Normal VHS/RoadMainPart.mat using Guid(282e7729576a24e95a4d96f702c5903a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a32f7d28f23afa0c61d6ebaf0a0f9fcc') in 0.017997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssestStore/EffectExamples/WaterEffects/Materials/WaterRipplesParticle.mat
+  artifactKey: Guid(c185392cb22aeb741a03d966a7012837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/WaterEffects/Materials/WaterRipplesParticle.mat using Guid(c185392cb22aeb741a03d966a7012837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf5ac34e53f172f2a78604deda470987') in 0.017925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssestStore/Low Poly Guns/Models/Guns/sniper2/sniper2.fbx
+  artifactKey: Guid(c8573db8e30e916479a705831bd5040c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/Low Poly Guns/Models/Guns/sniper2/sniper2.fbx using Guid(c8573db8e30e916479a705831bd5040c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40a89e7cca6322432f12dfae06e714a') in 0.029496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssestStore/EffectExamples/Shared/Materials/SandSurface.mat
+  artifactKey: Guid(26bc8648a85c6b041a5d5b00ca61062b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssestStore/EffectExamples/Shared/Materials/SandSurface.mat using Guid(26bc8648a85c6b041a5d5b00ca61062b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c77e22c8a3755247351d3f41f5c49a') in 0.015449 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010104 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.411 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1412ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1105ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (500ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (318ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (64.8 KB). Loaded Objects now: 4473.
+Memory consumption went from 158.4 MB to 158.4 MB.
+Total: 4.496900 ms (FindLiveObjects: 0.372100 ms CreateObjectMapping: 0.280400 ms MarkObjects: 3.651100 ms  DeleteObjects: 0.192000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -204,12 +1501,49 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 5.40 ms, found 3 plugins.
+Registering precompiled user dll's ...
+Registered in 0.010032 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (62.4 KB). Loaded Objects now: 4418.
-Memory consumption went from 80.7 MB to 80.7 MB.
-Total: 4.056600 ms (FindLiveObjects: 0.360500 ms CreateObjectMapping: 0.182700 ms MarkObjects: 3.396900 ms  DeleteObjects: 0.115600 ms)
+Mono: successfully reloaded assembly
+- Completed reload, in  1.425 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1426ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1130ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (546ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (359ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (64.9 KB). Loaded Objects now: 4476.
+Memory consumption went from 158.4 MB to 158.4 MB.
+Total: 4.307000 ms (FindLiveObjects: 0.422900 ms CreateObjectMapping: 0.103200 ms MarkObjects: 3.602900 ms  DeleteObjects: 0.176100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -222,3 +1556,175 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010318 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.498 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1499ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1202ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (539ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (350ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (88.1 KB). Loaded Objects now: 4479.
+Memory consumption went from 158.5 MB to 158.4 MB.
+Total: 4.117300 ms (FindLiveObjects: 0.414900 ms CreateObjectMapping: 0.136800 ms MarkObjects: 3.432800 ms  DeleteObjects: 0.131700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014023 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.503 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1504ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1192ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (599ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (171ms)
+				ProcessInitializeOnLoadAttributes (340ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (88.0 KB). Loaded Objects now: 4482.
+Memory consumption went from 158.5 MB to 158.4 MB.
+Total: 4.631400 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.098200 ms MarkObjects: 4.028800 ms  DeleteObjects: 0.144400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009376 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fuzzy\Documents\GitHub\Project-Frictionless\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.409 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1409ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1114ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (349ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (497ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (323ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (64.9 KB). Loaded Objects now: 4485.
+Memory consumption went from 158.5 MB to 158.4 MB.
+Total: 4.872900 ms (FindLiveObjects: 0.440400 ms CreateObjectMapping: 0.200300 ms MarkObjects: 4.085500 ms  DeleteObjects: 0.144700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.

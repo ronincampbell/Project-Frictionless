@@ -62,7 +62,10 @@ namespace RetroAesthetics.Demos {
 				SceneManager.LoadSceneAsync("Level2");
 			}
 			else if (continueTo == 2) {
-				SceneManager.LoadSceneAsync("Level2");
+				SceneManager.LoadSceneAsync("Level3");
+			}
+			else if (continueTo == 3) {
+				SceneManager.LoadSceneAsync("Level3");
 			}
 		}
 	}

@@ -55,6 +55,14 @@ public class EndLevelPickUp : MonoBehaviour
                 HighScoreText.SetActive(true);
                 victorySound.SetActive(true);
             }
+            else if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 4)
+            {
+                PlayerPrefs.SetFloat("Highscore3", finalScore);
+                HighScore = PlayerPrefs.GetFloat("Highscore3");
+                HighScoreTime.text = HighScore.ToString();
+                HighScoreText.SetActive(true);
+                victorySound.SetActive(true);
+            }
         }
     }
 
@@ -87,18 +95,18 @@ public class EndLevelPickUp : MonoBehaviour
     private void LevelEndUI()
     {
         endTime.text = runTimer.text;
-        HighScore = PlayerPrefs.GetFloat("Highscore1");
         HighScoreUI.SetActive(true);
         pCamera.GetComponent<RetroCameraEffect>().enabled = true;
         footSteps.SetActive(false);
 
-        // NOTE: This is an inefficient method, TOO BAD!
-        // Determine which highscore value to set
         if (SceneManager.GetActiveScene().buildIndex == 2){
             HighScore = PlayerPrefs.GetFloat("Highscore1");
         }
         else if (SceneManager.GetActiveScene().buildIndex == 3){
             HighScore = PlayerPrefs.GetFloat("Highscore2");
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 4){
+            HighScore = PlayerPrefs.GetFloat("Highscore3");
         }
 
     }

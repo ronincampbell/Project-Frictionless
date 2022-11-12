@@ -10,6 +10,10 @@ public class LevelSelection : MonoBehaviour
     private float AvailScenes;
     public GameObject Level1Button;
     public GameObject Level2Button;
+    public GameObject Level3Button;
+    public GameObject Level1MiniButton;
+    public GameObject Level2MiniButton;
+    public GameObject Level3MiniButton;
     public GameObject continueButton;
     public GameObject newGameButton;
     
@@ -25,17 +29,34 @@ public class LevelSelection : MonoBehaviour
         
         if (PlayerPrefs.GetFloat("Highscore2") == 0)
             PlayerPrefs.SetFloat("Highscore2", 10000);
+
+        if (PlayerPrefs.GetFloat("Highscore3") == 0)
+            PlayerPrefs.SetFloat("Highscore3", 10000);
     }
 
     // Display level tapes that the player has unlocked
     public void DisplayLevels()
     {
         if (AvailScenes == 1)
+        {
             Level1Button.SetActive(true);
+            Level1MiniButton.SetActive(true);
+        }
         else if (AvailScenes == 2)
         {
             Level1Button.SetActive(true);
             Level2Button.SetActive(true);
+            Level1MiniButton.SetActive(true);
+            Level2MiniButton.SetActive(true);
+        }
+        else if (AvailScenes == 3)
+        {
+            Level1Button.SetActive(true);
+            Level2Button.SetActive(true);
+            Level3Button.SetActive(true);
+            Level1MiniButton.SetActive(true);
+            Level2MiniButton.SetActive(true);
+            Level3MiniButton.SetActive(true);
         }
     }
 
@@ -44,6 +65,10 @@ public class LevelSelection : MonoBehaviour
     {
         Level1Button.SetActive(false);
         Level2Button.SetActive(false);
+        Level3Button.SetActive(false);
+        Level1MiniButton.SetActive(false);
+        Level2MiniButton.SetActive(false);
+        Level3MiniButton.SetActive(false);
     }
 
     // Clear player data
@@ -52,6 +77,7 @@ public class LevelSelection : MonoBehaviour
         PlayerPrefs.SetInt("UnlockedLevels", 0);
         PlayerPrefs.SetFloat("Highscore1", 10000);
         PlayerPrefs.SetFloat("Highscore2", 10000);
+        PlayerPrefs.SetFloat("Highscore3", 10000);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

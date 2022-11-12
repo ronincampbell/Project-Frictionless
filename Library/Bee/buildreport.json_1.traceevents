@@ -1,600 +1,477 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1667958608066262, "dur": 2243430, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958608066509, "dur": 10983, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958608077496, "dur": 32117, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958608109650, "dur": 886408, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958608996060, "dur": 1300532, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958610296595, "dur": 13097, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958610310395, "dur": 20, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
-{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1667958608821890, "dur": 144271, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1667958608822656, "dur": 49163, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1667958608951516, "dur": 3550, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1667958608955070, "dur": 11085, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1667958608955915, "dur": 9706, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1667958608970423, "dur": 1191, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1667958608969088, "dur": 2547, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958610310560, "dur": 216, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1668263833430727, "dur": 447257, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1668263833431007, "dur": 5381, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1668263833436390, "dur": 440564, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1668263833876956, "dur": 1028, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1668263833878565, "dur": 10, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1667958609029719, "dur":1401, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958609031126, "dur":203, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1667958609031380, "dur":42, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1667958609031423, "dur":288, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1667958609031735, "dur":957, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958609032692, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610270935, "dur":270, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271205, "dur":65, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271270, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271275, "dur":54, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271329, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271331, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271345, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271346, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271354, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271356, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271366, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271368, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271376, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271377, "dur":19, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271396, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271398, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271403, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271418, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610271483, "dur":8208, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1667958609032176, "dur":551, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609032727, "dur":3632, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609036359, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1667958609036501, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609042839, "dur":6479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1667958609049351, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1667958609049434, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609049441, "dur":190133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1667958609239605, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609239643, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609239651, "dur":128910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609368589, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609368618, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609368628, "dur":26675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609395331, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609395373, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609395383, "dur":17247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609412666, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609412699, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609412715, "dur":50856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609463600, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609463637, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609463648, "dur":33462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609497138, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609497166, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609497176, "dur":120639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609617845, "dur":730, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609618580, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609618619, "dur":719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609619363, "dur":63532, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609682914, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609682924, "dur":3483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609686433, "dur":49486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609735923, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609735932, "dur":669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609736627, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609736656, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609736663, "dur":182458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609919149, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958609919179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958609919192, "dur":137008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958610056227, "dur":113715, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958610169950, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1667958610169997, "dur":1103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1667958610171136, "dur":99800, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609032446, "dur":448, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609032894, "dur":3446, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609036340, "dur":248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1667958609036599, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609038851, "dur":10286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1667958609049169, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1667958609049269, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609049279, "dur":52895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1667958609102209, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1667958609102336, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609102347, "dur":9007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1667958609111383, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1667958609111481, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609113109, "dur":16995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1667958609130147, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609130181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609130263, "dur":37754, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609168048, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609168087, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609168096, "dur":22752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609190882, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609190913, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609190923, "dur":19712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609210666, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609210697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609210727, "dur":68691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609279449, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609279481, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609279490, "dur":97295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609376814, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609376846, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609376855, "dur":48198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609425082, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609425122, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609425244, "dur":20743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609446016, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609446051, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609446061, "dur":25413, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609471503, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609471534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609471545, "dur":16934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609488507, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609488539, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609488548, "dur":31272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609519855, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609519889, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609519899, "dur":51439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609571370, "dur":87149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609658523, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609658532, "dur":979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609659537, "dur":568, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609660109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609660119, "dur":918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609661061, "dur":577, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609661641, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609661649, "dur":764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609662440, "dur":26503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609688948, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609688958, "dur":2796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609691781, "dur":41394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.Csg.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609733183, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609733196, "dur":1704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.Csg.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609734927, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609734957, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609734967, "dur":100629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609835625, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609835656, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609835665, "dur":104618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609940313, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958609940389, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958609940398, "dur":108708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958610049132, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958610049165, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1667958610049173, "dur":178737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1667958610227932, "dur":43003, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609032727, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609032728, "dur":3611, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609036339, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1667958609036495, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609041903, "dur":8347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1667958609050278, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1667958609050363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609050669, "dur":1823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1667958609052518, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1667958609052594, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609052602, "dur":49659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1667958609102292, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":3, "ts":1667958609102390, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609102398, "dur":2417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":3, "ts":1667958609104861, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609104959, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609104965, "dur":44205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609149388, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609149435, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609149445, "dur":18564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609168038, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609168071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609168081, "dur":35794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609203909, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609203951, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609203961, "dur":20542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609224534, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609224573, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609224584, "dur":18321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609242933, "dur":131882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609374822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609374833, "dur":1003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609375865, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609375902, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609375932, "dur":51090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609427049, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609427078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609427087, "dur":29998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609457117, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609457183, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609457193, "dur":93065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609550286, "dur":86194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609636488, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609636499, "dur":835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609637359, "dur":3362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609640727, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609640738, "dur":883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609641653, "dur":40057, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609681743, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609681754, "dur":842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609682623, "dur":77014, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609759645, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609759658, "dur":968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609760656, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609760687, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609760696, "dur":149326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609910052, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958609910086, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958609910096, "dur":170100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":3, "ts":1667958610080228, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":3, "ts":1667958610080259, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610080266, "dur":953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":3, "ts":1667958610081246, "dur":21709, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets3.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610102960, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610102970, "dur":11755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets3.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610114754, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":3, "ts":1667958610114783, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610114792, "dur":2841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":3, "ts":1667958610117662, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1667958610117690, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610117696, "dur":1274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1667958610118995, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level4.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610119023, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610119029, "dur":779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level4.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610119836, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level3.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610119866, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610119872, "dur":785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level3.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610120687, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level2.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610120715, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610120721, "dur":631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level2.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610121374, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level1.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610121399, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610121405, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level1.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610122343, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level0.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610122369, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610122375, "dur":1093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level0.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610123490, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1667958610123515, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610123524, "dur":1259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1667958610124816, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610124871, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1667958610124879, "dur":6002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1667958610130908, "dur":140121, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609032218, "dur":670, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609032888, "dur":3448, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609036338, "dur":170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1667958609036511, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609048444, "dur":56003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1667958609104509, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609104564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609104744, "dur":5432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609110213, "dur":584, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner.exe" }}
-,{ "pid":12345, "tid":4, "ts":1667958609110833, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609110843, "dur":3295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner.exe" }}
-,{ "pid":12345, "tid":4, "ts":1667958609114169, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609114210, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609116953, "dur":25936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609142920, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609142975, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609142984, "dur":38010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609181029, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609181060, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609181069, "dur":24201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609205296, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609205327, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609205335, "dur":30164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609235554, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609235592, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609235601, "dur":65363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609300994, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609301048, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609301056, "dur":46488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609347577, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609347612, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609347622, "dur":56071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609403725, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609403760, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609403769, "dur":53745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609457544, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609457602, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609457610, "dur":19169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609476807, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609476836, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609476846, "dur":54006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609530880, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609530913, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609530923, "dur":55018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609585968, "dur":71867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609657841, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609657853, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609658792, "dur":686, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609659500, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609659509, "dur":1283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609660817, "dur":25815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609686637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609686648, "dur":738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609687412, "dur":263136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609950555, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609950570, "dur":1100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609951701, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958609951734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958609951743, "dur":123578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1667958610075347, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":4, "ts":1667958610075438, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610076958, "dur":2004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":4, "ts":1667958610078997, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets4.resource" }}
-,{ "pid":12345, "tid":4, "ts":1667958610079029, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610079037, "dur":6647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets4.resource" }}
-,{ "pid":12345, "tid":4, "ts":1667958610085711, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":4, "ts":1667958610085738, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610085746, "dur":5529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":4, "ts":1667958610091301, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1667958610091327, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610091335, "dur":5677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1667958610097041, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":4, "ts":1667958610097067, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610097076, "dur":2240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":4, "ts":1667958610099350, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1667958610099379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610099387, "dur":614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1667958610100026, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":4, "ts":1667958610100055, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610100061, "dur":8319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":4, "ts":1667958610108408, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1667958610108435, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1667958610108443, "dur":31334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1667958610139839, "dur":131109, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609032156, "dur":559, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609032717, "dur":3514, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609036239, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":5, "ts":1667958609036277, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609036954, "dur":542, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":5, "ts":1667958609037514, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/app.info" }}
-,{ "pid":12345, "tid":5, "ts":1667958609037558, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609038024, "dur":6118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/app.info" }}
-,{ "pid":12345, "tid":5, "ts":1667958609044145, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":5, "ts":1667958609044253, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609044296, "dur":57939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":5, "ts":1667958609102273, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1667958609102389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609102403, "dur":277482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1667958609379921, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609379954, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609379964, "dur":33446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609413439, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609413471, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609413479, "dur":43592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609457167, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609457202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609457210, "dur":22391, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609479628, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609479658, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609479667, "dur":30621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609510315, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609510344, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609510353, "dur":20857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609531235, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609531262, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609531269, "dur":17719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609549021, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609549055, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609549063, "dur":36833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609585929, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609585961, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609585971, "dur":62961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609648965, "dur":774, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609649745, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609649756, "dur":785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609650563, "dur":52853, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609703430, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609703441, "dur":963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609704431, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609704460, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609704469, "dur":109313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609813813, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609813845, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609813856, "dur":46760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609860646, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609860722, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609860732, "dur":55420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609916179, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609916208, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609916218, "dur":39967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609956217, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958609956680, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958609956691, "dur":119163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":5, "ts":1667958610075884, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":5, "ts":1667958610075918, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610075956, "dur":3111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":5, "ts":1667958610079094, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets4.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1667958610079123, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610079129, "dur":1555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets4.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1667958610080711, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets3.resource" }}
-,{ "pid":12345, "tid":5, "ts":1667958610080738, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610080744, "dur":7951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets3.resource" }}
-,{ "pid":12345, "tid":5, "ts":1667958610088724, "dur":15427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets2.resource" }}
-,{ "pid":12345, "tid":5, "ts":1667958610104156, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610104164, "dur":11079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/sharedassets2.resource" }}
-,{ "pid":12345, "tid":5, "ts":1667958610115269, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1667958610115366, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610115373, "dur":746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1667958610116143, "dur":791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1667958610116938, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610116963, "dur":596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1667958610117586, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1667958610117615, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610117621, "dur":1890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1667958610119534, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level4" }}
-,{ "pid":12345, "tid":5, "ts":1667958610119565, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610119571, "dur":712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level4" }}
-,{ "pid":12345, "tid":5, "ts":1667958610120307, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level3" }}
-,{ "pid":12345, "tid":5, "ts":1667958610120333, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610120339, "dur":774, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level3" }}
-,{ "pid":12345, "tid":5, "ts":1667958610121135, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level2" }}
-,{ "pid":12345, "tid":5, "ts":1667958610121160, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610121165, "dur":1031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level2" }}
-,{ "pid":12345, "tid":5, "ts":1667958610122221, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level1" }}
-,{ "pid":12345, "tid":5, "ts":1667958610122246, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610122252, "dur":2593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/level1" }}
-,{ "pid":12345, "tid":5, "ts":1667958610124876, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":5, "ts":1667958610124911, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610124918, "dur":3191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":5, "ts":1667958610128140, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1667958610128171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610128180, "dur":2652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1667958610130864, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/boot.config" }}
-,{ "pid":12345, "tid":5, "ts":1667958610130974, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1667958610130983, "dur":644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/boot.config" }}
-,{ "pid":12345, "tid":5, "ts":1667958610131651, "dur":139281, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609032213, "dur":612, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609032825, "dur":3410, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609036239, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1667958609036367, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609039891, "dur":62604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1667958609102530, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609102568, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609102772, "dur":2117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609104924, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":6, "ts":1667958609105023, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609105034, "dur":9150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":6, "ts":1667958609114216, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609114252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609116951, "dur":29367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609146351, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609146388, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609146398, "dur":36066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609182494, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609182532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609182540, "dur":30954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609213526, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609213560, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609213569, "dur":84854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609298456, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609298488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609298498, "dur":89496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609388024, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609388056, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609388066, "dur":21186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609409285, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609409318, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609409328, "dur":37484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609446839, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609446867, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609446875, "dur":50228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609497136, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609497172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609497180, "dur":18294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609515502, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609515537, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609515547, "dur":33416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609548992, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609549028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609549037, "dur":37004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609586072, "dur":210253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609796332, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609796343, "dur":1217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609797589, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609797622, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609797630, "dur":77495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609875154, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958609875189, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958609875197, "dur":199643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958610074870, "dur":62531, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Assembly-CSharp-firstpass.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958610137407, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1667958610137421, "dur":842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Assembly-CSharp-firstpass.dll" }}
-,{ "pid":12345, "tid":6, "ts":1667958610138287, "dur":132679, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609032206, "dur":526, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609032732, "dur":3609, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609036341, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1667958609036456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609039839, "dur":198856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1667958609238725, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609238759, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609238768, "dur":44197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609282995, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609283026, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609283035, "dur":90265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609373329, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609373358, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609373371, "dur":47728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609421149, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609421185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609421194, "dur":80127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609501352, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609501385, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609501397, "dur":30238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609531659, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609531687, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609531694, "dur":37800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609569524, "dur":97612, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609667143, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609667154, "dur":888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609668067, "dur":2531, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609670604, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609670616, "dur":970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609671614, "dur":36301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.Stl.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609707921, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609707955, "dur":803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/Unity.ProBuilder.Stl.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609708782, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609708814, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609708821, "dur":261097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609969948, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958609969977, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958609969987, "dur":48102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958610018117, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958610018145, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1667958610018154, "dur":252703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":7, "ts":1667958610270901, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":7, "ts":1667958610270903, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609032150, "dur":571, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609032721, "dur":3607, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609036331, "dur":251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1667958609036600, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609039913, "dur":9180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1667958609049130, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1667958609049228, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609049237, "dur":2138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1667958609051402, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1667958609051496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609051540, "dur":50713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1667958609102289, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":8, "ts":1667958609102396, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609102404, "dur":11211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":8, "ts":1667958609113648, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609113682, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609116987, "dur":62159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609179175, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609179205, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609179214, "dur":98775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609278023, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609278060, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609278070, "dur":20495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609298596, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609298628, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609298635, "dur":54667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609353332, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609353363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609353372, "dur":64944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609418347, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609418517, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609418525, "dur":65909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609484461, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609484489, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609484498, "dur":48771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609533297, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609533326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609533334, "dur":181849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609715215, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609715247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609715258, "dur":70040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609785330, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609785361, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609785377, "dur":89700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609875111, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958609875143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958609875152, "dur":180227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958610055419, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/DOTween.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958610055455, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1667958610055464, "dur":99149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Ronin Campbell/Documents/ProFricBUILDS/V0.6/Neon Outrunner_Data/Managed/DOTween.dll" }}
-,{ "pid":12345, "tid":8, "ts":1667958610154641, "dur":116292, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1667958610281037, "dur":2599, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1667958610310828, "dur": 879, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1667958610310376, "dur": 1368, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1668263833471678, "dur":1762, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833473449, "dur":299, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1668263833473787, "dur":38, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1668263833473827, "dur":590, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1668263833474457, "dur":908, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833475366, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863380, "dur":250, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863631, "dur":34, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863666, "dur":42, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863710, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863723, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863725, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863733, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863735, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863741, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863744, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863750, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863751, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863757, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863759, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863765, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863767, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863773, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863775, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863781, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863782, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863789, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863791, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863797, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863799, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863805, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863821, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833863835, "dur":4458, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1668263833474636, "dur":738, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833475376, "dur":7395, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833482786, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1668263833482789, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833482923, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1668263833482926, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483035, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483182, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483282, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483442, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483534, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483606, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483696, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483765, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483846, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833483932, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484020, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484074, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484156, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484206, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484287, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484355, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484446, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484527, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484616, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484668, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484740, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484872, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833484987, "dur":96284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1668263833581272, "dur":34482, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833615758, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets5.resource" }}
+,{ "pid":12345, "tid":1, "ts":1668263833615838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833615847, "dur":13195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets5.resource" }}
+,{ "pid":12345, "tid":1, "ts":1668263833629110, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":1, "ts":1668263833629183, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833629193, "dur":1810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":1, "ts":1668263833631070, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":1, "ts":1668263833631148, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833631157, "dur":18104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":1, "ts":1668263833649337, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1668263833649407, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833649417, "dur":1578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1668263833651054, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":1, "ts":1668263833651114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833651149, "dur":111347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":1, "ts":1668263833762560, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level4.resS" }}
+,{ "pid":12345, "tid":1, "ts":1668263833762635, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833762641, "dur":4092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level4.resS" }}
+,{ "pid":12345, "tid":1, "ts":1668263833766795, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1668263833766871, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1668263833766880, "dur":4216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1668263833771159, "dur":92230, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833474671, "dur":711, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833475383, "dur":7668, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483051, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483206, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483295, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483454, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483555, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483730, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483830, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833483908, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484009, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484085, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484180, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484251, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484344, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484496, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484575, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484628, "dur":252, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484881, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833484947, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833485022, "dur":276842, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1668263833761864, "dur":382, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833762248, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level5.resS" }}
+,{ "pid":12345, "tid":2, "ts":1668263833762321, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833762329, "dur":3956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level5.resS" }}
+,{ "pid":12345, "tid":2, "ts":1668263833766336, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1668263833766492, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1668263833766502, "dur":4642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1668263833771205, "dur":92181, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833474700, "dur":693, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833475394, "dur":7386, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833482786, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1668263833482981, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483070, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483247, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483333, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483476, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483598, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483674, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483771, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483844, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833483964, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484087, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484177, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484247, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484452, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484510, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484620, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484696, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484786, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484888, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833484989, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833485150, "dur":293, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833485444, "dur":126175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1668263833611620, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833611801, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":3, "ts":1668263833612021, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833612112, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1668263833612180, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833613105, "dur":7500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1668263833620672, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1668263833620740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833620782, "dur":3953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1668263833624797, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets4.resource" }}
+,{ "pid":12345, "tid":3, "ts":1668263833624861, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833624869, "dur":20608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets4.resource" }}
+,{ "pid":12345, "tid":3, "ts":1668263833645544, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":3, "ts":1668263833645608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833645617, "dur":8535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":3, "ts":1668263833654211, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1668263833654351, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1668263833654362, "dur":135969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1668263833790398, "dur":72989, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833474740, "dur":660, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833475403, "dur":7593, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833482999, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483157, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483264, "dur":170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483435, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483532, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483603, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483691, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483762, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483848, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483905, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833483982, "dur":277855, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1668263833761838, "dur":420, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833762260, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level5" }}
+,{ "pid":12345, "tid":4, "ts":1668263833762343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833762359, "dur":3332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level5" }}
+,{ "pid":12345, "tid":4, "ts":1668263833765754, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level1.resS" }}
+,{ "pid":12345, "tid":4, "ts":1668263833765849, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1668263833765855, "dur":5600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level1.resS" }}
+,{ "pid":12345, "tid":4, "ts":1668263833771521, "dur":91867, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833474764, "dur":647, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833475412, "dur":7457, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833482871, "dur":563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1668263833483435, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833483522, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1668263833483620, "dur":447, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833484068, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1668263833484127, "dur":555, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833484683, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1668263833484744, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833484883, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1668263833485010, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833485189, "dur":38023, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1668263833523213, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833523317, "dur":109426, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":5, "ts":1668263833632745, "dur":2686, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833635436, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":5, "ts":1668263833635545, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833635555, "dur":127495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":5, "ts":1668263833763125, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level3" }}
+,{ "pid":12345, "tid":5, "ts":1668263833763203, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833763209, "dur":5125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level3" }}
+,{ "pid":12345, "tid":5, "ts":1668263833768410, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1668263833768616, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1668263833768626, "dur":4254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1668263833772928, "dur":90475, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833474804, "dur":616, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833475420, "dur":7406, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833482829, "dur":247, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483076, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483183, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483331, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483419, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483556, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483652, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483716, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483806, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483862, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833483949, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484006, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484085, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484141, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484217, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484270, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484356, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484417, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484494, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484599, "dur":326, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833484925, "dur":141179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":6, "ts":1668263833626105, "dur":7570, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833633679, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1668263833633781, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833633792, "dur":129158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1668263833763037, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level3.resS" }}
+,{ "pid":12345, "tid":6, "ts":1668263833763110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833763118, "dur":5133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level3.resS" }}
+,{ "pid":12345, "tid":6, "ts":1668263833768329, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1668263833768432, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1668263833768447, "dur":9608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1668263833778111, "dur":85272, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833474845, "dur":584, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833475430, "dur":7390, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833482823, "dur":248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483071, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483184, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483339, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483471, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483594, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483710, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483774, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483847, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833483928, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484024, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484082, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484161, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484217, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484290, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484349, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484442, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484493, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484579, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484641, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484715, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484776, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484896, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833484961, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833485038, "dur":24229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833509268, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833509400, "dur":12667, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833522068, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833522201, "dur":43827, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566030, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566179, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566238, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566309, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566371, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566471, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566524, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566589, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833566860, "dur":303, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833567164, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833567223, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833567294, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833567349, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833567453, "dur":597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568051, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568163, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568228, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568303, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568362, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568453, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568508, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568582, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568641, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568711, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568764, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568834, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568899, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833568972, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833569026, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833569097, "dur":1286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833570384, "dur":2044, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833572432, "dur":100634, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":7, "ts":1668263833673067, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833673232, "dur":88252, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1668263833761498, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833761509, "dur":7586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1668263833769153, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/boot.config" }}
+,{ "pid":12345, "tid":7, "ts":1668263833769347, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1668263833769471, "dur":93910, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833474880, "dur":555, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833475435, "dur":7378, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833482817, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1668263833483074, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833483185, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1668263833483346, "dur":276, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833483623, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833483698, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833483902, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484031, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484117, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484188, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484276, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484338, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484514, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484590, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484690, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484763, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484893, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833484981, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833485122, "dur":24490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833509612, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833509699, "dur":56017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833565717, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833565801, "dur":195741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":8, "ts":1668263833761543, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833761679, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1668263833761758, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833761765, "dur":3256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1668263833765192, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1668263833765272, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1668263833765283, "dur":4089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1668263833769447, "dur":93938, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833475026, "dur":413, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833475440, "dur":7365, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833482809, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1668263833482990, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833483150, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1668263833483278, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833483359, "dur":696, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner.exe" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484056, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484127, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484182, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484283, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484343, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484445, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484511, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484619, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484902, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833484990, "dur":80286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":9, "ts":1668263833565277, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833565464, "dur":297788, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":9, "ts":1668263833863253, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1668263833863353, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":9, "ts":1668263833863354, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833475061, "dur":383, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833475444, "dur":7355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833482802, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1668263833483156, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833483256, "dur":1493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":10, "ts":1668263833484749, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833484876, "dur":374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833485251, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833485342, "dur":23889, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833509232, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833509343, "dur":1263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833510607, "dur":956, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833511567, "dur":8260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833519828, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833519957, "dur":50769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833570727, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833570859, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833570918, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833570991, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571044, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571113, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571172, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571242, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571289, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571354, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571403, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571468, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571515, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571581, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571630, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571696, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/DOTween.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571744, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833571809, "dur":189787, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833761604, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833761735, "dur":2013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":10, "ts":1668263833763841, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level2.resS" }}
+,{ "pid":12345, "tid":10, "ts":1668263833763915, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1668263833763922, "dur":5746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level2.resS" }}
+,{ "pid":12345, "tid":10, "ts":1668263833769730, "dur":93648, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833475096, "dur":352, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833475448, "dur":7346, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833482798, "dur":1372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484170, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484254, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484316, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484408, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484466, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484557, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484610, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484688, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484759, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833484899, "dur":52864, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":11, "ts":1668263833537764, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833537891, "dur":137074, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":11, "ts":1668263833674966, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833675091, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":11, "ts":1668263833675258, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833675349, "dur":919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":11, "ts":1668263833676268, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833676365, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1668263833676486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833676503, "dur":89897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1668263833766464, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level0.resS" }}
+,{ "pid":12345, "tid":11, "ts":1668263833766527, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1668263833766533, "dur":5351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level0.resS" }}
+,{ "pid":12345, "tid":11, "ts":1668263833771954, "dur":91437, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833475150, "dur":303, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833475453, "dur":7332, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833482791, "dur":969, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1668263833483761, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833483851, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1668263833483973, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833484051, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1668263833484110, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833484188, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1668263833484305, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833484459, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1668263833484524, "dur":553, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833485078, "dur":61849, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":12, "ts":1668263833546928, "dur":6921, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833553853, "dur":68743, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":12, "ts":1668263833622597, "dur":235, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833622837, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":12, "ts":1668263833622934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833622950, "dur":2540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":12, "ts":1668263833625558, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1668263833625626, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833625634, "dur":8525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1668263833634218, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":12, "ts":1668263833634278, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833634283, "dur":10410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":12, "ts":1668263833644762, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1668263833644830, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833644839, "dur":117298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1668263833763020, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level4" }}
+,{ "pid":12345, "tid":12, "ts":1668263833763115, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833763122, "dur":5224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/level4" }}
+,{ "pid":12345, "tid":12, "ts":1668263833768449, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1668263833768619, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1668263833768627, "dur":3758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Fuzzy/Documents/ProFricBUILDS/0.7/Neon Outrunner_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1668263833772446, "dur":90947, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1668263833870510, "dur":2038, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1668263833878665, "dur": 892, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1668263833878553, "dur": 1028, "ph": "X", "name": "Write chrome-trace events", "args": {} },
