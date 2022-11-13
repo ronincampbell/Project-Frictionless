@@ -55,16 +55,17 @@ namespace RetroAesthetics.Demos {
 				_loadingSceneAsync.allowSceneActivation = true;
 			}
 
-			if (continueTo == 0) {
+
+			if (continueTo == 1) {
 				SceneManager.LoadSceneAsync("Level1");
 			}
-			else if (continueTo == 1) {
+			else if (continueTo == 2) {
 				SceneManager.LoadSceneAsync("Level2");
 			}
-			else if (continueTo == 2) {
+			else if (continueTo == 3) {
 				SceneManager.LoadSceneAsync("Level3");
 			}
-			else if (continueTo == 3) {
+			else if (continueTo == 4) {
 				SceneManager.LoadSceneAsync("Level3");
 			}
 		}

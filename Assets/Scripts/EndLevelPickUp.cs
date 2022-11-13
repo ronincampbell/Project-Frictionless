@@ -41,13 +41,21 @@ public class EndLevelPickUp : MonoBehaviour
 
             if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 2)
             {
+                PlayerPrefs.SetFloat("HighscoreT", finalScore);
+                HighScore = PlayerPrefs.GetFloat("HighscoreT");
+                HighScoreTime.text = HighScore.ToString();
+                HighScoreText.SetActive(true);
+                victorySound.SetActive(true);
+            }
+            else if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 3)
+            {
                 PlayerPrefs.SetFloat("Highscore1", finalScore);
                 HighScore = PlayerPrefs.GetFloat("Highscore1");
                 HighScoreTime.text = HighScore.ToString();
                 HighScoreText.SetActive(true);
                 victorySound.SetActive(true);
             }
-            else if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 3)
+            else if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 4)
             {
                 PlayerPrefs.SetFloat("Highscore2", finalScore);
                 HighScore = PlayerPrefs.GetFloat("Highscore2");
@@ -55,7 +63,7 @@ public class EndLevelPickUp : MonoBehaviour
                 HighScoreText.SetActive(true);
                 victorySound.SetActive(true);
             }
-            else if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 4)
+            else if (finalScore < HighScore && SceneManager.GetActiveScene().buildIndex == 5)
             {
                 PlayerPrefs.SetFloat("Highscore3", finalScore);
                 HighScore = PlayerPrefs.GetFloat("Highscore3");
@@ -100,12 +108,15 @@ public class EndLevelPickUp : MonoBehaviour
         footSteps.SetActive(false);
 
         if (SceneManager.GetActiveScene().buildIndex == 2){
-            HighScore = PlayerPrefs.GetFloat("Highscore1");
+            HighScore = PlayerPrefs.GetFloat("HighscoreT");
         }
         else if (SceneManager.GetActiveScene().buildIndex == 3){
-            HighScore = PlayerPrefs.GetFloat("Highscore2");
+            HighScore = PlayerPrefs.GetFloat("Highscore1");
         }
         else if (SceneManager.GetActiveScene().buildIndex == 4){
+            HighScore = PlayerPrefs.GetFloat("Highscore2");
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 5){
             HighScore = PlayerPrefs.GetFloat("Highscore3");
         }
 

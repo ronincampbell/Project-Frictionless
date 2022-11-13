@@ -24,6 +24,9 @@ public class LevelSelection : MonoBehaviour
         HideLevels();
 
         // If the player has no score, allow them to get a high score through setting it to 10000
+        if (PlayerPrefs.GetFloat("HighscoreT") == 0)
+            PlayerPrefs.SetFloat("HighscoreT", 10000);
+
         if (PlayerPrefs.GetFloat("Highscore1") == 0)
             PlayerPrefs.SetFloat("Highscore1", 10000);
         
@@ -37,19 +40,19 @@ public class LevelSelection : MonoBehaviour
     // Display level tapes that the player has unlocked
     public void DisplayLevels()
     {
-        if (AvailScenes == 1)
+        if (AvailScenes == 2)
         {
             Level1Button.SetActive(true);
             Level1MiniButton.SetActive(true);
         }
-        else if (AvailScenes == 2)
+        else if (AvailScenes == 3)
         {
             Level1Button.SetActive(true);
             Level2Button.SetActive(true);
             Level1MiniButton.SetActive(true);
             Level2MiniButton.SetActive(true);
         }
-        else if (AvailScenes == 3)
+        else if (AvailScenes == 4)
         {
             Level1Button.SetActive(true);
             Level2Button.SetActive(true);
@@ -75,6 +78,7 @@ public class LevelSelection : MonoBehaviour
     public void ClearProgress()
     {
         PlayerPrefs.SetInt("UnlockedLevels", 0);
+        PlayerPrefs.SetFloat("HighscoreT", 10000);
         PlayerPrefs.SetFloat("Highscore1", 10000);
         PlayerPrefs.SetFloat("Highscore2", 10000);
         PlayerPrefs.SetFloat("Highscore3", 10000);
